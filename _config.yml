@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Hắc Mão Website
+title: Hắc Mão 
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Love meow
 
 # --- Navigation bar options --- #
 
@@ -25,14 +25,14 @@ description: A virtual proof that name is awesome!
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Beautiful Jekyll: "https://www.facebook.com/kamithanthanh"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
   Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "https://png.pngtree.com/element_origin_min_pic/17/08/17/9aeacb04d2442bcb2b46b50caf46b9be.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
