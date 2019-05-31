@@ -24,6 +24,7 @@ description: Phàm nhân tu tiên
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Blog : "https://kamithanthanh.github.io/"
   Contact:
     - Facebook: "https://www.facebook.com/kamithanthanh"
     - GitHub Pages: "https://github.com/kamithanthanh/"
