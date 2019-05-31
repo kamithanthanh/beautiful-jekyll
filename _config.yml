@@ -17,7 +17,7 @@ baseurl: ""
 title: Hắc Mão 
 
 # Short description of your site
-description: Love meow
+description: Phàm nhân tu tiên
 
 # --- Navigation bar options --- #
 
@@ -57,7 +57,7 @@ footer-link-col: "#404040"
 # navbar-img: "/img/bgimage.png"
 # footer-img: "/img/bgimage.png"
 # page-img: "/img/bgimage.png"
-
+page-imd: "cat2.jpg"
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
