@@ -12,3 +12,5 @@ Hiện tại đang ở luyện khí  kỳ, chủ tu hai môn công pháp :
 
 Blog này sẽ là nơi lưu giữ chặng đường tu tiên từ những ngày còn là luyện khí, xem ta có thể đi bao xa trong thế giới rộng lớn này, sẽ khám phá được gì ? Điều gì đang chờ đợi ta ở phía trước ??? 
 Phải đi thì mới biết được :v 
+  
+Ngày 31, tháng 5, 2019
