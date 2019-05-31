@@ -26,8 +26,7 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Facebook: "https://www.facebook.com/kamithanthanh"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+    - GitHub Pages: "https://github.com/kamithanthanh/"
   Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
