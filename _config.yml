@@ -24,7 +24,7 @@ description: Phàm nhân tu tiên
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
+  Contact:
     - Facebook: "https://www.facebook.com/kamithanthanh"
     - GitHub Pages: "https://github.com/kamithanthanh/"
   #Author's home: "http://deanattali.com"
@@ -68,11 +68,9 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
   email: "nguyentuanhieptuki@gmail.com"
   facebook: kamithanthanh
-  github: daattali
-  twitter: daattali
+  github: kamithanthanh
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
