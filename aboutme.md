@@ -1,17 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
-image: cat2.jpg
+subtitle: Một tiểu phàm nhân trên con đường tu tiên đại đạo
+title-image: /tmp/cat2.jpg
 ---
-
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Một tiểu phàm nhân trên con đường lĩnh hội tri thức , thấu hiểu vũ trụ rộng lớn này .
+Hiện tại đang ở luyện khí  kỳ, chủ tu hai môn công pháp : 
+- Crypto 
+- Pwnable
+Blog này sẽ là nơi lưu giữ chặng đường tu tiên từ những ngày còn là luyện khí, xem ta có thể đi bao xa trong thế giới rộng lớn này, sẽ khám phá được gì ? Điều gì đang chờ đợi ta ở phía trước ??? 
+Phải đi thì mới biết được :v 
