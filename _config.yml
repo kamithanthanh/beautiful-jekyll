@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://username.github.io"
+url: "https://www.facebook.com/kamithanthanh"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -25,7 +25,7 @@ description: Love meow
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://www.facebook.com/kamithanthanh"
+    - Facebook: "https://www.facebook.com/kamithanthanh"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
   Author's home: "http://deanattali.com"
