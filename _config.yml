@@ -103,7 +103,7 @@ share-links-active:
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
-
+google_analytics: "UA-141258427-1"
 # Google Tag Manager ID
 #gtm: ""
 
@@ -123,7 +123,7 @@ share-links-active:
 
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
-
+fb_comment_id: "700133730415642"
 # Staticman support
 staticman:
   repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
