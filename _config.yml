@@ -25,6 +25,7 @@ avatar: "/img/cat2.jpg"
 navbar-links:
   About Me: "aboutme"
   Blog : "https://kamithanthanh.github.io/"
+  Crypto : "crypto"
   Contact:
     - Facebook: "https://www.facebook.com/kamithanthanh"
     - GitHub Pages: "https://github.com/kamithanthanh/"
