@@ -13,4 +13,4 @@ Hiện tại đang trong thời gian hoàn thiện trang web.Xin quay lại tron
 
 ![anh](https://www.isara.com/wp-content/uploads/2018/06/blog-image-1-1.jpg)  
 
-~~~~~~~~~~~**Feel free to contact me !!**~~~~~~~~~~
+<center>**Feel free to contact me !!**</center>
