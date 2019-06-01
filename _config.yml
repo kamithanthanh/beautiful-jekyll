@@ -24,9 +24,9 @@ avatar: "/img/cat2.jpg"
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Blog : "https://kamithanthanh.github.io/"
-  Crypto : "crypto"
-  Pwnable : "pwnable"
+  #Blog : "https://kamithanthanh.github.io/"
+  Crypto : "https://kamithanthanh.github.io/"
+  Pwnable : "https://hacmao.github.io/"
   Contact:
     - Facebook: "https://www.facebook.com/kamithanthanh"
     - GitHub Pages: "https://github.com/kamithanthanh/"
