@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Pwnable
+fig_width : 6
+fig_heigth : 4
 ---
 # This is Pwnable forum
 
