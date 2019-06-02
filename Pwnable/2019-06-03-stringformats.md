@@ -45,7 +45,7 @@ python -c 'print"\x37\x13\x04\x08\x37\x13\x04\x08\x37\x13\x04\x08\x37\x13\x04\x0
 + str(0x22) + "x%12$n%" + str(0x22) + "x%13$n"' | ./test 
 ```
 ## II.3 - Ghi giá trị là 0x12345678
-Chúng ta sẽ thực hiện ghi từng bytes một lên lần lượt các địa chỉ ```0x08041337```,```0x08041338```,```0x08041339```,```0x08041340``` lần lượt các giá trị ```0x321```,```0x243```,```0x165```,```0x87```. Mình minh họa bằng python cho dễ nhìn. Giả sử ta có một chương trình C cho phép nhập input đầu vào có lỗi format như trên. Tại sao phải làm vậy vì %n ghi độ dài chuỗi string đã được printf in ra nên ta không thể ghi 0x65 sau 0x87 được. 
+Chúng ta sẽ thực hiện ghi từng bytes một lên lần lượt các địa chỉ ```0x08041337```,```0x08041338```,```0x08041339```,```0x08041340``` lần lượt các giá trị ```0x321```,```0x243```,```0x165```,```0x87```. Tại sao phải làm vậy vì %n ghi độ dài chuỗi string đã được printf in ra nên ta không thể ghi 0x65 sau 0x87 được. 
 ## II.4 - Short write
 Nếu dùng %n thì chúng ta ghi 4 bytes 1 lúc. Nếu chỉ muốn ghi 2 bytes thì dùng ```%hn``` thay thế. 
 
