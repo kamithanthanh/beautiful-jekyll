@@ -39,13 +39,13 @@ printf("\x37\x13\x04\x08%768x%10$n")
 ```%10$n``` là cách truy cập trực tiếp một địa chỉ trên stack . Thay vì bạn dùng 10 kí tự ```%x``` thì ở đây chúng ta thay bằng 1 kí tự duy nhất thôi . Khá là tiện lợi và hữu ích trong trường hợp bị giới hạn kí tự input.  
 
 ## ghi giá trị 0x87654321 
-Chúng ta sẽ thực hiện ghi từng bytes một lên lần lượt các địa chỉ 0x08041337,0x08041338,0x08041339,0x08041340 lần lượt các giá trị 0x21,0x43,0x65,0x87. Mình minh họa bằng python cho dễ nhìn. Giả sử ta có một chương trình C cho phép nhập input đầu vào có lỗi format như trên.
+Chúng ta sẽ thực hiện ghi từng bytes một lên lần lượt các địa chỉ ```0x08041337```,```0x08041338```,```0x08041339```,```0x08041340``` lần lượt các giá trị ```0x21```,```0x43```,```0x65```,```0x87```. Mình minh họa bằng python cho dễ nhìn. Giả sử ta có một chương trình C cho phép nhập input đầu vào có lỗi format như trên.
 ```python
 python -c 'print"\x37\x13\x04\x08\x37\x13\x04\x08\x37\x13\x04\x08\x37\x13\x04\x08" + "%" + str(0x11) + "x%10$n%" + str(0x22) + "x%11$n%" 
 + str(0x22) + "x%12$n%" + str(0x22) + "x%13$n"' | ./test 
 ```
 ## ghi giá trị là 0x12345678
-Chúng ta sẽ thực hiện ghi từng bytes một lên lần lượt các địa chỉ 0x08041337,0x08041338,0x08041339,0x08041340 lần lượt các giá trị 0x321,0x243,0x165,0x87. Mình minh họa bằng python cho dễ nhìn. Giả sử ta có một chương trình C cho phép nhập input đầu vào có lỗi format như trên. Tại sao phải làm vậy vì %n ghi độ dài chuỗi string đã được printf in ra nên ta không thể ghi 0x65 sau 0x87 được. 
+Chúng ta sẽ thực hiện ghi từng bytes một lên lần lượt các địa chỉ ```0x08041337```,```0x08041338```,```0x08041339```,```0x08041340``` lần lượt các giá trị ```0x321```,```0x243```,```0x165```,```0x87```. Mình minh họa bằng python cho dễ nhìn. Giả sử ta có một chương trình C cho phép nhập input đầu vào có lỗi format như trên. Tại sao phải làm vậy vì %n ghi độ dài chuỗi string đã được printf in ra nên ta không thể ghi 0x65 sau 0x87 được. 
 ## short write
 Nếu dùng %n thì chúng ta ghi 4 bytes 1 lúc. Nếu chỉ muốn ghi 2 bytes thì dùng ```%hn``` thay thế. 
 
