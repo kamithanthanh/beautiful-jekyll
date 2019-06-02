@@ -29,7 +29,7 @@ printf("\xff\xff\xff\xff %08x.%08x.%08x.....)
 ```
 Trong đó ```\xff\xff\xff\xff``` thay bằng địa chỉ mà bạn muốn đọc. Phần ```...``` là điền đủ số lượng cho tới khi in ra được địa chỉ ```\xff\xff\xff\xff``` . Sau đó chọn lựa format ```%08x``` đã in ra địa chỉ kia thay bằng ```%s``` . Thế là đọc được nội dung đã được lưu thôi. Một mẹo nhỏ là đầu tiên nên thay địa chỉ cần đọc bằng string ```AAAA``` để trong bước đầu tiên phân biệt cho nó dễ.  
 
-# II - ghi lên một địa chỉ bất kì 
+# II - Ghi lên một địa chỉ bất kì 
 Bước đầu tiên chúng ta cũng làm như khi đọc giá trị của một địa chỉ bất kì. Bước cuối thay ```%s``` bằng ```%n``` . Khi đó thay vì đọc thì nó sẽ ghi số bytes đã được in bởi hàm prinf lên địa chỉ đích. Cơ mà ta thấy có một khó khăn rõ ràng là thông thường thì cần giá trị rất lớn , vd : ```0x08041337``` nếu thế thì hàm printf phải in rất nhiều mới đủ cho giá trị đó sao ? 😱😱😱 Điều đó không khả thi chút nào .  
 Dưới đây trình bày lại một số thủ thuật ứng dụng cho từng trường hợp cụ thể để ghi giá trị lên địa chỉ ```0x08041337```
 ## II.1 - Ghi giá trị 0x300 
