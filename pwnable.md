@@ -8,6 +8,7 @@ Pwn là một phần khá là khó trong khi chơi CTF.Nhưng nó cũng khá th�
 bài pwn thì bạn cũng rèn luyện được rất nhiều kĩ năng khác nhau như : nghiên cứu, tư duy logic, kiên nhẫn, ... Đương nhiên mình mới là thằng noob và mới bắt đầu tập tành . Đây là nơi tổng hợp những bài mình thấy hay  , note lại kiến thức ,... 
 
 ## Basis knowledge 
+
 1 . [Basis Format strings](https://kamithanthanh.github.io/Pwnable/2019-06-03-stringformats/) 
 
 ## CTF Online WriteUp
