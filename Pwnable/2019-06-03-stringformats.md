@@ -17,7 +17,7 @@ printf("%x") ;
 ```
 Hàm trên sẽ in ra những giá trị tại một địa chỉ trong stack dưới dạng hexadecimal.
 
-# đọc một địa chỉ bất kì  
+# I - Đọc một địa chỉ bất kì  
 Nếu chúng ta có một câu lệnh như sau : 
 ```C
 printf(input) ; 
@@ -29,24 +29,24 @@ printf("\xff\xff\xff\xff %08x.%08x.%08x.....)
 ```
 Trong đó ```\xff\xff\xff\xff``` thay bằng địa chỉ mà bạn muốn đọc. Phần ```...``` là điền đủ số lượng cho tới khi in ra được địa chỉ ```\xff\xff\xff\xff``` . Sau đó chọn lựa format ```%08x``` đã in ra địa chỉ kia thay bằng ```%s``` . Thế là đọc được nội dung đã được lưu thôi. Một mẹo nhỏ là đầu tiên nên thay địa chỉ cần đọc bằng string ```AAAA``` để trong bước đầu tiên phân biệt cho nó dễ.  
 
-# ghi lên một địa chỉ bất kì 
+# II - ghi lên một địa chỉ bất kì 
 Bước đầu tiên chúng ta cũng làm như khi đọc giá trị của một địa chỉ bất kì. Bước cuối thay ```%s``` bằng ```%n``` . Khi đó thay vì đọc thì nó sẽ ghi số bytes đã được in bởi hàm prinf lên địa chỉ đích. Cơ mà ta thấy có một khó khăn rõ ràng là thông thường thì cần giá trị rất lớn , vd : ```0x08041337``` nếu thế thì hàm printf phải in rất nhiều mới đủ cho giá trị đó sao ? 😱😱😱 Điều đó không khả thi chút nào .  
 Dưới đây trình bày lại một số thủ thuật ứng dụng cho từng trường hợp cụ thể để ghi giá trị lên địa chỉ ```0x08041337```
-## ghi giá trị 0x300 
+## II.1 - Ghi giá trị 0x300 
 ```C
 printf("\x37\x13\x04\x08%768x%10$n")
 ```
 ```%10$n``` là cách truy cập trực tiếp một địa chỉ trên stack . Thay vì bạn dùng 10 kí tự ```%x``` thì ở đây chúng ta thay bằng 1 kí tự duy nhất thôi . Khá là tiện lợi và hữu ích trong trường hợp bị giới hạn kí tự input.  
 
-## ghi giá trị 0x87654321 
+## II.2 - Ghi giá trị 0x87654321 
 Chúng ta sẽ thực hiện ghi từng bytes một lên lần lượt các địa chỉ ```0x08041337```,```0x08041338```,```0x08041339```,```0x08041340``` lần lượt các giá trị ```0x21```,```0x43```,```0x65```,```0x87```. Mình minh họa bằng python cho dễ nhìn. Giả sử ta có một chương trình C cho phép nhập input đầu vào có lỗi format như trên.
 ```python
 python -c 'print"\x37\x13\x04\x08\x37\x13\x04\x08\x37\x13\x04\x08\x37\x13\x04\x08" + "%" + str(0x11) + "x%10$n%" + str(0x22) + "x%11$n%" 
 + str(0x22) + "x%12$n%" + str(0x22) + "x%13$n"' | ./test 
 ```
-## ghi giá trị là 0x12345678
+## II.3 - Ghi giá trị là 0x12345678
 Chúng ta sẽ thực hiện ghi từng bytes một lên lần lượt các địa chỉ ```0x08041337```,```0x08041338```,```0x08041339```,```0x08041340``` lần lượt các giá trị ```0x321```,```0x243```,```0x165```,```0x87```. Mình minh họa bằng python cho dễ nhìn. Giả sử ta có một chương trình C cho phép nhập input đầu vào có lỗi format như trên. Tại sao phải làm vậy vì %n ghi độ dài chuỗi string đã được printf in ra nên ta không thể ghi 0x65 sau 0x87 được. 
-## short write
+## II.4 - Short write
 Nếu dùng %n thì chúng ta ghi 4 bytes 1 lúc. Nếu chỉ muốn ghi 2 bytes thì dùng ```%hn``` thay thế. 
 
 ## Kết
