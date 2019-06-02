@@ -23,11 +23,9 @@ Nếu chúng ta có một câu lệnh như sau :
 ```C
 printf(input) ; 
 ```
-    Thì chúng ta hoàn toàn có thể đọc và ghi lên một địa chỉ bất kì trong chương trình để làm những việc theo ý mình. 😎😎😎 Vào một ngày đẹp trời
-nào đó mà thằng lập trình viên gõ lỗi lệnh như vậy , chương trình vẫn sẽ chạy bình thường nhưng hacker chúng ta thì sẽ có việc để làm thôi . Cơ mà
-có vẻ hiếm lắm vì trước kia mình còn chả biết là in ra được **inpu** luôn mà không cần format thì chạy được cơ mà.  
-    Thôi lan man đủ rồi , cách tấn công là làm như sau : 
+Thì chúng ta hoàn toàn có thể đọc và ghi lên một địa chỉ bất kì trong chương trình để làm những việc theo ý mình. 😎😎😎 Vào một ngày đẹp trờin ào đó mà thằng lập trình viên gõ lỗi lệnh như vậy , chương trình vẫn sẽ chạy bình thường nhưng hacker chúng ta thì sẽ có việc để làm thôi . Cơ màcó vẻ hiếm lắm vì trước kia mình còn chả biết là in ra được **inpu** luôn mà không cần format thì chạy được cơ mà.  
+Thôi lan man đủ rồi , cách tấn công là làm như sau : 
 ```C
 printf("\xff\xff\xff\xff %08x.%08x.%08x.....) 
 ```
-    Trong đó ``\xff\xff\xff\xff`` thay bằng địa chỉ mà bạn muốn đọc. Phần ``..`` là  
+Trong đó ```\xff\xff\xff\xff``` thay bằng địa chỉ mà bạn muốn đọc. Phần ```...``` là  
