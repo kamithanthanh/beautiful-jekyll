@@ -50,5 +50,7 @@ Chúng ta sẽ thực hiện ghi từng bytes một lên lần lượt các đ�
 Nếu dùng %n thì chúng ta ghi 4 bytes 1 lúc. Nếu chỉ muốn ghi 2 bytes thì dùng ```%hn``` thay thế. 
 
 ## Kết
+Như vậy là ta đã có thể đọc và ghi bất kì giá trị nào lên một địa chỉ tùy ý trong chương trình rồi. Đây chỉ là những điều basis thôi :v 
+Học xong cái này mình tưởng mấy bài string chỉ là muỗi cơ 😰😰😰 Cơ mà nhìn qua bài format string trong ISITDTU 2018 Quals sao mà nó khủng khiếp thế . Đúng là pwn thì sâu không lường được. Hi hi tích lũy dùng dần , lo đéo gì. 
 Note lại có hơi vớ vẩn , cũng chỉ là copy lại để sau này dùng thôi :v Hope là sau này phát hiện ra cái mới để viết. 
 ![meo](https://tsukasakiyshu.files.wordpress.com/2012/06/3.png) 
