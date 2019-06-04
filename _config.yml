@@ -24,12 +24,12 @@ avatar: "/img/cat2.jpg"
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Blog : "https://kamithanthanh.github.io/"
+  Blog : "https://hacmao.github.io/"
   Crypto : "crypto"
   Pwnable : "pwnable"
   Contact:
     - Facebook: "https://www.facebook.com/kamithanthanh"
-    - GitHub Pages: "https://github.com/kamithanthanh/"
+    - GitHub Pages: "https://github.com/hacmao/"
   #Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
