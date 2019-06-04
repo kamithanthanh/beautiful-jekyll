@@ -9,11 +9,11 @@ bài pwn thì bạn cũng rèn luyện được rất nhiều kĩ năng khác nh
 
 ## Basis knowledge 
 
-  -  [Basis Format strings](https://kamithanthanh.github.io/Pwnable/2019-06-03-stringformats/) 
+  -  [Basis Format strings](https://hacmao.github.io/Pwnable/2019-06-03-stringformats/) 
 
 ## CTF Online WriteUp
   
- - [FBCTF-2019](https://kamithanthanh.github.io/Pwnable/overfloat/2019-06-02-fbctf/)
+ - [FBCTF-2019](https://hacmao.github.io/Pwnable/overfloat/2019-06-02-fbctf/)
 
 ![anh](https://sophosnews.files.wordpress.com/2016/07/red-bug-1200.jpg?w=780&h=408&crop=1)
 
