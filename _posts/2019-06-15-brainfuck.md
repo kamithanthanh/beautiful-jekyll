@@ -1,6 +1,6 @@
 ---
 layout : post 
-title : BrainFuckkkkkkkk XXXXXXXXX 
+title : BrainFuckkkkkkkk
 --- 
 
 # Mở đầu 
@@ -31,6 +31,8 @@ Mình đi loanh quanh một hồi tận dụng các hàm trong **do_brainfuck** 
 
 
 - Ý tưởng là : Thay đổi putchar -> start , memset -> gets , fgets -> system . 
+
+Tham khảo code của mình ở [đây](https://github.com/hacmao/hacmao.github.io/tree/master/Pwnable/pwnable.kr/rookiss/brainfuck)
 
 # Kết 
 
