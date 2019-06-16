@@ -14,4 +14,4 @@ nữa trong bài này là phải vượt qua được canary , chỉ cần có m
 
 Hàm main : 
 
-![hinh1](/Pwnable/pwnable.kr/rookiss/MD5\ caculator/hinh1.PNG) 
+![hinh1](/Pwnable/pwnable.kr/rookiss/MD5%20caculator/hinh1.PNG) 
