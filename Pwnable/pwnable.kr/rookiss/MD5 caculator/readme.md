@@ -16,8 +16,8 @@ Hàm main :
 
 Hàm main khá sạch sẽ và dễ đọc, nó bao gồm hai hàm cơ bản  : 
 
-- hàm **my_hash** : 
+- hàm **my_hash** :   
 ![hinh2](/Pwnable/pwnable.kr/rookiss/MD5%20caculator/hinh2.PNG) 
 
-- hàm **process_hash** : 
+- hàm **process_hash** :   
 ![hinh3](/Pwnable/pwnable.kr/rookiss/MD5%20caculator/hinh3.PNG) 
