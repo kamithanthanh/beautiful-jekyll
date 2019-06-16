@@ -18,10 +18,12 @@ Hàm main khá sạch sẽ và dễ đọc, nó bao gồm hai hàm cơ bản  :
 
 - hàm **my_hash** :   
 Hàm này trả về giá trị là một chuỗi các biểu thức được tạo ra bằng hàm ```rand()``` cộng với canary .😐😐😐 Thế chẳng phải chúng ta có thể leak canary nếu biết các giá trị còn lại sao ??? 
+
 ![hinh2](/Pwnable/pwnable.kr/rookiss/MD5%20caculator/hinh2.PNG) 
 
 - hàm **process_hash** :   
-Kinh nghiệm của mình là cái gì khó hiểu quá thì đừng có cố tìm hiểu 😀😀😀 Như con gái chẳng hạn , ta không thể hiểu hết được đâu. Cho nên một mẹo là cứ nhìn tên hàm rồi đoán chức năng. Kết hợp với GDB nữa để hiểu rõ hàm của nó làm gì. 
+Kinh nghiệm của mình là cái gì khó hiểu quá thì đừng có cố tìm hiểu 😀😀😀 Như con gái chẳng hạn , ta không thể hiểu hết được đâu. Cho nên một mẹo là cứ nhìn tên hàm rồi đoán chức năng. Kết hợp với GDB nữa để hiểu rõ hàm của nó làm gì.  
+
 ![hinh3](/Pwnable/pwnable.kr/rookiss/MD5%20caculator/hinh3.PNG) 
 
 Đầu tiên chúng ta nhập 1024 kí tự vào ```g_buf``` được đặt ở bss. Sẽ không có tràn ở đây. Tiếp đó nó sẽ decode base64 biến g_buf rồi lưu vào biến s , trả về độ dài của s . Chúng ta có thể thấy biến s có độ dài max là 0x200 mà max của b64decode của ```g_buf``` lại là 0x300 . Ta có lỗi overflow ở đây . Từ đó có thể dễ dàng thực hiện các kĩ thuật tràn cơ bản để có được shell khi đã có đủ nguyên liệu cần thiêt. 
