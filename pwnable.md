@@ -7,7 +7,7 @@ title: Pwnable
 Pwn là một phần khá là khó trong khi chơi CTF.Nhưng nó cũng khá thú vị và mình cũng rất thích pwn vì nó đòi hỏi tư duy logic. Làm xong một
 bài pwn thì bạn cũng rèn luyện được rất nhiều kĩ năng khác nhau như : nghiên cứu, tư duy logic, kiên nhẫn, ... Đương nhiên mình mới là thằng noob và mới bắt đầu tập tành . Đây là nơi tổng hợp những bài mình thấy hay  , note lại kiến thức ,... 
 
-## Basis knowledge 
+## Basis knowledge 🔥🔥🔥
 
   -  [Basis Format strings](https://hacmao.github.io/Pwnable/2019-06-03-stringformats/) 
 
@@ -16,7 +16,7 @@ bài pwn thì bạn cũng rèn luyện được rất nhiều kĩ năng khác nh
       
       
 
-## Pwnable.Kr
+## Pwnable.Kr 🔥🔥🔥
 Các bạn có thể chơi ở [đây](https://pwnable.kr/play.php) . Mình viết Writeup theo kiểu gợi mở cũng như lưu lại sau này dùng dần ✋✋✋
 ### Rookiss
   - [BrainFuck](https://hacmao.github.io/2019-06-15-brainfuck/) 
@@ -27,7 +27,7 @@ Các bạn có thể chơi ở [đây](https://pwnable.kr/play.php) . Mình vi�
 🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀    
 🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞      
          
-## CTF Online WriteUp
+## CTF Online WriteUp 🔥🔥🔥
   
  - [FBCTF-2019](https://hacmao.github.io/Pwnable/overfloat/2019-06-02-fbctf/)
 
