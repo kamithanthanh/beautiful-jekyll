@@ -77,7 +77,7 @@ void __cdecl FightDragon(int choice)
 }
 ```  
 
-**Hàm PriestAttack ** 
+**Hàm PriestAttack** 
 ```c
 int __cdecl PriestAttack(int player, void *monster)
 {
