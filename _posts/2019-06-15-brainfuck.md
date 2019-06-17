@@ -2,7 +2,7 @@
 layout : post 
 title : BrainFuckkkkkkkk
 subtitle : Rookiss Pwnable.kr
-image : /Pwnable/pwnable.kr/rookiss/brainfuck/brain%20fuck.png
+image : /Pwnable/pwnable.kr/rookiss/brainfuck/brain_fuck.png
 --- 
 
 # Mở đầu
