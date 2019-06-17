@@ -20,7 +20,7 @@ title: Hắc Mão
 description: Phàm nhân tu tiên
 
 # --- Navigation bar options --- #
-#avatar: "/img/cat2.jpg"
+avatar: "/img/cat2.jpg"
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
@@ -65,7 +65,7 @@ footer-link-col: "#404040"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Hắc Mão
-  #og_image: "/img/cat2.jpg"
+  og_image: "/img/cat2.jpg"
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
