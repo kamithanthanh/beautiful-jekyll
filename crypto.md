@@ -4,8 +4,10 @@ title: CryptoGraphy
 ---
 # This is CryptoGraphy forum
 
-Hiện tại đang trong thời gian hoàn thiện trang web.Xin quay lại trong thời gian tới.  
-
+ 
+## CRYPTOPAL  
+Mình có chơi cryptopal và note lại code lại . Mặc dù cũng tham khảo từ nhiều nguồn và note lại ☺️☺️☺️
+[CryptoPal](https://github.com/hacmao/Cryptopal) 
 
 ## CTF WriteUp
   
