@@ -37,17 +37,17 @@ Như vậy là control được cái EBP thì chúng ta có thể control đư�
 # Phân tích binary  
 Hàm main cho phép chúng ta nhập 30 kí tự vào biến ```enc``` , sau đó giải mã base64 rồi lưu vào biến ```dec``` với max len cho phép là 12. Sau đó copy giá trị lên biến bss ```input``` . Nếu hash của ```input``` trùng với hash MD5 cho trước thì chúng ta sẽ được xác thực và trở thành root. 
 
-**hàm main**
+**hàm main**  
 ![hinh1](/Pwnable/pwnable.kr/rookiss/simple%20login/hinh1.PNG) 
 
-**hàm auth**
+**hàm auth**  
 ![hinh2](/Pwnable/pwnable.kr/rookiss/simple%20login/hinh2.PNG) 
 
-**hàm correct**
+**hàm correct**  
 ![hinh3](/Pwnable/pwnable.kr/rookiss/simple%20login/hinh3.PNG)
 
-Chú ý vào hàm auth . MD5 thì không thể break được nên chúng ta sẽ phải tìm cách khác. Trong bước trên chúng ta đã phát hiện ra là EBP đã bị thay đổi ở một bước nào đó, và đó chính là tại hàm auth này. Hàm **auth** thực hiện copy **input** vào biến **v4** 😆😆😆(quên chưa sửa tên mà thôi kệ :)) Cơ mà **v4** lại chỉ được cấp phát 8 bytes bộ nhớ. Mà max len của **input** mà chúng ta được phép là 12 . Như vậy 4 bytes sẽ tràn vào địa chỉ EBP cũ của hàm **auth** . Như vậy khi hàm auth thực hiện lệnh **leave** thì EBP sẽ trở thành 4 bytes tràn đó. EBP lúc này là EBP của hàm main do chúng ta không vào được hàm **correct** . 
-Như vậy chúng ta đã controll được EBP của hàm main . Bước cuối cùng để tiến tới heaven ☝️☝️☝️ là tìm xem heaven ở đâu. Stack là cái ta không thể control .Có một cái chúng ta có thể control đó là  👉  **input** . Lưu ý cuối là nên tìm hiểu kĩ câu lệnh **leave** để khi ret nó ret đúng địa chỉ correct. 
+Chú ý vào hàm auth . MD5 thì không thể break được nên chúng ta sẽ phải tìm cách khác. Trong bước trên chúng ta đã phát hiện ra là EBP đã bị thay đổi ở một bước nào đó, và đó chính là tại hàm auth này. Hàm **auth** thực hiện copy **input** vào biến **v4** 😆😆😆(quên chưa sửa tên mà thôi kệ :)) Cơ mà **v4** lại chỉ được cấp phát 8 bytes bộ nhớ. Mà max len của **input** mà chúng ta được phép là 12 . 4 bytes sẽ tràn vào địa chỉ EBP cũ của hàm **auth** 💥💥💥. Như vậy khi hàm auth thực hiện lệnh **leave** thì EBP sẽ trở thành 4 bytes tràn đó. EBP lúc này là EBP của hàm main do chúng ta không vào được hàm **correct** .  
+Chúng ta đã controll được EBP của hàm main . Bước cuối cùng để tiến tới heaven ☝️☝️☝️ là tìm xem heaven ở đâu. Stack là cái ta không thể control .Có một cái chúng ta có thể control đó là  👉  **input** . Lưu ý cuối là nên tìm hiểu kĩ câu lệnh **leave** để khi ret nó ret đúng địa chỉ correct. 
 
 # Kết 
 
