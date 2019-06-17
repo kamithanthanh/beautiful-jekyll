@@ -38,12 +38,15 @@ Như vậy là control được cái EBP thì chúng ta có thể control đư�
 Hàm main cho phép chúng ta nhập 30 kí tự vào biến ```enc``` , sau đó giải mã base64 rồi lưu vào biến ```dec``` với max len cho phép là 12. Sau đó copy giá trị lên biến bss ```input``` . Nếu hash của ```input``` trùng với hash MD5 cho trước thì chúng ta sẽ được xác thực và trở thành root. 
 
 **hàm main**  
+
 ![hinh1](/Pwnable/pwnable.kr/rookiss/simple%20login/hinh1.PNG) 
 
 **hàm auth**  
+
 ![hinh2](/Pwnable/pwnable.kr/rookiss/simple%20login/hinh2.PNG) 
 
 **hàm correct**  
+
 ![hinh3](/Pwnable/pwnable.kr/rookiss/simple%20login/hinh3.PNG)
 
 Chú ý vào hàm auth . MD5 thì không thể break được nên chúng ta sẽ phải tìm cách khác. Trong bước trên chúng ta đã phát hiện ra là EBP đã bị thay đổi ở một bước nào đó, và đó chính là tại hàm auth này. Hàm **auth** thực hiện copy **input** vào biến **v4** 😆😆😆(quên chưa sửa tên mà thôi kệ :)) Cơ mà **v4** lại chỉ được cấp phát 8 bytes bộ nhớ. Mà max len của **input** mà chúng ta được phép là 12 . 4 bytes sẽ tràn vào địa chỉ EBP cũ của hàm **auth** 💥💥💥. Như vậy khi hàm auth thực hiện lệnh **leave** thì EBP sẽ trở thành 4 bytes tràn đó. EBP lúc này là EBP của hàm main do chúng ta không vào được hàm **correct** .  
