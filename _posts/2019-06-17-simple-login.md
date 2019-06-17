@@ -1,6 +1,6 @@
 ---
 layout : post
-title : simple login rookiss 
+title : Simple login Rookiss 
 --- 
 
 # Mở đầu 
