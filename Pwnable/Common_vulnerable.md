@@ -13,7 +13,7 @@ Tổng hợp những lỗi phổ biến để khi nào còn check cho dễ .
   🌌  Overwrite Init, fini, GOT  
 
 
-## ✔️ Heap 
+## ✔️ [Heap](https://github.com/shellphish/how2heap) 
   🌌   Use after free  
   🌌   Overlap Chunks   
 
