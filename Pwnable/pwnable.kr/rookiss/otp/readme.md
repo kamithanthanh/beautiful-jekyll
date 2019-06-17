@@ -61,3 +61,6 @@ int main(int argc, char* argv[]){
         return 0;
 }
 ```
+
+Đoạn code trên thực hiện các nhiệm vụ sau : 
+ - 
