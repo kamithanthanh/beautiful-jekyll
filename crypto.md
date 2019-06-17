@@ -6,8 +6,8 @@ title: CryptoGraphy
 
  
 ## 🐣🐣🐣 CRYPTOPAL  
-Mình có chơi cryptopal và note lại code lại . Mặc dù cũng tham khảo từ nhiều nguồn và note lại 💬💬💬
-[CryptoPal](https://github.com/hacmao/Cryptopal) 
+Mình có chơi cryptopal và note lại code lại . Mặc dù cũng tham khảo từ nhiều nguồn và note lại 💬💬💬  
+[Link](https://github.com/hacmao/Cryptopal) 
 
 ## 🐣🐣🐣 CTF WriteUp
   
