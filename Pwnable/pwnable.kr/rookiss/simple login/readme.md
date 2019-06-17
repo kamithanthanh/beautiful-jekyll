@@ -11,11 +11,11 @@ Mình lại tiếp tục luyện series Rookiss trên [pwnable.kr](https://pwnab
 
 Trước khi phân tích binary thì thử chạy chương trình và ngâm cứu xem có gì hay ho không 😬😬😬 . Thử một vài giá trị thì nó ra một cái thú vị : 
 
-![hinh5](/Pwnable/pwnable.kr/rookiss/simple login/hinh5.PNG) 
+![hinh5](/Pwnable/pwnable.kr/rookiss/simple%20login/hinh5.PNG) 
 
 Chưa gì đã segmentation fault rồi. Theo kinh nghiệm ban đầu của mình thì mình nghĩ là lại tràn vào địa chỉ trở về gì đó rồi :)) 
 Nhưng sau khi debug bằng GDB thì mình phát hiện ra méo phải như vậy .Và mình phát hiện ra là EBP thay đổi thành những giá trị rất lạ lol 😳😳😳 .  
-![hinh6](/Pwnable/pwnable.kr/rookiss/simple login/hinh6.PNG)  
+![hinh6](/Pwnable/pwnable.kr/rookiss/simple%20login/hinh6.PNG)  
 Lưu ý là EBP sẽ lưu giá trị của ESP cũ .  
 Trước khi vào một hàm thì nó thực hiện  :  
 ```
