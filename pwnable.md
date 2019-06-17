@@ -11,19 +11,19 @@ bài pwn thì bạn cũng rèn luyện được rất nhiều kĩ năng khác nh
 
   -  [Basis Format strings](https://hacmao.github.io/Pwnable/2019-06-03-stringformats/) 
 
-   
+🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀   
       
       
 
 ## Pwnable.Kr
-Các bạn có thể chơi ở [đây](https://pwnable.kr/play.php) .
+Các bạn có thể chơi ở [đây](https://pwnable.kr/play.php) . Mình viết Writeup theo kiểu gợi mở cũng như lưu lại sau này dùng dần ✋✋✋
 ### Rookiss
   - [BrainFuck](https://hacmao.github.io/2019-06-15-brainfuck/) 
   - [Md5 Caculator](https://hacmao.github.io/2019-06-16-md5Caculator/)
   - [Simple Login](https://hacmao.github.io/2019-06-17-simple-login/)
 
 
-   
+🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀   
      
        
          
