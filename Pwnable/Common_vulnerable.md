@@ -15,7 +15,9 @@ Tổng hợp những lỗi phổ biến để khi nào còn check cho dễ .
 
 ## ✔️ Heap 
   - [x]  Use after free 
-  - [x]  Overlap Chunks
+  - [x]  Overlap Chunks  
+
+
 ## ✔️ Format strings 
 
   - [x]  Read, Write arbitrary
