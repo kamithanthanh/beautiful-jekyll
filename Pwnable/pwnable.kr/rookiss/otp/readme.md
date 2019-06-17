@@ -61,6 +61,19 @@ int main(int argc, char* argv[]){
         return 0;
 }
 ```
-
+  
 Đoạn code trên thực hiện các nhiệm vụ sau : 
- - 
+ - Đọc hai số random vào lưu trong biến **otp** 
+ - Tạo một file **/tmp/random1** , ghi vào file đó giá trị random2 . 
+ - Đọc file random vừa tạo rồi lưu giá trị vào **passcode** . 
+ - So sánh giá trị **passcode** vs **argv[1]** , nếu bằng nhau thì in ra flag. 
+Với code như trên thì ta thấy không hề có lỗi gì cả 👌👌👌
+❓ Vậy làm sao để exploit được ? 
+
+# Ý tưởng  
+Chúng ta bằng cách nào đó làm thất bại việc đọc ```fread(&passcode, 8, 1, fp2);``` , như vậy passcode = 0 , và do đó chúng ta có thể có flag. 
+👉 Dùng ```ulimit -f 0``` .
+
+# Kết 
+
+Qua bài này học thêm được khi exploit còn quan tâm đến các hàm trong linux tác động như nào tới chương trình đang chạy nữa. Về cái này thì làm dần để tích kinh nghiệm thôi . 
