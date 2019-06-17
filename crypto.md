@@ -2,7 +2,7 @@
 layout: page
 title: CryptoGraphy
 ---
-# This is CryptoGraphy forum
+# **This is CryptoGraphy forum**
 
  
 ## 🐣🐣🐣 CRYPTOPAL  
