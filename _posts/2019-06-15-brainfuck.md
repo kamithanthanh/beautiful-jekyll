@@ -1,6 +1,7 @@
 ---
 layout : post 
 title : BrainFuckkkkkkkk
+image : /Pwnable/pwnable.kr/rookiss/brainfuck/brain%20fuck.png
 --- 
 
 # Mở đầu 
