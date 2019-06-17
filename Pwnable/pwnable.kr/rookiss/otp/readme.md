@@ -66,12 +66,12 @@ int main(int argc, char* argv[]){
  - Đọc hai số random vào lưu trong biến **otp** 
  - Tạo một file **/tmp/random1** , ghi vào file đó giá trị random2 . 
  - Đọc file random vừa tạo rồi lưu giá trị vào **passcode** . 
- - So sánh giá trị **passcode** vs **argv[1]** , nếu bằng nhau thì in ra flag. 
-Với code như trên thì ta thấy không hề có lỗi gì cả 👌👌👌
+ - So sánh giá trị **passcode** vs **argv[1]** , nếu bằng nhau thì in ra flag.   
+Với code như trên thì ta thấy không hề có lỗi gì cả 👌👌👌  
 ❓ Vậy làm sao để exploit được ? 
 
 # Ý tưởng  
-Chúng ta bằng cách nào đó làm thất bại việc đọc ```fread(&passcode, 8, 1, fp2);``` , như vậy passcode = 0 , và do đó chúng ta có thể có flag. 
+Chúng ta bằng cách nào đó làm thất bại việc đọc ```fread(&passcode, 8, 1, fp2);``` , như vậy passcode = 0 và do đó chúng ta có thể có flag.  
 👉 Dùng ```ulimit -f 0``` .
 
 # Kết 
