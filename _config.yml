@@ -20,7 +20,7 @@ title: Hắc Mão
 description: Phàm nhân tu tiên
 
 # --- Navigation bar options --- #
-#avatar: "/img/cat2.jpg"
+avatar: "/img/cat2.jpg"
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
@@ -37,7 +37,7 @@ navbar-links:
 #avatar: "cat2.jpg"
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: "/img/cat2.jpg"
+#title-img: "/img/cat2.jpg"
 
 # --- Background colour/image options --- #
 
