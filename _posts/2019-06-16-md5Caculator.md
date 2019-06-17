@@ -1,8 +1,8 @@
 ---
 layout : post
-title : MD5 Caculator Pwnable.kr
+title : MD5 Caculator 
+subttitle : Rookiss Pwnable.kr
 image : /Pwnable/pwnable.kr/rookiss/MD5%20caculator/md5%20calculator.png
-bigimg : /img/meorenga.jpg
 --- 
 
 # Mở đầu
