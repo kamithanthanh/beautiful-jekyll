@@ -6,7 +6,7 @@ title: CryptoGraphy
 
  
 ## CRYPTOPAL  
-Mình có chơi cryptopal và note lại code lại . Mặc dù cũng tham khảo từ nhiều nguồn và note lại ☺️☺️☺️
+Mình có chơi cryptopal và note lại code lại . Mặc dù cũng tham khảo từ nhiều nguồn và note lại ☺️☺️☺️  
 [CryptoPal](https://github.com/hacmao/Cryptopal) 
 
 ## CTF WriteUp
