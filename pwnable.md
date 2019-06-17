@@ -18,6 +18,7 @@ bài pwn thì bạn cũng rèn luyện được rất nhiều kĩ năng khác nh
 
 ## 🔥🔥🔥 Pwnable.Kr 
 Các bạn có thể chơi ở [đây](https://pwnable.kr/play.php) . Mình viết Writeup theo kiểu gợi mở cũng như lưu lại sau này dùng dần ✋✋✋
+Mình chưa quen với dạng bài mà có SSH nên sẽ chỉ chú tâm đến những bài có file bin để đọc đã :v 
 ### Rookiss
   - [BrainFuck](https://hacmao.github.io/2019-06-15-brainfuck/) 
   - [Md5 Caculator](https://hacmao.github.io/2019-06-16-md5Caculator/)
