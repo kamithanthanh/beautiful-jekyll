@@ -3,7 +3,7 @@ layout : post
 title : Common Vulnerable 
 --- 
 
-Tổng hợp những lỗi phổ biến để khi nào còn check cho dễ . 
+Tổng hợp những lỗi phổ biến để khi nào còn check cho dễ . Học đến đâu note lại đến đó. Do học còn ít nên note lại ít vcl 🌝🌝🌝
 
 ## ✔️ Stack 
   🌌  Overflow EBP    
