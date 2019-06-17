@@ -22,6 +22,7 @@ Các bạn có thể chơi ở [đây](https://pwnable.kr/play.php) . Mình vi�
   - [BrainFuck](https://hacmao.github.io/2019-06-15-brainfuck/) 
   - [Md5 Caculator](https://hacmao.github.io/2019-06-16-md5Caculator/)
   - [Simple Login](https://hacmao.github.io/2019-06-17-simple-login/)
+  - [Otp](https://hacmao.github.io/2019-06-17-Otp/)
 
 
 🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀    
