@@ -26,7 +26,9 @@ navbar-links:
   About Me: "aboutme"
   Blog : "https://hacmao.github.io/"
   Crypto : "crypto"
-  Pwnable : "pwnable"
+  Pwnable : 
+      - Forum : "pwnable" 
+      - Check List : "https://hacmao.github.io/Pwnable/Common_vulnerable/" 
   Contact:
     - Facebook: "https://www.facebook.com/kamithanthanh"
     - GitHub Pages: "https://github.com/hacmao/"
