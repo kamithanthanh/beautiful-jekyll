@@ -2,7 +2,7 @@
 layout : post
 title : Simple login Rookiss 
 image : /Pwnable/pwnable.kr/rookiss/simple%20login/simple_login.png
-bigimg : /Pwnable/pwnable.kr/rookiss/simple%20login/simple_login.png
+bigimg : /img/meorenga.jpg
 --- 
 
 # Mở đầu
