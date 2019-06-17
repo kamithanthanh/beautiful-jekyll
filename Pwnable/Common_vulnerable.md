@@ -4,3 +4,11 @@ title : Common Vulnerable
 --- 
 
 Tổng hợp những lỗi phổ biến để khi nào còn check cho dễ . 
+
+## ✔️ Stack 
+-[] Overflow EBP 
+-[] Overflow number 
+
+## ✔️ Heap 
+
+## ✔️ Format strings 
