@@ -86,7 +86,7 @@ Chúng ta có thể gọi hàm echo1 bằng tùy chọn 1 . Hàm này có lỗi 
 😥😥😥 Đến đây lúc đầu không nghĩ shellcode mình vẫn thử theo cách thường làm là leak địa chỉ libc rồi gọi hàm system như bình thường thôi . Cơ mà khổ nỗi là các gadget nghèo nàn nên không thể đủ nguyên liệu để thực hiệp ROP . Bế tắc trong tuyệt vọng .   
 ✨✨✨ Sau đó mình mới nghĩ đến shellcode .Có hai điều cơ bản để chạy shellcode : 
  - Đặt ở đâu ? 
- - Chạy như nào ? 
+ - Chạy như nào ?  
 Chúng ta có thể đặt shellcode ở biến s , nhưng chúng ta không biết địa chỉ của shellcode thì không thể chạy được. Vì vậy còn 1 chỗ là nhập shellcode vào tên. Tên có độ dài là 24 bytes nên ta cần tìm shellcode < 24 bytes.  👉 [đây](https://www.exploit-db.com/exploits/42179)  
 Shellcode hiện đang đặt trong heap . Muốn chạy được shellcode thì phải control dòng chảy chương trình tới heap. Địa chỉ của vùng heap được lưu tại **o** . Kỹ thuật ROP vẫn không sử dụng được ở đây. Ta sẽ dùng technique Control EBP để đưa stack đến đúng địa chỉ rồi ret tới shellcode là ok 👌👌👌 Mình nói hơi khó hiểu tí :v  😄😄😄 Cơ mà thế cũng hay vì đỡ spoil quá nhiều :v  
 
