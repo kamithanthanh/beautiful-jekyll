@@ -28,10 +28,14 @@ ghi lên một địa chỉ nào đó rồi . 👻👻👻 Ý tưởng của mì
 Ý tưởng là khá rõ ràng như trên , việc còn lại chỉ là tìm cách leak địa chỉ libc rồi ghi đè lên GOT của ```free``` thôi. Cơ mà cũng lách cách
 phết đấy, có cái sai mà mình không biết tại sao nó lại không chạy được mặc dù đã xem bằng debug rồi .  
 Cuối cùng sau một time try hard nhiệt tình thì mình cũng thu được thành quả :  
+
+
 ![hinh1](/Pwnable/pwnable.kr/rookiss/echo2/hinh1.PNG)  
 
 Vì không biết trên server nó dùng bản libc nào nên mình đành stop tại đây ✌️✌️✌️
 
 # Kết  
-Lại ngắm mèo tí cho đỡ buồn :))  
+Lại ngắm mèo tí cho đỡ buồn :))   
+
+
 ![hinh](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Q0dbeMISi2Mk2JRgoGzoF6m7wm3RQaA3TjqlOGdp17UOs65U)
