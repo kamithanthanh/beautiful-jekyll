@@ -30,7 +30,7 @@ navbar-links:
       - Forum : "pwnable" 
       - Check List : "https://hacmao.github.io/Pwnable/Common_vulnerable/" 
   Contact:
-    - Facebook: "https://www.facebook.com/kamithanthanh"
+    - Facebook: "https://www.facebook.com/hacmao99"
     - GitHub Pages: "https://github.com/hacmao/"
   #Author's home: "http://deanattali.com"
 
@@ -74,7 +74,7 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   email: "nguyentuanhieptuki@gmail.com"
-  facebook: kamithanthanh
+  facebook: hacmao99
   github: hacmao
 #  reddit: yourname
 #  google-plus: +DeanAttali
