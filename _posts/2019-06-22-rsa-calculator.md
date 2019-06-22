@@ -1,6 +1,6 @@
 ---
 layout : post 
-title : rsa calculator 
+title : Rsa Calculator 
 subtitle : Rookiss Pwnable.kr 
 --- 
 
