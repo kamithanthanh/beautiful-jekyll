@@ -64,4 +64,4 @@ chả lẽ cái này lại không vượt được 👍👍👍
 # Kết thúc  
 Mới đây mình đọc được một câu nói khá hay , đại ý là như này  
 > Chúng ta luôn nghĩ cuộc sống của chúng ta thêm một ai đó thì mọi thứ sẽ tuyệt vời hơn. Nhưng không có họ chúng ta vẫn sống tốt mà. 
-![gaixinh](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwjIppTapv3iAhUDH3AKHeAzCysQjRx6BAgBEAU&url=https%3A%2F%2Fwww.facebook.com%2Fpages%2FIn4-G%25C3%25A1i-Xinh%2F257880374879581&psig=AOvVaw1pxRfpSCBtkDlcbspFJIXG&ust=1561300199516316)
+![gaixinh](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAimrrM7dqqnyV5Xs2FwhdcIp73kukrP2Q1_yTqFL5p4oSnFUr)
