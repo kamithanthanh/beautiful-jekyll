@@ -58,8 +58,8 @@ Từ lỗi format string này chúng ta có thể overwrite lên địa chỉ GO
 Nếu không có hàm system được lưu trong bss thì chúng ta phải leak địa chỉ libc các kiểu 😁😁 May mà bài này nó cho trước nên khỏi mất công chi.
 Quay lại trước một chút,tại sao lại chon GOT của hàm printf , vì nó là hàm duy nhất cho phép chúng ta chọn tham số string đầu vào. Vì vậy 
 có thể nhập chuỗi ```/bin/sh\x00``` một cách dễ dàng.  
-Công đoạn còn lại cũng khá là khoai vì phải căn chỉnh format string các kiểu với RSA nên khá là mắc công . Nhưng khó khăn lớn nhất đã vượt qua thì
-chả lẽ cái này lại không vượt được 👍👍👍  
+Công đoạn còn lại cũng khá là khoai vì phải căn chỉnh format string các kiểu với RSA nên khá là mắc công . Nhưng khó khăn lớn nhất đã vượt qua thì chả lẽ cái này lại không vượt được 👍👍👍   
+Có một lưu ý nhỏ là cái payload của mình sẽ có dạng ```encrypt_rsa(format_string) + address``` . Bởi vì ta không thể cho address cần đọc hoặc ghi vào encode vì khi đó sau khi decrypt nó sẽ được lưu trong bss chứ không phải trong stack . 
 
 # Kết thúc  
 Mới đây mình đọc được một câu nói khá hay , đại ý là như này  
