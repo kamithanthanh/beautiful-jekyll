@@ -29,7 +29,17 @@ Mình chưa quen với dạng bài mà có SSH nên sẽ chỉ chú tâm đến 
   - [Rsa Calculator](http://hacmao.pw/2019-06-22-rsa-calculator/)
   
 🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀    
-🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞      
+🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞 
+  
+  
+## 🔥🔥🔥 Pwnable.Kr  
+  
+  
+Luyện lại các skill trên trang này để củng cố tu vi nào 😀😀😀 Xưa làm vài bài đầu trên trang này mà toàn đọc writeup nên chưa đọng lại được nhiều . Giờ rảnh ngồi luyện lại đồng thời đúc kết lại kĩ năng cho mượt mà hơn.  
+ - [Start](http://hacmao.pw/2019-06-24-start/)
+ 
+🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀    
+🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞
          
 ## 🔥🔥🔥 CTF Online WriteUp 
   
