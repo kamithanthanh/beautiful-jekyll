@@ -15,8 +15,8 @@ Pwn là một phần khá là khó trong khi chơi CTF.Nhưng nó cũng khá th�
       
       
 
-## 🔥🔥🔥 Pwnable.Kr 
-Các bạn có thể chơi ở [đây](https://pwnable.kr/play.php) . Mình viết Writeup theo kiểu gợi mở cũng như lưu lại sau này dùng dần ✋✋✋
+## 🔥🔥🔥 [Pwnable.Kr](https://pwnable.kr/play.php) 
+ Mình viết Writeup theo kiểu gợi mở cũng như lưu lại sau này dùng dần ✋✋✋
 Mình chưa quen với dạng bài mà có SSH nên sẽ chỉ chú tâm đến những bài có file bin để đọc đã :v 
 ### Rookiss
   - [BrainFuck](https://hacmao.github.io/2019-06-15-brainfuck/) 
@@ -32,7 +32,7 @@ Mình chưa quen với dạng bài mà có SSH nên sẽ chỉ chú tâm đến 
 🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞 
   
   
-## 🔥🔥🔥 Pwnable.Kr  
+## 🔥🔥🔥 [Pwnable.tw](https://pwnable.tw/challenge/?fbclid=IwAR0co6ozsyCC5ScG3CmjOTsNoM63Ll0uiOa-SOiQTf84UJwwFiQ2y51MuIo)
   
   
 Luyện lại các skill trên trang này để củng cố tu vi nào 😀😀😀 Xưa làm vài bài đầu trên trang này mà toàn đọc writeup nên chưa đọng lại được nhiều . Giờ rảnh ngồi luyện lại đồng thời đúc kết lại kĩ năng cho mượt mà hơn.  
