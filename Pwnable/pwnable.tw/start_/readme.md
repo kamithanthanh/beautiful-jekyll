@@ -2,7 +2,7 @@
 layout : post
 title : Start  
 subtitle : Pwnable.tw 
-
+image : /Pwnable/pwnable.tw/start_/img.PNG
 --- 
 
 # Mở đầu
@@ -28,7 +28,7 @@ Khi NX bị disabled thì ta có thể sử dụng shellcode. Nhưng khi dùng s
 Shellcode của chúng ta sẽ đặt ở ngay sau địa chỉ trở về của chương trình này và chạy bằng cách ```ret``` về stack .  
 🌼 Nhiệm vụ 1 có thể dễ dàng thực hiện được. Đối với nhiệm vụ hai chúng ta cần leak địa chỉ của stack.  
 
-![hinh3](/Pwnable/pwnable.tw/start_/hinh3.PNG)  
+![hinh4](/Pwnable/pwnable.tw/start_/hinh4.PNG)  
 
 Địa chỉ stack được lưu ngay sau địa chỉ trở về của hàm main. Chúng ta có thể leak địa chỉ stack bằng cách tràn vào địa chỉ trở về bằng địa chỉ 
 ```0x08048087``` . Đó là địa chỉ bên trong hàm main cho phép chúng ta in ra 20 giá trị tính từ đỉnh ngăn xếp, trong đó có ESP. Đồng thời chúng 
