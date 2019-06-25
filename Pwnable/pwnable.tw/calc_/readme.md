@@ -14,7 +14,7 @@ Bài này là một bài kinh điển về minnig . Việc cố gắng tìm ra l
 
 Mình sẽ không phân tích binary cụ thể cách máy tính hoạt động vì nó là một thử thách mà ai cũng phải hoàn thành.Tất cả magic của bài toán 
 đều sẽ được giải quyết nếu bạn giải thích được bức ảnh trên 😋😋😋 .  
-🌱 ```+361``` có nghĩa là bạn sẽ thay đổi được biến đếm count trỏ tới ô nhớ thứ 361 sau biến count . Tất cả các toán hạng theo sau biểu thức trên sẽ làm việc với ô nhớ thứ 360 . Vậy tại sao lại là con số 361 ???  
+🌱 ```+361``` có nghĩa là bạn sẽ thay đổi được biến đếm count trỏ tới ô nhớ thứ 361 sau biến count . Tất cả các toán hạng theo sau biểu thức trên sẽ làm việc với ô nhớ thứ 361 . Vậy tại sao lại là con số 361 ???  
 
 ![hinh2](/Pwnable/pwnable.tw/calc_/hinh2.PNG)  
   
