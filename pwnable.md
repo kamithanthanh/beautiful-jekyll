@@ -37,7 +37,7 @@ Mình chưa quen với dạng bài mà có SSH nên sẽ chỉ chú tâm đến 
   
 Luyện lại các skill trên trang này để củng cố tu vi nào 😀😀😀 Xưa làm vài bài đầu trên trang này mà toàn đọc writeup nên chưa đọng lại được nhiều . Giờ rảnh ngồi luyện lại đồng thời đúc kết lại kĩ năng cho mượt mà hơn.  
  - [Start](http://hacmao.pw/2019-06-24-start/)
- 
+ - [Calc](http://hacmao.pw/2019-06-25-calc/)
 🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀    
 🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞
          
