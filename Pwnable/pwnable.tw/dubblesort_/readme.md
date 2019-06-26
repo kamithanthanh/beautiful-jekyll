@@ -20,7 +20,7 @@ Hàm này thực hiện các chức năng :
  - Nhập từng phần tử của mảng  
  - Sắp xếp các phần tử rồi in ra dãy đã sắp xếp  
 
-Do chương trình không check độ dài mảng nên ta có lỗi tràn . Ở đây ta có thể dễ dàng đưa payload vào sao cho sau khi sắp xếp , payload nằm đúng như vị trí ta mong muốn. 
+Do chương trình không check độ dài mảng nên ta có lỗi tràn . Ở đây ta có thể dễ dàng đưa payload vào sao cho sau khi sắp xếp , payload nằm đúng như vị trí ta mong muốn.  
 Chương trình được bật full bảo vệ :  
 
 ![hinh5](/Pwnable/pwnable.tw/dubblesort_/hinh5.PNG)  
