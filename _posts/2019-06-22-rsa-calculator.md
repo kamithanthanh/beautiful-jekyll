@@ -2,7 +2,7 @@
 layout : post 
 title : Rsa Calculator 
 subtitle : Rookiss Pwnable.kr 
-image : Pwnable/pwnable.kr/rookiss/rsa_caculator/rsa%20calculator.png
+image : /Pwnable/pwnable.kr/rookiss/rsa_caculator/rsa%20calculator.png
 --- 
 
 # Mở đầu
