@@ -13,6 +13,7 @@ Tổng hợp những lỗi phổ biến để khi nào còn check cho dễ . H�
   🌌  [One_gadget](https://github.com/david942j/one_gadget)  
   🌌  Overwrite Init, fini, GOT   
   🌌  [ShellCode](http://shell-storm.org/shellcode/)  
+  🌌  [SROP](https://0x00sec.org/t/srop-signals-you-say/2890)  
 
 ## ✔️ [Heap](https://github.com/shellphish/how2heap) 
   🌌   Use after free  
