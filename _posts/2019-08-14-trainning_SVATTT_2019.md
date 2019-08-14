@@ -12,7 +12,15 @@ mà mình nhận được trong các bài 😁😁😁
 
 # Ngày 1  
 Do nay ngày đầu tiên nên là chỉ có 1 bi thôi :v  
-
+[SvATTT 2018 PyLock](https://drive.google.com/open?id=1CDyi4Ayisgt3hYqwiT4FZlYMEJHErSRx) đây được cho là 1 file exe. Tên bài cho ta gợi ý là đây là 1 file python được convert thành file exe. Việc đầu tiên cần làm là đưa được ngược trở lại thành file python .  
+Dùng tool [python-exe-unpacker](https://github.com/countercept/python-exe-unpacker) để convert. Làm theo các bước sau : 
+```
+python python-exe-unpacker.py -i unlock.exe
+python python-exe-unpacker.py -p unlock 
+```
+Đọc kĩ doc của tool để hiểu tại sao lại có như vậy :v 
+Sau đó được file unlock.py có import 1 thư việc PyLock. Trong cái đống được extract trên thì ta vào thư mục library của nó thì tìm được file PyLock.pyc. Dùng tool để convert ngược trở lại file py thì ta decode được hàm main . Từ đó dịch ngược lại là ta có được flag.   
+![ngay1](/img/meo2.jpg)
 
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
