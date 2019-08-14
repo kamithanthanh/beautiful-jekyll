@@ -13,4 +13,8 @@ mà mình nhận được trong các bài 😁😁😁
 # Ngày 1  
 Do nay ngày đầu tiên nên là chỉ có 1 bi thôi :v  
 
+
+# Kết thúc  
+Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
+
 ![hinh1](/Trainning/pham-nhan-tu-tien-vng-phap-bao-02.jpg)
