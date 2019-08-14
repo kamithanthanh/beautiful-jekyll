@@ -20,7 +20,7 @@ python python-exe-unpacker.py -p unlock
 ```
 Đọc kĩ doc của tool để hiểu tại sao lại có như vậy :v 
 Sau đó được file unlock.py có import 1 thư việc PyLock. Trong cái đống được extract trên thì ta vào thư mục library của nó thì tìm được file PyLock.pyc. Dùng tool để convert ngược trở lại file py thì ta decode được hàm main . Từ đó dịch ngược lại là ta có được flag.   
-Kết thúc ngày một, mọi thứ cứ gọi là ok :v 
+Kết thúc ngày một, mọi thứ cứ gọi là ok :v  
 ![ngay1](/img/meo2.jpg)
 
 # Kết thúc  
