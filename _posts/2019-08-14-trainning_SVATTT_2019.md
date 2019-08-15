@@ -24,7 +24,8 @@ Kết thúc ngày một, mọi thứ cứ gọi là ok :v
 ![ngay1](/img/meo2.jpg)
 
 # Ngày 2  
- - [PlaidCTF 2016 : quick](https://github.com/N4NU/Reversing-Challenges-List/blob/master/Medium_Easy/PlaidCTF_2016_quick/quick.7z)  
+ - [PlaidCTF 2016 : quick](https://github.com/N4NU/Reversing-Challenges-List/blob/master/Medium_Easy/PlaidCTF_2016_quick/quick.7z)   
+
 Bài này khá là ghê được viết bằng swift.Sử dụng skill chính là đọc code. Nói chung là vẫn khá mông lung vì mình tham khảo write up của [yeuchimse](https://ctf.yeuchimse.com/plaid-ctf-2016-quick-re175/) . Đọc rồi đối chiếu với code trong IDA thì ngẫm lại có vẻ cũng đúng. Sau bài này rút ra được 1 điều là đôi khi chúng ta cần đoán được code đó nó viết gì dựa vào mạch code rồi check lại . Chứ không đọc hết sẽ tốn rất nhiều thời gian.  
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
