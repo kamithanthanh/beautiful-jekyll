@@ -30,7 +30,8 @@ Bài này khá là ghê được viết bằng swift.Sử dụng skill chính l�
 Skill khác là đôi khi phân tích 1 hàm không cần thiết đọc hết hàm. Căn cứ vào giá trị trả về và giá trị mà ta đang quan tâm đến thì ta đọc từ đó trở đi. Ví dụ ta cần quan tâm xem giá trị trả về là bao nhiêu thì đi ngược từ giá trị trở về lên. Hoặc ta xem giá trị tại con trỏ được truyền vào hàm có thay đổi không thì lần theo đó mà đi.  
 
 # Ngày 3  
-Nay chả làm được bài nào cả. Một phần do đi thi đường lối , một phần vì lười, phần vì bài khá khoai :( 
+Nay chả làm được bài nào cả. Một phần do đi thi đường lối , một phần vì lười, phần vì bài khá khoai :(  
+
 ![ngay3](/img/meo4.jpg)  
 
 # Kết thúc  
