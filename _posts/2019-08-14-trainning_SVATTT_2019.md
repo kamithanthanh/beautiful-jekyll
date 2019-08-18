@@ -31,8 +31,10 @@ Skill khác là đôi khi phân tích 1 hàm không cần thiết đọc hết h
 
 # Ngày 3  
 Nay chả làm được bài nào cả. Một phần do đi thi đường lối , một phần vì lười, phần vì bài khá khoai :(  
-
 ![ngay3](/img/meo4.jpg)  
+
+# Ngày 4  
+Nay chơi flare on pass được hai level đầu . Cảm thấy hiện tại nên chuyển hướng hoạt động cách mạng sang một hướng mới, không quan trọng về số lượng mà nên quan trọng chất lượng. Cái flare on này diễn ra trong tới 6 tuần, nên có thời gian để tìm hiểu ngâm cứu. Tiếp theo mình sẽ ngâm cứu về [android pentesting](https://github.com/tsug0d/AndroidMobilePentest101/tree/master/vietnamese) để pass level 3. 😉   
 
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
