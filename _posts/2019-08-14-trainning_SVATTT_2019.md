@@ -39,6 +39,7 @@ Nay chơi flare on pass được hai level đầu . Cảm thấy hiện tại n�
  Sau một hồi ngụp lặn trong jadx mà vẫn chẳng hiểu cái gì 😢😢😢 Quay lại cày cơ bản.   
   - [android pentesting](https://github.com/tsug0d/AndroidMobilePentest101/tree/master/vietnamese)  
     + chap 1 : set up enviroment. Mình thử tự xử bằng android studio nhưng méo biết dùng. Cài thử theo người ta v. Hmmm  😓😓😓 ở quê mạng chậm set up lâu vl.  
+
 Somehow nghịch một hồi lại ra được flag nên stop cái turtorial nghiên cứu android pentest tại đây 😃😃😃 Do tem cũng có thằng nhận làm android rồi nên mình cũng ko ngâm cứu sâu.  
 
 
