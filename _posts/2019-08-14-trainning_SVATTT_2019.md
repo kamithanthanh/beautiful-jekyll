@@ -34,7 +34,12 @@ Nay chả làm được bài nào cả. Một phần do đi thi đường lối 
 ![ngay3](/img/meo4.jpg)  
 
 # Ngày 4  
-Nay chơi flare on pass được hai level đầu . Cảm thấy hiện tại nên chuyển hướng hoạt động cách mạng sang một hướng mới, không quan trọng về số lượng mà nên quan trọng chất lượng. Cái flare on này diễn ra trong tới 6 tuần, nên có thời gian để tìm hiểu ngâm cứu. Tiếp theo mình sẽ ngâm cứu về [android pentesting](https://github.com/tsug0d/AndroidMobilePentest101/tree/master/vietnamese) để pass level 3. 😉   
+Nay chơi flare on pass được hai level đầu . Cảm thấy hiện tại nên chuyển hướng hoạt động cách mạng sang một hướng mới, không quan trọng về số lượng mà nên quan trọng chất lượng. Cái flare on này diễn ra trong tới 6 tuần, nên có thời gian để tìm hiểu ngâm cứu. Tiếp theo mình sẽ ngâm cứu về [android pentesting](https://github.com/tsug0d/AndroidMobilePentest101/tree/master/vietnamese) để pass level 3. 😉  
+ # Ngày 5
+ Sau một hồi ngụp lặn trong jadx mà vẫn chẳng hiểu cái gì 😢😢😢 Quay lại cày cơ bản.   
+  - [android pentesting](https://github.com/tsug0d/AndroidMobilePentest101/tree/master/vietnamese)  
+    + chap 1 : set up enviroment. Mình thử tự xử bằng android studio nhưng méo biết dùng. Cài thử theo người ta v. Hmmm  😓😓😓 ở quê mạng chậm set up lâu vl. 
+
 
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
