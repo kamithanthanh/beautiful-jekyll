@@ -46,6 +46,8 @@ Somehow nghịch một hồi lại ra được flag nên stop cái turtorial ngh
 Trở lại với pwn một chút.  
  - [MMA CTF 2nd 2016 : greeting-150](https://github.com/ctfs/write-ups-2016/tree/master/mma-ctf-2nd-2016/pwn/greeting-150)  
  Bài này dùng ghi đè lên fini . Không có realloc nên cũng dễ dàng thực hiện hơn.  
+ - [[DEFCON CTF 2016] xkcd - Baby's First](https://github.com/smokeleeteveryday/CTF_WRITEUPS/tree/master/2016/DEFCONCTF/babysfirst/xkcd)   Bài này không tấn công chiếm quyền mà chỉ tận dụng lỗi tràn vào giá trị null của char để in ra flag thôi.  
+
 
 
 # Kết thúc  
