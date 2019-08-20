@@ -49,7 +49,16 @@ Trở lại với pwn một chút.
  - [[DEFCON CTF 2016] xkcd - Baby's First](https://github.com/smokeleeteveryday/CTF_WRITEUPS/tree/master/2016/DEFCONCTF/babysfirst/xkcd)  
  Bài này không tấn công chiếm quyền mà chỉ tận dụng lỗi tràn vào giá trị null của char để in ra flag thôi.  
 
-
+# Ngày 7  
+ - [SSCTF_2016_Quals_Re2](https://github.com/N4NU/Reversing-Challenges-List/tree/master/Medium_Easy/SSCTF_2016_Quals_Re2)  
+ Nay ngồi nghịch lại bài này thì đã fix được đoạn anti disassembly, note lại một số trick đã dùng trong bài : 
+   + jmp const : xor eax, eax; jmp .... ,jz + jnz to same addr , not fix into jmp   
+   + jmp bỏ qua một đoạn code -> nop all code not execute 
+   + nop tất cả đoạn code ko được thực thi. 
+   script nop : 
+   ```python 
+   REDACTED
+   ```  
 
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
