@@ -54,11 +54,11 @@ Trở lại với pwn một chút.
  Nay ngồi nghịch lại bài này thì đã fix được đoạn anti disassembly, note lại một số trick đã dùng trong bài : 
    + jmp const : xor eax, eax; jmp .... ,jz + jnz to same addr , not fix into jmp   
    + jmp bỏ qua một đoạn code -> nop all code not execute 
-   + nop tất cả đoạn code ko được thực thi. 
-   script nop : 
-   ```python 
+   + nop tất cả đoạn code ko được thực thi.  
+ Script nop : 
+ ```python 
    REDACTED
-   ```  
+ ```  
  - [DEF CON CTF Quals 2017 - mute](https://fadec0d3.blogspot.com/2017/05/def-con-ctf-quals-2017-mute.html)  
  Bài này về side channel attack. Thấy side channel attack là gì trông lạ lạ nên mình đọc qua tí :v Xem ý tưởng thế nào chứ chưa viết cụ thể. Ý tưởng của bài này là người ta cho mình một đoạn shellcode chỉ được gọi một số syscall như đọc , mở nhưng ko có ghi. Idea là sẽ thực hiện mở file flag, đọc file rồi so sánh từng kí tự trong file flag. Nếu mà trùng thì end còn không trùng thì sẽ tạo một vòng lặp vô hạn, tức là thời gian sẽ dài hơn nhiều. Idea hay vc 👍👍👍 Cũng khá là dễ hiểu nhưng để vận dụng được lại rất là khó.  
  
