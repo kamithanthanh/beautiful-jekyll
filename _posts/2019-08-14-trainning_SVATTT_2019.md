@@ -64,7 +64,10 @@ def n(start,length) :
  ```  
  - [DEF CON CTF Quals 2017 - mute](https://fadec0d3.blogspot.com/2017/05/def-con-ctf-quals-2017-mute.html)  
  Bài này về side channel attack. Thấy side channel attack là gì trông lạ lạ nên mình đọc qua tí :v Xem ý tưởng thế nào chứ chưa viết cụ thể. Ý tưởng của bài này là người ta cho mình một đoạn shellcode chỉ được gọi một số syscall như đọc , mở nhưng ko có ghi. Idea là sẽ thực hiện mở file flag, đọc file rồi so sánh từng kí tự trong file flag. Nếu mà trùng thì end còn không trùng thì sẽ tạo một vòng lặp vô hạn, tức là thời gian sẽ dài hơn nhiều. Idea hay vc 👍👍👍 Cũng khá là dễ hiểu nhưng để vận dụng được lại rất là khó.  
- 
+
+# Ngày 8  
+ - [SSCTF_2016_Quals_Re3](https://github.com/N4NU/Reversing-Challenges-List/blob/master/Medium_Easy/SSCTF_2016_Quals_Re3/Re3.7z)  
+ Cả sáng ngồi reverse cái này. Vẫn còn vướng một số chỗ nó chưa có rõ ràng lắm nhưng cơ bản là hiểu được cách nó check flag. Có một cái technique hay dùng khi reverse nhưng binary lớn như này là Ctrl+x rồi flow theo những hàm quan trọng. Ở đây mình flow theo hàm MessageBoxA. Lúc đầu mình flow theo string ```PlsTryAgain``` thì ra được một đoạn code obfucate -> deobfucate cơ mà nó cũng chả liên quan tới chương trình của mình :v  
 
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
