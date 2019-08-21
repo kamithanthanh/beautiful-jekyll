@@ -68,6 +68,8 @@ def n(start,length) :
 # Ngày 8  
  - [SSCTF_2016_Quals_Re3](https://github.com/N4NU/Reversing-Challenges-List/blob/master/Medium_Easy/SSCTF_2016_Quals_Re3/Re3.7z)  
  Cả sáng ngồi reverse cái này. Vẫn còn vướng một số chỗ nó chưa có rõ ràng lắm nhưng cơ bản là hiểu được cách nó check flag. Có một cái technique hay dùng khi reverse nhưng binary lớn như này là Ctrl+x rồi flow theo những hàm quan trọng. Ở đây mình flow theo hàm MessageBoxA. Lúc đầu mình flow theo string ```PlsTryAgain``` thì ra được một đoạn code obfucate -> deobfucate cơ mà nó cũng chả liên quan tới chương trình của mình :v  
+ - [Defcon 2015 Quals babyecho](https://github.com/ctfs/write-ups-2015/tree/master/defcon-qualifier-ctf-2015/babys-first/babyecho)  
+ Bài này nó đặc biệt ở chỗ không có một hàm import nào mà nó kiểu là static linking. Mình phải xác định chức năng của các hàm. Nhưng cũng có thể dựa vào guessing technique 😄😄😄 để có thể tra ra một số hàm cơ bản. Sau đó chúng ta phải leak địa chỉ stack rồi ghi đè lên địa chỉ trở về của main bằng địa chỉ của shellcode bằng lỗi format string. 😤😤😤 Mọi thứ mượt mà đến phút cuối r mà mình tự tìm shellcode thì đéo chạy cho. Lấy shellcode trong wu của người ta ốp vào lại được. Magic vãi.  
 
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
