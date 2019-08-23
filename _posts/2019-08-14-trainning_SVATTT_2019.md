@@ -71,6 +71,11 @@ def n(start,length) :
  - [Defcon 2015 Quals babyecho](https://github.com/ctfs/write-ups-2015/tree/master/defcon-qualifier-ctf-2015/babys-first/babyecho)  
  Bài này nó đặc biệt ở chỗ không có một hàm import nào mà nó kiểu là static linking. Mình phải xác định chức năng của các hàm. Nhưng cũng có thể dựa vào guessing technique 😄😄😄 để có thể tra ra một số hàm cơ bản. Sau đó chúng ta phải leak địa chỉ stack rồi ghi đè lên địa chỉ trở về của main bằng địa chỉ của shellcode bằng lỗi format string. 😤😤😤 Mọi thứ mượt mà đến phút cuối r mà mình tự tìm shellcode thì đéo chạy cho. Lấy shellcode trong wu của người ta ốp vào lại được. Magic vãi.  
 
+# Ngày 9  
+ - Nay chỉ chơi với babystack bên pwnable.tw nhưng vẫn chưa ra. Cảm giác đầu tư thời gian chưa đủ.  
+# Ngày 10  
+  - Nay chơi giải hackonCTF2019 làm được 3 bài reverse. Cảm giác công sức bỏ ra đã có tí thành tựu. Có các kĩ thuật chủ yếu thiên về phân tích tĩnh đọc code là chính, có bài thực hiện kĩ thuật anti disassemble tí thôi :v  
+
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
 
