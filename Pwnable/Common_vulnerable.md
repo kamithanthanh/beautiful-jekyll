@@ -14,7 +14,8 @@ Tổng hợp những lỗi phổ biến để khi nào còn check cho dễ . H�
   🌌  Overwrite Init, fini, GOT   
   🌌  [ShellCode](http://shell-storm.org/shellcode/)  
   🌌  [SROP](https://0x00sec.org/t/srop-signals-you-say/2890)  
-
+  🌌  Reuse stack  
+  🌌  Off-by-one  
 ## ✔️ [Heap](https://github.com/shellphish/how2heap) 
   🌌   Use after free  
   🌌   Overlap Chunks   
