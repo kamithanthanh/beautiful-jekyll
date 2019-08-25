@@ -85,6 +85,7 @@ def n(start,length) :
 **CodeFest** 
   - Linux Re 1 : một file linux bị pack. Dùng Upx unpack được file C++ -> solve  
   - Linux Re 2 : Một loạt phương trình , dùng [Z3](https://stackoverflow.com/questions/55083687/solve-multiple-equations-using-z3) để giải. Chắc có cách ngắn hơn là dùng angr nhưng trình cùi đéo bt dùng :v  
+
 **ConfuserEx**  
   - Một loại pack của file .NET . Dùng [Nofusher2](https://github.com/CodeShark-Dev/NoFuserEx) rồi dùng [de4dot](https://github.com/0xd4d/de4dot)  
 
