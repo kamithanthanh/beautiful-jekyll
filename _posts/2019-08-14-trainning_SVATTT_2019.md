@@ -73,6 +73,7 @@ def n(start,length) :
 
 # Ngày 9  
  - Nay chỉ chơi với babystack bên pwnable.tw nhưng vẫn chưa ra. Cảm giác đầu tư thời gian chưa đủ.  
+
 # Ngày 10  
   - Nay chơi giải hackonCTF2019 làm được 3 bài reverse. Cảm giác công sức bỏ ra đã có tí thành tựu. Có các kĩ thuật chủ yếu thiên về phân tích tĩnh đọc code là chính, có bài thực hiện kĩ thuật anti disassemble tí thôi :v   
 
