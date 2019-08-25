@@ -91,7 +91,7 @@ def n(start,length) :
 
 **SVATTT 2018 Quals**  
  - [Encoder](https://github.com/chung96vn/writeup/tree/master/SVATTT-2018-Quals/Encoder)  
- Bài này có một lỗi format string khá rõ ràng. Nhưng nó được bật full cơ chế bảo vệ nên cũng khá là khó ăn. Mục đích của bài này không phải tấn công chiếm quyền mà tìm cách in ra flag. Lúc đầu mình đọc nhầm nên có những định hướng hơi sai. Một kinh nghiệm rút ra là đôi khi bài không khó như tưởng tượng, đọc lại xem mình có sai ở đâu không cũng là 1 cách khi đang hết nước. Mình cũng rút ra được 1 vài điều khá hay về format string :  
+ Bài này có một lỗi format string khá rõ ràng. Nhưng nó được bật full cơ chế bảo vệ nên cũng khá là khó ăn theo hướng thông thường mình vẫn làm. Mục đích của bài này không phải tấn công chiếm quyền mà tìm cách in ra flag. Lúc đầu mình đọc nhầm nên có những định hướng hơi sai. Một kinh nghiệm rút ra là đôi khi bài không khó như tưởng tượng, đọc lại xem mình có sai ở đâu không cũng là 1 cách khi đang hết nước. Mình cũng rút ra được 1 vài điều khá hay về format string :  
  	+ nó có thể dùng để đọc dữ liệu. Trước đây mình toàn dùng để ghi nên không chú ý đến chức năng này lắm. 😓😓😓  
 	+ Khi đọc hết kí tự trên con trỏ truyền vào hàm printf thì nó đọc tiếp tới ```stdin```  
 
