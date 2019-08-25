@@ -80,6 +80,11 @@ def n(start,length) :
   - [SVATT 2016 C0ffee](https://bo8blog.wordpress.com/2016/11/07/vong-loai-svattt-2016-pwn200-c0ffee-write-up/?fbclid=IwAR1OHLAOMEFnmq8DR4NoqkT_-KanWAmLztW2XPQRe1FNm1ARD_wb2HZlftA)  
   😁😁😁 Nay nổi hứng lên làm pwn của SVATTT vì mấy bài bên pwnable.tw khoai vl. Vừa làm vừa chơi mà bài này xong trong vòng 3 tiếng :v Cũng được ấy chứ . Cũng gọi là có tí hope vào pwn trong tương lai rồi. Bài này là tận dụng lỗi off-byte-one để ghi đè lên biến đếm số lần để có thể ghi vô hạn :v Sau đó thì là basis rop thôi . Cơ mà cái rop mình vẫn còn yếu vl nên làm đoạn đó khá chậm. Với cả vấn đề code cũng hay sai. Luyện nhiều lên là cải thiện được tốc độ :v  
   ![meo5](/img/meo5.jpg)  
+
+# Ngày 12  
+**CodeFest** 
+  - Linux Re 1 : một file linux bị pack. Dùng Upx unpack được file C++ -> solve  
+  - Linux Re 2 : Một loạt phương trình , dùng [Z3](https://stackoverflow.com/questions/55083687/solve-multiple-equations-using-z3) để giải. Chắc có cách ngắn hơn là dùng angr nhưng trình cùi đéo bt dùng :v  
   
 
 # Kết thúc  
