@@ -97,7 +97,8 @@ def n(start,length) :
  	+ nó có thể dùng để đọc dữ liệu. Trước đây mình toàn dùng để ghi nên không chú ý đến chức năng này lắm. 😓😓😓  
 	+ Khi đọc hết kí tự trên con trỏ truyền vào hàm printf thì nó đọc tiếp tới ```stdin```  
 
-
+# Ngày 13  
+Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad  
 
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
