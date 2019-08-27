@@ -100,6 +100,12 @@ def n(start,length) :
 # Ngày 13  
 Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad  
 
+# Ngày 14  
+  - [babystack](https://pwnable.tw/challenge/) Nay làm xong được bài này attack trên local . Qua bài này mình học được cách  
+    + Lỗ hổng reuse stack  : các hàm khi giải phóng mà không set up lại stack thì có thể gây lỗi này   
+    + Magic copy : copy sẽ cop tới khi nào null terminate nên có thể kèm theo những giá trị malicious.  
+
+
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
 
