@@ -104,7 +104,12 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
   - [babystack](https://pwnable.tw/challenge/) Nay làm xong được bài này attack trên local . Qua bài này mình học được cách  
     + Lỗ hổng reuse stack  : các hàm khi giải phóng mà không set up lại stack thì có thể gây lỗi này   
     + Magic copy : copy sẽ cop tới khi nào null terminate nên có thể kèm theo những giá trị malicious.  
+# Ngày 15  
+  - [spirited_away](https://pwnable.tw/challenge/)  
+  Nay đú đởn làm tiếp bài trên pwnable.tw . Thấy bài này cũng nhiều solve nên vào làm thử. Code trông khá sạch sẽ. Tên là spirit nên chắc là **house of spirit** rồi. Đọc chút về cách tấn công này trên how2heap thì cũng hiểu hiểu. Nhưng cũng chưa bt implement vào bài này như nào. Mình tưởng nó dùng kĩ thuật attack nào cao siêu nên đọc lướt qua wu trên mạng thì thấy nó cũng ko dùng kiến thức gì cao siêu cả. Mò lại từng bước xem vuln nó ở đâu. Thì mình cũng phát hiện ra lỗi để leak stack, libc đồng thời lỗi để tràn vào biến để cho nhập được nhiều hơn. Từ đây 😬😬😬 mình có ý tưởng tấn công để chiếm quyền sử dụng lỗi **house of spirit** . Cơ mà code cứ bị sai sai 😰😰😰 Chưa bao giờ mình thấy mình code tù như này 😰😰😰.  
 
+
+![ngay15](/img/meo6.jpg)  
 
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
