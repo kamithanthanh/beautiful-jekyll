@@ -113,7 +113,7 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
 # Ngày 16  
  - **Spirited Away**  
  Continue code nốt bài này. Phát hiện ra code lởm là do một số đặc trưng trong hàm cơ bản ban đầu. Cần tập trung hơn 😁😁😁  
- ```[House of spirit](https://heap-exploitation.dhavalkapil.com/attacks/house_of_spirit.html)``` 
+ [```house of spirit```](https://heap-exploitation.dhavalkapil.com/attacks/house_of_spirit.html)
  ```  
  	- thực hiện được khi có thể ghi đè pointer sắp được free.   
 	- thiết lập chunk fake để free đảm bảo :   
