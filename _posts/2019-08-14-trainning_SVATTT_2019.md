@@ -122,6 +122,8 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
 	  + size của chunk là vùng memory bao gồm cả : pre_size, size, fd, bk, user data   
  ```  
  Hoàn thiện theo cái kia là ok. Lúc đầu mình ko tính cái pre_size, size vào vùng data nên cứ bị sai.😝😝😝  
+ - **see the file**  
+ Know the set up but don't know how it work 😅😅😅 Script kiddie time :)) Nice setup [here](https://github.com/DoubleLabyrinth/pwnable.tw/blob/master/seethefile/seethefile.py)  
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
 
