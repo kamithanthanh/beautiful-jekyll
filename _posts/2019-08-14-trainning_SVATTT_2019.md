@@ -108,9 +108,20 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
   - [spirited_away](https://pwnable.tw/challenge/)  
   Nay đú đởn làm tiếp bài trên pwnable.tw . Thấy bài này cũng nhiều solve nên vào làm thử. Code trông khá sạch sẽ. Tên là spirit nên chắc là **house of spirit** rồi. Đọc chút về cách tấn công này trên how2heap thì cũng hiểu hiểu. Nhưng cũng chưa bt implement vào bài này như nào. Mình tưởng nó dùng kĩ thuật attack nào cao siêu nên đọc lướt qua wu trên mạng thì thấy nó cũng ko dùng kiến thức gì cao siêu cả. Mò lại từng bước xem vuln nó ở đâu. Thì mình cũng phát hiện ra lỗi để leak stack, libc đồng thời lỗi để tràn vào biến để cho nhập được nhiều hơn. Từ đây 😬😬😬 mình có ý tưởng tấn công để chiếm quyền sử dụng lỗi **house of spirit** . Cơ mà code cứ bị sai sai 😰😰😰 Chưa bao giờ mình thấy mình code tù như này 😰😰😰.  
 
-
 ![ngay15](/img/meo6.jpg)  
 
+# Ngày 16  
+ - **Spirited Away**  
+ Continue code nốt bài này. Phát hiện ra code lởm là do một số đặc trưng trong hàm cơ bản ban đầu. Cần tập trung hơn 😁😁😁  
+ ```[House of spirit](https://heap-exploitation.dhavalkapil.com/attacks/house_of_spirit.html)``` 
+ ```  
+ 	- thực hiện được khi có thể ghi đè pointer sắp được free.   
+	- thiết lập chunk fake để free đảm bảo :   
+	  + size chunk free : fast bin   
+	  + size of next chunk(from current chunk) : fast bin  
+	  + size của chunk là vùng memory bao gồm cả : pre_size, size, fd, bk, user data   
+ ```  
+ Hoàn thiện theo cái kia là ok. Lúc đầu mình ko tính cái pre_size, size vào vùng data nên cứ bị sai.😝😝😝  
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
 
