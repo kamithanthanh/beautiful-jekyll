@@ -115,8 +115,8 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
  Continue code nốt bài này. Phát hiện ra code lởm là do một số đặc trưng trong hàm cơ bản ban đầu. Cần tập trung hơn 😁😁😁  
  [```house of spirit```](https://heap-exploitation.dhavalkapil.com/attacks/house_of_spirit.html)
  ```  
- 	- thực hiện được khi có thể ghi đè pointer sắp được free.   
-	- thiết lập chunk fake để free đảm bảo :   
+ - thực hiện được khi có thể ghi đè pointer sắp được free.   
+ - thiết lập chunk fake để free đảm bảo :   
 	  + size chunk free : fast bin   
 	  + size of next chunk(from current chunk) : fast bin  
 	  + size của chunk là vùng memory bao gồm cả : pre_size, size, fd, bk, user data   
