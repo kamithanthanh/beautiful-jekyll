@@ -19,7 +19,7 @@ Tổng hợp những lỗi phổ biến để khi nào còn check cho dễ . H�
 ## ✔️ [Heap](https://github.com/shellphish/how2heap) 
   🌌   Use after free  
   🌌   Overlap Chunks  
-  🌌   [House of spirit](/Pwnable/heap/house_of_spirit.md)  
+  🌌   [House of spirit](https://hacmao.pw/Pwnable/heap/house_of_spirit/)  
   
 
  
