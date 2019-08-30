@@ -124,6 +124,14 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
  Hoàn thiện theo cái kia là ok. Lúc đầu mình ko tính cái pre_size, size vào vùng data nên cứ bị sai.😝😝😝  
  - **see the file**  
  Know the set up but don't know how it work 😅😅😅 Script kiddie time :)) Nice setup [here](https://github.com/DoubleLabyrinth/pwnable.tw/blob/master/seethefile/seethefile.py)  
+
+# Ngày 17  
+ - [**death note**](https://pwnable.tw/static/chall/death_note)  
+ Lúc đầu mình cứ tưởng bài này có malloc chắc lại heap rồi. Nhưng nghiên cứu 1 số lỗi cơ bản mình đã biết thì đéo có cái nào tận dụng được cả. Mình mới xem xét lại thì có lỗi tràn biến nguyên :v Cái này cũng khá là hay gặp nếu không filter cẩn thận. Lúc này ta có thể ghi đè lên got của bất kì hàm nào bằng địa chỉ của heap --> nơi đặt shellcode rồi thực thi. Nhưng có cái khó của bài này là ascii shellcode. Mình cũng chưa có kinh nghiệm nhiều với shellcode nên tham khảo wu :   
+ ```python 
+ \x68\x70\x70\x70\x70\x68\x70\x70\x70\x70\x59\x28\x48\x24\x28\x48\x2D\x28\x48\x2F\x28\x48\x31\x29\x48\x33\x28\x48\x37\x28\x48\x37\x68\x2F\x73\x68\x70\x68\x2F\x62\x69\x6E\x54\x5B\x31\x39\x31\x42\x31\x66\x31\x30\x21\x7C\x3D\x60
+ ```  
+ Shellcode này dùng được khi eax là địa chỉ của shellcode. Từ đó nó sẽ giải mà đoạn code đằng sau để có hàm gọi shell. Magic vch :v  
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
 
