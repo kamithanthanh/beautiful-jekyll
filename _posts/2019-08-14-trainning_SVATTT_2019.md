@@ -153,7 +153,7 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
  31: 66 31 30                xor    WORD PTR [eax],si
  34: 21 7c 3d 60             and    DWORD PTR [ebp+edi*1+0x60],edi
   ```
- Shellcode này dùng được khi eax là địa chỉ của shellcode. Từ đó nó sẽ giải mà đoạn code đằng sau để có hàm gọi shell. Magic vch :v  
+ Shellcode này dùng được khi eax là địa chỉ của shellcode. Từ đó nó sẽ giải mà đoạn code đằng sau để có hàm gọi shell. Magic vch :v Nó cộng thêm 0x70 để biến những cái unprintable thành printable :v    
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
 
