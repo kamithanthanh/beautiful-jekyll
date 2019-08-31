@@ -156,6 +156,12 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
  34: 21 7c 3d 60             and    DWORD PTR [ebp+edi*1+0x60],edi
   ```
  Shellcode này dùng được khi eax là địa chỉ của shellcode. Từ đó nó sẽ giải mà đoạn code đằng sau để có hàm gọi shell. Magic vch :v Nó cộng thêm 0x70 để biến những cái unprintable thành printable :v    
+
+# Ngày 18  
+  Nay chơi giải Tokyowestern nhưng cũng hơi feed có làm được 1-2 bài. Định chiến nốt tcache nhưng có vẻ khá khoai vì mình chưa hiểu sâu về heap lắm : tcache, unsorted bin, free-hook, ... Nói chung là nhiều vãi chưởng nên hoy chiến bài khác ez hơn tí. 😁😁😁  
+  Nói chung lên cao khó vl ra :))  
+  [ngay18](/img/meo30.jpg)  
+  
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
 
