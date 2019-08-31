@@ -160,7 +160,7 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
 # Ngày 18  
   Nay chơi giải Tokyowestern nhưng cũng hơi feed có làm được 1-2 bài. Định chiến nốt tcache nhưng có vẻ khá khoai vì mình chưa hiểu sâu về heap lắm : tcache, unsorted bin, free-hook, ... Nói chung là nhiều vãi chưởng nên hoy chiến bài khác ez hơn tí. 😁😁😁  
   Nói chung lên cao khó vl ra :))  
-  [ngay18](/img/meo30.jpg)  
+  ![ngay18](/img/meo30.jpg)  
   
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
