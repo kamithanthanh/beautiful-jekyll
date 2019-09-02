@@ -25,6 +25,7 @@ nextchunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 Khi allocated nó sẽ có dạng như trên :  
  - size  
  - user data  
+
 Sau khi malloc thì hàm malloc trả về giá trị địa chỉ của phần user data.  
 # Free chunk  
 
