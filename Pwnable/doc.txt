@@ -1,0 +1,3 @@
+https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/ 
+https://devel0pment.de/?p=688#libc
+https://azeria-labs.com/heap-exploitation-part-1-understanding-the-glibc-heap-implementation/
