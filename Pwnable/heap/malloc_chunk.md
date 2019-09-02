@@ -25,7 +25,7 @@ nextchunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 Khi allocated nó sẽ có dạng như trên :  
  - size  
  - user data  
-
+Sau khi malloc thì hàm malloc trả về giá trị địa chỉ của phần user data.  
 # Free chunk  
 
 ```
@@ -48,5 +48,6 @@ nextchunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
 ```  
 Nó sẽ thay thế phần đầu tiên của user data thành các con trỏ : FD, BK để hình thành các linked list các chunk bị free.  
+FD,BK trỏ từ phần Size trở đi chứ không phải phần user data.  
 Đối với fastbin thì chỉ hính thành single linked list. Tức là chỉ sử dụng con trỏ FD.  
 **Note** : P - previous bit in use = 0 có nghĩa là chunk phía trước đã bị free .  
