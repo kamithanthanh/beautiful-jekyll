@@ -48,4 +48,5 @@ nextchunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
 ```  
 Nó sẽ thay thế phần đầu tiên của user data thành các con trỏ : FD, BK để hình thành các linked list các chunk bị free.  
+Đối với fastbin thì chỉ hính thành single linked list. Tức là chỉ sử dụng con trỏ FD.  
 **Note** : P - previous bit in use = 0 có nghĩa là chunk phía trước đã bị free .  
