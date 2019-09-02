@@ -17,8 +17,10 @@ Tổng hợp những lỗi phổ biến để khi nào còn check cho dễ . H�
   🌌  Reuse stack  
   🌌  Off-by-one  
 ## ✔️ [Heap](https://github.com/shellphish/how2heap) 
+  🌌   [malloc chunk](https://hacmao.pw/Pwnable/heap/malloc_chunk/)  
   🌌   Use after free  
   🌌   Overlap Chunks  
+  🌌   [Fastbin dup into stack](https://hacmao.pw/Pwnable/heap/fastbin_dup_into_stack/)  
   🌌   [House of spirit](https://hacmao.pw/Pwnable/heap/house_of_spirit/)  
   
 
