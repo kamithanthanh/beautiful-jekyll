@@ -29,7 +29,7 @@ Khi allocated nó sẽ có dạng như trên :
 # Free chunk  
 
 ```
-chunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    chunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
             |             Size of previous chunk, if unallocated (P clear)  |
             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
     `head:' |             Size of chunk, in bytes                     |A|0|P|
@@ -47,3 +47,5 @@ nextchunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
             |             Size of next chunk, in bytes                |A|0|0|
             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
 ```  
+Nó sẽ thay thế phần đầu tiên của user data thành các con trỏ : FD, BK để hình thành các linked list các chunk bị free.  
+**Note** : P - previous bit in use = 0 có nghĩa là chunk phía trước đã bị free .  
