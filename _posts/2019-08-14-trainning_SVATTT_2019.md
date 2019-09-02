@@ -162,6 +162,15 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
   Nói chung lên cao khó vl ra :))  
   ![](/img/meo30.jpg)  
 
+# Ngày 19  
+ - [**unexploitable**](https://pwnable.tw/)   
+ Chương trình có 1 lỗi tràn duy nhất và hai hàm là ```read``` và ```sleep```. Có vẻ đúng như tên của bài là unexploitable. Qua bài này thì mình học thêm được một số kiến thức mới : 
+   + ROP advance : khi code C không còn gì cả thì nên xem xét tới code assembly vì có những đoạn có thể dùng cho kĩ thuật ROP. Bài này nó dùng lại cả một đoạn code khá là dài nên mình đã không chú ý khi sử dụng ropper nên không tận dụng được.  
+   + Overwrite GOT : một số function trong libc có khoảng cách khá gần nhau nên đôi khi chỉ cần ghi đè 1, 2 bytes cuối là ta được hàm mới.  
+   + Sysexecve : rax = 59 cũng là 1 cách để call shell. Cái này ít dùng nên mình hay quên.  
+   + Set rax : có thể set rax bằng cách gọi một hàm rồi lưu giá trị trở về mong muốn trong rax .  
+
+# Ngày 20  
 
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
