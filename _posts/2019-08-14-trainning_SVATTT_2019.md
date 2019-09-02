@@ -170,8 +170,6 @@ Nay làm mấy bài pwn mà chưa xong bài nào :(( Sad
    + Sysexecve : rax = 59 cũng là 1 cách để call shell. Cái này ít dùng nên mình hay quên.  
    + Set rax : có thể set rax bằng cách gọi một hàm rồi lưu giá trị trở về mong muốn trong rax .  
 
-# Ngày 20  
-
 # Kết thúc  
 Tu tiên đại đạo gian nan, mong một ngày có thể quát tháo tiên giới :v  
 
