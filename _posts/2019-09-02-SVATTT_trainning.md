@@ -5,6 +5,7 @@ subtitle : SVATTT 2019 v2
 ---  
 
 Tiếp tục chuỗi ngày trainning cho SVATTT.  Vì cái kia khá là dài rồi nên mình split ra cho dễ theo dõi.  
+
 ![](/img/meo38.jpg)  
 
 
