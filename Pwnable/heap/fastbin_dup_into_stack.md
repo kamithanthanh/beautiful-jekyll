@@ -20,3 +20,5 @@ subtitle : Fastbin dup into stack
  - Malloc 2 fast bin 👉 stack  
 
 **Note** : Địa chỉ của stack khi ghi lên user phải là : stack_target - 2 * sizeof(a) có nghĩa là trừ đi kích thước của phần size.  
+
+Source : [here](https://github.com/shellphish/how2heap/blob/master/glibc_2.25/fastbin_dup_into_stack.c)  
