@@ -13,3 +13,10 @@ Tiếp tục chuỗi ngày trainning cho SVATTT.  Vì cái kia khá là dài r�
 # Ngày 20  
   Nay học thêm được một số kiến thức hay ho về heap. Có update trong phần common vulnerable. Cùng với làm bài ```Secret garden``` trong pwnable.tw. 
   Mai mình sẽ làm lại + tổng hợp lại kiến thức mình học được qua bài đó.  
+
+# Ngày 21  
+ - [**Secret garden**](https://pwnable.tw/)  
+   + [leak libc](https://hacmao.pw/Pwnable/heap/leak_libc/)  
+   + [fastbin dupinto stack](https://hacmao.pw/Pwnable/heap/fastbin_dup_into_stack/)  
+
+
