@@ -20,4 +20,5 @@ Diện meo ... Mấy nay bị đứa nhóc đùa giỡn đến faded thành di�
    + [leak libc](https://hacmao.pw/Pwnable/heap/leak_libc/)  
    + [fastbin dupinto stack](https://hacmao.pw/Pwnable/heap/fastbin_dup_into_stack/)  
 
+![meo24](/img/meo24.jpg)  
 
