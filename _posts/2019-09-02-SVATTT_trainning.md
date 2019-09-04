@@ -23,7 +23,11 @@ Diện meo ... Mấy nay bị đứa nhóc đùa giỡn đến faded thành di�
 # Ngày 22  
  - [SVATTT 2018 quals Blind](https://github.com/chung96vn/writeup/raw/master/SVATTT-2018-Quals/blind/blind)  
  Sau một thời gian chơi heap thì mình thử sức với bài heap trong SVATTT năm ngoái. Có vẻ file được viết bằng C++. Có một điểm new là ```__imp_printf```. Có nghĩa là file được viết bằng C++ < 2015. 
- à thôi nó lại gắc quá :))  
+ à thôi nó lại gắc quá :))   
+  Chán chán lại cày game cả buổi chả làm bài nào :))tội lỗi quá :))  
+ 
+  
+    ![](/img/meo34.jpg)  
 
 
 # Kết thúc  
