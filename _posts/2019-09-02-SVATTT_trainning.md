@@ -27,8 +27,6 @@ Diện meo ... Mấy nay bị đứa nhóc đùa giỡn đến faded thành di�
 
 
 # Kết thúc  
-Em không thuưng anh à :|||  
- - [SVATTT 2018 quals blind](https://github.com/chung96vn/writeup/raw/master/SVATTT-2018-Quals/blind/blind)  
- Qua một qua triìh hoc heap nay miìh thử
+
 ![meo24](/img/meo24.jpg)  
 
