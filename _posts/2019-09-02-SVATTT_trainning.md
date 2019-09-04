@@ -21,6 +21,7 @@ Diện meo ... Mấy nay bị đứa nhóc đùa giỡn đến faded thành di�
    + [fastbin dupinto stack](https://hacmao.pw/Pwnable/heap/fastbin_dup_into_stack/)  
 
 # Kết thúc  
+Em không thuưng anh à :|||  
 
 ![meo24](/img/meo24.jpg)  
 
