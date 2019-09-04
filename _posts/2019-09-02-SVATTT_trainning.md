@@ -20,8 +20,12 @@ Diện meo ... Mấy nay bị đứa nhóc đùa giỡn đến faded thành di�
    + [leak libc](https://hacmao.pw/Pwnable/heap/leak_libc/)  
    + [fastbin dupinto stack](https://hacmao.pw/Pwnable/heap/fastbin_dup_into_stack/)  
 
+# Ngày 22  
+
+
 # Kết thúc  
 Em không thuưng anh à :|||  
-
+ - [SVATTT 2018 quals blind](https://github.com/chung96vn/writeup/raw/master/SVATTT-2018-Quals/blind/blind)  
+ Qua một qua triìh hoc heap nay miìh thử
 ![meo24](/img/meo24.jpg)  
 
