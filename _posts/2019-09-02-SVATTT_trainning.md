@@ -29,6 +29,10 @@ Diện meo ... Mấy nay bị đứa nhóc đùa giỡn đến faded thành di�
   
     ![](/img/meo34.jpg)  
 
+# Ngày 23  
+  - [Notebook matesCTF 2019](https://github.com/chung96vn/writeup/raw/master/mates-2019/notebook/notebook)  
+  Nay làm lại bài này xem có làm được không vì trước kia cũng làm 1 lần rồi :)) . Cũng nghĩ lại được cách attack :v mai viết nốt script.  
+
 
 # Kết thúc  
 
