@@ -20,3 +20,4 @@ Sau đó run bằng cách :
 ```
 sudo docker exec -it ${ctf_name} /bin/bash
 ```  
+Lưu ý là cái port kia thì khi cài một cái khác thì cũng phải thay port. Mình chưa ngâm cứu ra cách tắt port nhưng chắc cũng ko khó.  
