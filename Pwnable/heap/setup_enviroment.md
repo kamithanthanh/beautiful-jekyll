@@ -4,7 +4,7 @@ title : Setup Enviroment
 subtitle : Debug heap binary  
 --- 
 
-Có một thanh niên nào đó đã tạo ra một docker dành riêng cho việc này. [Docker](https://github.com/skysider/pwndocker) này có thể setup bằng câu lệnh : 
+Khi chơi mấy bài heap thì việc đau đầu là không có bản libc phù hợp vs bài để mà debug.Vì vậy nhờ một thanh niên nào đó đã tạo ra một docker dành riêng cho việc này. [**Docker**](https://github.com/skysider/pwndocker) này có thể setup bằng câu lệnh : 
 ```
 docker run -d \
 	--rm \
