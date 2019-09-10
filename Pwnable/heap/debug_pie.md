@@ -19,5 +19,6 @@ def debug(bp):
     for x in bp:
         script += "b *0x%x\n"%(PIE+x)
     gdb.attach(sh,gdbscript=script) 
+debug([0x123,0x456])
 ```  
 Hàm ```get_PIE``` sẽ lấy địa chỉ PIE rồi recovery lại tất cả địa chỉ trước khi PIE, tiến hành đặt break point rồi debug như thường thôi.
