@@ -13,8 +13,14 @@ Do các bài về heap thì nó thường bật full cơ chế bảo vệ nên s
 Hình trên rất dễ hình dung khi chúng ta free một chunk ko phải là fast bin. Nó sẽ có dạng là double linked list. Có head và tail có con trỏ trỏ vào main_arena như đã nói trên. Nếu chỉ có một chunk trong double linked list thì cả FD, BK đều trỏ vào main_arena.  
 
 # Angel Boy leak  
+
+```
+Tấn công vào hàm puts để nó in ra thêm những giá trị dư thừa.  
+```
+
 Overwrite ```stdout->flags = 0xfbad1800```, đồng thời ghi giá trị NULL lên ```_IO_read_ptr, _IO_read_end, _IO_read_base``` và last bytes của ```_IO_write_base```.  
-Nói chúng trong hàm puts có 1 function như này :  
+
+Khi hàm puts được call nó tiến hành thực hiện nhiều function, trong đó target vào function này :  
 
 ```c
 int
@@ -39,8 +45,10 @@ _IO_new_file_overflow (_IO_FILE *f, int ch)
 
 Đây là target : ```_IO_do_write (f, f->_IO_write_base,  // our target
 			 f->_IO_write_ptr - f->_IO_write_base); ```  
-Thực hiện ghi đè lên ```stdout-> flags = 0xfbad1800``` để qua tất cả các check để đến được target.  
+Thực hiện ghi đè lên ```stdout-> flags = 0xfbad1800``` để qua tất cả các check để đến được thực hiện target.  
 Sau đó chúng ta ghi đè 1 bytes "\x00" lên bytes cuối cùng của ```_IO_write_base``` để nó trỏ sang một địa chỉ trước địa chỉ cần in. Từ đó in thêm cho chúng ta một số thông tin về địa chỉ của libc.   
+Payload để ghi đè : ```p64(0xfbad1800) + p64(0) * 3 + '\x00'```  
+
 # Practice  
 
 - [Secret garden](https://pwnable.tw/)  
