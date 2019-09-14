@@ -9,6 +9,12 @@ Turn off :
 
 Turn on :  
   ```echo 2 | sudo tee /proc/sys/kernel/randomize_va_space```  
+# Set Break Point in Pwntools  
+
+```python
+sh = process("./test") 
+gdb.attach(sh, ' b * 0x1234')
+``` 
 
 # Debug PIE  
 Pie là một cơ chế bảo vệ của file. Khi tính năng này được bật thì chúng ta không thể biết địa chỉ của tất cả các hàm trong chương trình.Thông thường khi PIE không được bật chúng ta sẽ biết được địa chỉ các hàm như main, các hàm con, địa chỉ bss, got, ... Và do đó khi PIE được bật sẽ gây khó khăn trong việc debug cũng như đặt breakpoint .Cách giải quyết mình học được từ [đây](https://teamrocketist.github.io/2019/08/17/Pwn-RedpwnCTF-penpal-world/)  
