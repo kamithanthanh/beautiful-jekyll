@@ -18,7 +18,7 @@ subtitle : Fastbin dup into stack
  - Free : a -> b -> a  👉 Free linked list : a -> b -> a  
  - Malloc 2 fastbin with same size  👉 Free linked list : a  
  - Giờ ta có quyền kiểm soát dữ liệu trong user data của a, viết giá trị địa chỉ stack muốn đạt được lên user data của chunk a. 
- - Set Stack_target-8 = fake size, fake size = fastbin , P = 0  để pass security check.  
+ - Set Stack_target-8 = fake size, fake size = fastbin size , P = 0  để pass security check.  
  - Free linked list : stack -> a  
  - Malloc 2 fast bin 👉 stack  
 
