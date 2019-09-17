@@ -6,21 +6,21 @@ subtitle : Fastbin dup into stack
 
 # Basic knowledge    
 
-**Điều kiện sử dụng** :  
+**Điều kiện sử dụng** :   
  - Double free  
- - Control size of malloc  
+ - Control size of malloc   
 
-**Mục đích** : 
- - Malloc lên stack  
+**Mục đích** :   
+ - Malloc lên stack   
 
-**Phương pháp**:  
- - Malloc 2 fastbin chunk : a, b  
- - Free : a -> b -> a  👉 Free linked list : a -> b -> a  
+**Phương pháp**:   
+ - Malloc 2 fastbin chunk : a, b   
+ - Free : a -> b -> a  👉 Free linked list : a -> b -> a   
  - Malloc 2 fastbin with same size  👉 Free linked list : a  
- - Giờ ta có quyền kiểm soát dữ liệu trong user data của a, viết giá trị địa chỉ stack muốn đạt được lên user data của chunk a. 
+ - Giờ ta có quyền kiểm soát dữ liệu trong user data của a, viết giá trị địa chỉ target - 0x10 -> user data's a.  
  - Set Stack_target-8 = fake size, fake size = fastbin size , P = 0  để pass security check.  
- - Free linked list : stack -> a  
- - Malloc 2 fast bin 👉 stack  
+ - Free linked list : target - 0x10 -> a  
+ - Malloc 2 fast bin 👉 target  
 
 **Note** : Địa chỉ của stack khi ghi lên user phải là : stack_target - 2 * sizeof(a) có nghĩa là trừ đi kích thước của phần size.  
 
