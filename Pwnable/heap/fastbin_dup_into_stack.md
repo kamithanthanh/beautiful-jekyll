@@ -28,4 +28,7 @@ Source : [here](https://github.com/shellphish/how2heap/blob/master/glibc_2.25/fa
 
 # Practice  
  - [**Secret Garden**](https://pwnable.tw/)  
- Bài này sử dụng kĩ thuật fastbin dup into stack để có thể malloc về địa chỉ của hàm ```malloc_hook```. Lưu ý để pass cái security check như trên mà chúng ta không thể trực tiếp control được cái size như ở bước trên . Vì vậy người ta đã tìm được vị trí ```malloc_hook-0x13``` là vị trí phù hợp để pass được security check. Như vậy chúng ta có thể dup đến địa chỉ kia rồi ghi đè địa chỉ mong muốn lên ```malloc_hook```.   
+ Bài này sử dụng kĩ thuật fastbin dup into stack để có thể malloc về địa chỉ của hàm ```malloc_hook```. Lưu ý để pass cái security check như trên mà chúng ta không thể trực tiếp control được cái size như ở bước trên . Vì vậy người ta đã tìm được vị trí ```malloc_hook-0x13``` là vị trí phù hợp để pass được security check. Như vậy chúng ta có thể dup đến địa chỉ kia rồi ghi đè địa chỉ mong muốn lên ```malloc_hook```.    
+
+ - [**Nobaby**](https://hacmao.pw/2019-09-17-BKSEC/)  
+ Một bài sử dụng lỗi này như cái khó là tìm ra lỗi double free và leak libc.  
