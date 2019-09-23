@@ -1,1 +1,2 @@
 https://github.com/corkami/collisions
+https://www.alpertron.com.ar/DILOG.HTM
