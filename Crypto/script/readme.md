@@ -24,8 +24,12 @@ res = Hensel(f, p, k, coeffs)
 
 ## Discrete Logarithm problem (DLP)  
 
-Có thể dùng tool online. [đây](https://www.alpertron.com.ar/DILOG.HTM)  
+Có thể dùng tool online. [đây](https://www.alpertron.com.ar/DILOG.HTM)   
 
+## Căn bậc hai module n  
+
+Giả sử có a = b^2 (mod n) . Tìm b.  
+[script](/Crypto/script/module_sqrt.py)  
 
 
 
