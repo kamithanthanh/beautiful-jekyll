@@ -13,4 +13,19 @@ f = Polynomial(coeffs )
 res = Hensel(f, p, k, coeffs) 
 ```  
 
+## Find hash collision  
+
+[here](https://github.com/corkami/collisions)  
+
+## Factors tools  
+
+ - [factordb](http://factordb.com/)  
+ - [alpertron](https://www.alpertron.com.ar/JAVAPROG.HTM)  
+
+## Discrete Logarithm problem (DLP)  
+
+Có thể dùng tool online. [đây](https://www.alpertron.com.ar/DILOG.HTM)  
+
+
+
 
