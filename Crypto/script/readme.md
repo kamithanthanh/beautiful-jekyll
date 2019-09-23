@@ -32,4 +32,6 @@ Giả sử có a = b^2 (mod n) . Tìm b.
 [script](/Crypto/script/module_sqrt.py)  
 
 
+## Some repository 
 
+ - [p4 team](https://github.com/p4-team/crypto-commons)  
