@@ -7,7 +7,10 @@ title : Block cipher
 Block cipher là kiểu mã hóa khối. Hiện nay AES là loại mã khối tiêu chuẩn và hay được dùng nhất. AES được coi là không thể bị bẻ khóa. Đây cũng là một dạng quen thuộc trong các kì thi CTF. Tùy vào từng tác giả sẽ có những tùy biến khác nhau nhưng có một số lỗi cơ bản mà chúng ta cần nắm được. Vì các kiểu tùy biến thì hầu như cũng dựa trên nền những kiểu tấn công cổ điển này.  
 Về tài liệu tham khảo thì có thể tham khảo trên :  
   - [**Crypto101**](https://www.crypto101.io/)    
-  - [**Cryptopal Set2**](https://cryptopals.com/sets/2)  
+  - [**Cryptopal Set2**](https://cryptopals.com/sets/2)   
+
+Không cần đi sâu hiểu được cách hoạt động của AES. Vì nó rất khó lại ít bị khai thác lỗi. Tập trung hiểu được cách hoạt động của các dạng mã hóa như ECB, CBC, CRT, ...  
+Well documented [here](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation).  
 
 😁😁😁 Ôn luyện lại đồng thời lưu lại script để dùng sau .  
 
