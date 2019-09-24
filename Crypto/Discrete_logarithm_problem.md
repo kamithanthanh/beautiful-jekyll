@@ -9,10 +9,10 @@ Alert : Bài viết này không mang tính chất học thuật mà mang đậm 
 # Table Of Content  
  - [RitSec2018 DarkpearAI](#wu1) 
 
-< a name="wu1">
+<a name="wu1">
 </a>
 
-# RitSec2018 DarkpearAI (https://github.com/aadityapurani/My-CTF-Solutions/tree/master/ritsec-2018/DarkpearAI)  
+# [RitSec2018 DarkpearAI](https://github.com/aadityapurani/My-CTF-Solutions/tree/master/ritsec-2018/DarkpearAI)  
 
 Đề bài cho một loại mã hóa là [**Diffie Hellman**](https://vi.wikipedia.org/wiki/Trao_%C4%91%E1%BB%95i_kh%C3%B3a_Diffie-Hellman) cùng với publickey và ciphertext.  
 
