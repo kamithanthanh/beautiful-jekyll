@@ -43,7 +43,12 @@ a = discrete_log(F(m1), F(g))
 Khi hàm này được gọi, Sage tự động thực hiện các thuật toán như ```Pohlig Hellman```, ```Baby Step - Giant Step``` để giải bài toán DLP. Có thể tham khảo thêm cách viết script ở [đây](http://sage.math.canterbury.ac.nz/home/pub/337/).  
  - BSGS thường được dùng để giải bài toán Diffie Hellman trong trường hợp modules là số nguyên tố.  
  - Trong trường hợp modules không là số nguyên tố thì Pohlig Hellman là lựa chọn tốt hơn.  
-Độ phức tạp của Pohlig Hellman trong trường hợp tệ nhất là ![](https://latex.codecogs.com/gif.latex?O(\sqrt{n})) . 
+
+Độ phức tạp của Pohlig Hellman trong trường hợp tệ nhất là  ![](https://latex.codecogs.com/gif.latex?O(\sqrt{n})) .   
+Nhưng trong trường hợp tốt nhất thì là :  
+              ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/1659cc7510a39c976a64afaafe64f953214e1e7a)  
+
+
 <a name="wu2"></a>
 # [Securinets CTF Quals 2018](https://github.com/p4-team/ctf/tree/master/2018-03-24-securinets/crypto_quality)  
 
