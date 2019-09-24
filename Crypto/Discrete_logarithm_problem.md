@@ -6,11 +6,11 @@ title : Discrete Logarithm Problem (DLP)
 # Mở đầu  
 **Alert** : Bài viết này không mang tính chất học thuật mà mang đậm tính chất của một script kiddie. Học và hiểu cách làm thông qua một số bài CTF, biết các script và cách xử lí cho từng bài. Nếu bạn nào có hứng thú thì sau có thể tìm hiểu thêm. Không gì nhanh bằng việc học qua các bài CTF. 😂😂😂  
   
-Discrete Logarithm Problem(DLP) là việc đi tìm x sao cho : ```x^a = b (mod n)```  
+Discrete Logarithm Problem(DLP) là việc đi tìm x sao cho : ```a ^ x = b (mod n)```  
 
 # Table Of Content  
  - [RitSec2018 DarkpearAI](#wu1) 
-
+ - [Securinets Quals](#wu2)  
 <a name="wu1">
 </a>
 
@@ -39,6 +39,13 @@ Thiết lập script như sau :
 F = IntegerModRing(n)             
 a = discrete_log(F(m1), F(g))
 ```
+
+Khi hàm này được gọi, Sage tự động thực hiện các thuật toán như ```Pohlig Hellman```, ```Baby Step - Giant Step``` để giải bài toán DLP. Có thể tham khảo thêm cách viết script ở [đây](http://sage.math.canterbury.ac.nz/home/pub/337/).  
+ - BSGS thường được dùng để giải bài toán Diffie Hellman trong trường hợp modules là số nguyên tố.  
+ - Trong trường hợp modules không là số nguyên tố thì Pohlig Hellman là lựa chọn tốt hơn.  
+Độ phức tạp của Pohlig Hellman trong trường hợp tệ nhất là ![](https://latex.codecogs.com/gif.latex?O(\sqrt{n})) . 
+<a name="wu2"></a>
+# [Securinets CTF Quals 2018](https://github.com/p4-team/ctf/tree/master/2018-03-24-securinets/crypto_quality)  
 
 
 
