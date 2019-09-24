@@ -45,6 +45,8 @@ Tại block thứ hai, chúng ta thu được mã hóa của ```"a"*(block_size-
 ```  
 Bruteforce tới khi nào thu được đoạn mã giống như (1) thì dừng.Ta thu được character đầu tiên của suffix.  
 Tiếp tục làm như vậy ta thu được suffix.  
+👉 [Script](/Crypto/AES/byte_at_time.py)  
+
 
 
 
