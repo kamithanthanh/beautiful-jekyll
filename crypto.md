@@ -9,7 +9,7 @@ title: CryptoGraphy
 Mình có chơi cryptopal và note lại code lại . Mặc dù cũng tham khảo từ nhiều nguồn và note lại 💬💬💬  
 [Link](https://github.com/hacmao/Cryptopal) 
 
-## Documentations  
+## 👻👻👻 Documentations  
 
  - [**Attack On Block Cipher(P1)**](https://hacmao.pw/Crypto/AES/readme/)  
 
