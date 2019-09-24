@@ -123,7 +123,7 @@ def padding_oracle(c) :
 
 ### Step 1 : create fake valid padding  
 
-![](Crypto/AES/padding_oracle/hinh1.PNG)  
+![](/Crypto/AES/padding_oracle/hinh1.PNG)  
 
 Giả sử target của chúng ta là block Ci. Chúng ta thực hiện check valid padding của đoạn cipher ```R + Ci```. Trong đó R là một block ngẫu nhiên. Chúng ta sẽ thay đổi byte cuối cùng của R cho tới khi đạt được valid padding.Do CBC là phép xor nên khi thay đổi byte như vậy ta luôn được valid padding (vì luôn qua giá trị ```\x01```).  
 Tuy nhiên đôi khi chúng ta gặp phải trường hợp valid padding lại có dạng ```\x02\x02``` hoặc ```\x03\x03\x03```. Những trường hợp như vậy rất hiếm nhưng không phải không có khả năng. Ta có thể loại bỏ nó bằng cách thay đổi byte thứ hai từ cuối lên của R. Nếu nó vần là valid padding thì valid padding sẽ là ```\x01```.  
