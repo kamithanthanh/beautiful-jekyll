@@ -17,6 +17,7 @@ Well documented [here](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operat
 # Table Of Content  
   - [**Byte-at-a-time ECB decryption**](#type1)  
   - [**CBC Bit flipping attack**](#type2)  
+  - [**CBC KEY as IV**](#type3)  
 
 <a name="type1"></a> 
 # Byte-at-a-time ECB decryption  
@@ -75,7 +76,24 @@ p[i] = ord("a") ^ ord("a") ^ ord("A")
 p[i] = ord("a") 
 ``` 
 
+<a name="type3"></a> 
+# CBC KEY as IV  
+ 
+Trong nhiều hệ thống thời xưa khi triển khai mã hóa bằng AES.MODE_CBC thường lấy key = IV. Vì IV luôn random nên việc lấy như vậy được coi như là secure. Vừa đỡ tốn thời gian generate key, dễ setup. 😁😁😁 Nhưng có một thanh niên nào đó không nghĩ vậy và đã tìm ra được cách attack vào những hệ thống như vậy.   
 
+🎆🎆🎆 Tình huống giả định trong trường hợp này là : Alice và Bob trao đổi thư điện tử cho nhau sử dụng hệ thống mã hóa như trên. Khi đó Malory thực hiện cuộc tấn công MITM (Man-In-the-middle attack) và kiểm soát được những dữ liệu ciphertext mã hóa tin nhắn của Alice gửi cho Bob. Và thay bằng malicious ciphertext. Sau khi Bob giải mã giữ liệu thì từ những dữ liệu đó, Malory sẽ tiến hành tính toán và recovery lại được KEY.   
+
+🐙🐙🐙 [**Oracle**](https://github.com/hacmao/hacmao.github.io/tree/master/Crypto/AES/key_as_IV)  
+
+Ok chi tiết hơn. Giả sử Alice -> Bob : P1P2P3..... được mã hóa thành C1C2C3....  
+Malory sau đó sẽ can thiệp và gửi lại cho Bob đoạn mã hóa : C1ZC1 , trong đó Z là một block các kí tự NULL.  
+Sau khi giải mã thì plaintext mới sẽ là :  
+```
+ - P1` = D(k, C1) ^ IV = P1 
+ - P2` = D(k, Z) ^ C1 = R    # một giá trị ngẫu nhiên nào đó
+ - P3` = D(k, C1) ^ Z = D(k, C1) 
+``` 
+Khi đó, k = P1' ^ P3'.   🌝🌝🌝 Get key.  
 
 
 
