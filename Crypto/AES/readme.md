@@ -115,10 +115,10 @@ def pad(s) :
 Hàm check padding có dạng :  
 
 ```python
-def padding_oracle2(c) : 
+def padding_oracle(c) : 
     m = decrypt(c) 
     LB = ord(m[-1])   
-    return LB
+    return m[-LB :] == chr(LB) * LB
 ``` 
 
 ### Step 1 : create fake valid padding  
