@@ -39,7 +39,7 @@ Chúng ta sẽ thực hiện một phép mapping từ Curve Field về FinityFie
 
 ![](https://latex.codecogs.com/gif.latex?E(Fp)&space;\mapsto&space;F_{p}^{&plus;},&space;(x,y)&space;\mapsto&space;\frac{x}{y},&space;\infty&space;\mapsto&space;0)    
 
-Tương đương với việc ta có :   
+Tương đương với việc ta có mối liên hệ chuyển đổi giữa (E) và GF(p) :   
 
 ![](https://latex.codecogs.com/gif.latex?t&space;=&space;\frac{x}{y},&space;x&space;=&space;\frac{1}{t^{2}},&space;y&space;=&space;\frac{1}{t^{3}})   
 
