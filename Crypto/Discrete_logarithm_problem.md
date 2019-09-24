@@ -17,8 +17,8 @@ Alert : Bài viết này không mang tính chất học thuật mà mang đậm 
 Đề bài cho một loại mã hóa là [**Diffie Hellman**](https://vi.wikipedia.org/wiki/Trao_%C4%91%E1%BB%95i_kh%C3%B3a_Diffie-Hellman) cùng với publickey và ciphertext.  
 
 ```python
-n=371781196966866977144706219746579136461491261
-g=3
+n = 371781196966866977144706219746579136461491261
+g = 3
 
 m1 = 97112112108101112101097114098108117101
 m2 = 100097114107104111114115101097105
