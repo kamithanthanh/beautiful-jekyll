@@ -9,11 +9,9 @@ title: CryptoGraphy
 Mình có chơi cryptopal và note lại code lại . Mặc dù cũng tham khảo từ nhiều nguồn và note lại 💬💬💬  
 [Link](https://github.com/hacmao/Cryptopal) 
 
-## 🐣🐣🐣 CTF WriteUp
-  
-1. [example](https://kamithanthanh.github.io/Crypto/2015-02-28-test-markdown/)
+## Documentations  
 
-![anh](https://www.isara.com/wp-content/uploads/2018/06/blog-image-1-1.jpg)  
+ - [**Block Cipher(P1)**](https://hacmao.pw/Crypto/AES/readme/)  
 
 
 
