@@ -48,6 +48,10 @@ Khi hàm này được gọi, Sage tự động thực hiện các thuật toán
 Nhưng trong trường hợp tốt nhất thì là :  
               ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/1659cc7510a39c976a64afaafe64f953214e1e7a)  
 
+Như vậy ta có thể thấy được hai phương pháp này thích hợp cho những số nhỏ. Sage còn hỗ trợ nhiều cách giải khác nhau của bài toán DLP trong các trường hợp khác nhau được miêu ta chi tiết ở [đây](http://doc.sagemath.org/html/en/reference/groups/sage/groups/generic.html)  
+ - **discrete_log_lamda** : Phương pháp này dùng cho trường hợp chúng ta có một vùng giới hạn của x.  
+ - **discrete_log_rho** : Dùng cho module lớn hơn nhưng chỉ được phép là số nguyên tố. Nếu module khá nhỏ thì nó trở về BSGS.  
+
 
 <a name="wu2"></a>
 # [Securinets CTF Quals 2018](https://github.com/p4-team/ctf/tree/master/2018-03-24-securinets/crypto_quality)  
