@@ -11,8 +11,20 @@ Giả sử ta có được cong Elliptic (E) trên GF(p) :
 
 ![](https://latex.codecogs.com/gif.latex?y^{2}&space;=&space;x^{3}&space;&plus;&space;A\times&space;x&space;&plus;&space;B)  
 
-Singular là nghiệm của phương trình :  
+Singular là nghiệm của phương trình trên GF(p) :  
 
 ![](https://latex.codecogs.com/gif.latex?x^{3}&space;&plus;&space;A\times&space;x&space;&plus;&space;B=0)  
 
+Đối với Curve có Singular point thì sage sẽ không thiết lập được bằng hàm ```EllipticCurve```. Chúng ta có thể thiết lập bằng cách khác để tìm singular point như sau :  
+```sage
+p = ... 
+P.<x,y> = GF(p)[]
+f = x^3 + A*x + B 
+C = Curve(-y^2 + f) 
+singular_point = C.singular_points()
+```
 
+# Cusp and Node  
+Sau khi xác định được singular point của (E). 
+# Tài liệu tham khảo  
+ - [**Crypto StackExchange**](https://crypto.stackexchange.com/questions/61302/how-to-solve-this-ecdlp)  
