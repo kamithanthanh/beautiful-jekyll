@@ -1,2 +1,8 @@
 https://github.com/corkami/collisions
 https://www.alpertron.com.ar/DILOG.HTM
+
+# ECDLP 
+https://crypto.stackexchange.com/questions/61302/how-to-solve-this-ecdlp   # node 
+https://github.com/p4-team/ctf/tree/master/2018-12-08-hxp/crypto_curve12833227    # node 
+https://grosquildu.github.io/writeups/2019/01/03/nullcon-singular/        # cusp  
+
