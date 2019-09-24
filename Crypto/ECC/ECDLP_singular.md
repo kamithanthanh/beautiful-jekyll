@@ -35,8 +35,19 @@ f_.factor()
 Nếu sau khi chuyển đổi hệ số mà ```f_=x^3``` thì Curve có dạng cusp. Không thì có dạng Node.  
 
 # Attack 0n Cusp  
-Chúng ta sẽ thực hiện một phép mapping từ Curve Field về FinityField. Mình còn chả biết từ ngữ mình dùng có đúng không nhưng bằng vào việc chuyển đổi này có thể đừa từ ECDLP về dạng DLP thông thường. Đối với Cusp, thực hiện map :  
-![](https://latex.codecogs.com/gif.latex?E(Fp)&space;\mapsto&space;F_{p}^{&plus;},&space;(x,y)&space;\mapsto&space;\frac{x}{y},&space;\infty&space;\mapsto&space;0)  
+Chúng ta sẽ thực hiện một phép mapping từ Curve Field về FinityField. Mình còn chả biết từ ngữ mình dùng có đúng không nhưng bằng vào việc chuyển đổi này có thể đừa từ ECDLP về dạng DLP thông thường. Đối với Cusp,thực hiện map:   
+
+![](https://latex.codecogs.com/gif.latex?E(Fp)&space;\mapsto&space;F_{p}^{&plus;},&space;(x,y)&space;\mapsto&space;\frac{x}{y},&space;\infty&space;\mapsto&space;0)    
+
+Tương đương với việc ta có :   
+
+![]https://latex.codecogs.com/gif.latex?t&space;=&space;\frac{x}{y},&space;x&space;=&space;\frac{1}{t^{2}},&space;y&space;=&space;\frac{1}{t^{3}}   
+
+Ví dụ : P(x,y) trong (E) thì ta có điểm tương ứng P' trong GC(p) là : t = x/y .  
+
+Giả sử chúng ta có ECDLP : Q = x * P. Thì lúc này sau khi chuyển đổi về GF(p) thì chúng ta có thể viết thành Q'=x * P' là phép nhân thông thường. Nghĩa là, x đơn giản được tính theo công thức : x = P' * Q'^-1.  
+
+**Practice** : [**Nullcon 2019**](https://grosquildu.github.io/writeups/2019/01/03/nullcon-singular/)  
 
 # Tài liệu tham khảo  
  - [**Crypto StackExchange**](https://crypto.stackexchange.com/questions/61302/how-to-solve-this-ecdlp)  
