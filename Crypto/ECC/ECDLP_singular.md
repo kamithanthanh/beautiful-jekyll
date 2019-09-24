@@ -41,7 +41,7 @@ Chúng ta sẽ thực hiện một phép mapping từ Curve Field về FinityFie
 
 Tương đương với việc ta có :   
 
-![]https://latex.codecogs.com/gif.latex?t&space;=&space;\frac{x}{y},&space;x&space;=&space;\frac{1}{t^{2}},&space;y&space;=&space;\frac{1}{t^{3}}   
+![](https://latex.codecogs.com/gif.latex?t&space;=&space;\frac{x}{y},&space;x&space;=&space;\frac{1}{t^{2}},&space;y&space;=&space;\frac{1}{t^{3}})   
 
 Ví dụ : P(x,y) trong (E) thì ta có điểm tương ứng P' trong GC(p) là : t = x/y .  
 
