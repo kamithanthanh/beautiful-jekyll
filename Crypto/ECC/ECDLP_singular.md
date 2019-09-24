@@ -1,0 +1,10 @@
+---
+layout : post 
+title : One way to attack ECDLP of singular  
+---  
+
+# Mở đầu  
+ECC luôn là vấn đề phức tạp 😥😥😥 Cần rất nhiều kiến thức toán. Mà mình lại là một script K1dd13. 😁😁😁 Nếu bạn cũng là một scr1pt k1dd13 thì w3lc0m3. Chúng ta chung lí tưởng. Vì là script kidde nên mình sẽ không đi quá sâu vào từng chi tiết một. Chỉ là cái nhìn lướt qua đủ hiểu vấn đề này là gì, khi nào thì dùng và dùng bằng cách nào.  
+
+# Singular Point  
+Giả sử ta có được cong Elliptic (E) :  [img[https://latex.codecogs.com/gif.latex?y^{2} = x^{3} + A\times x + B]]
