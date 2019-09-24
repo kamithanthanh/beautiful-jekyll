@@ -16,7 +16,7 @@ Well documented [here](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operat
 
 # Table Of Content  
   - [**Byte-at-a-time ECB decryption**](#type1)  
-  - [**Bit flipping attack**](#type2)  
+  - [**CBC Bit flipping attack**](#type2)  
 
 <a name="type1"></a> 
 # Byte-at-a-time ECB decryption  
@@ -52,13 +52,29 @@ Tiếp tục làm như vậy ta thu được suffix.
 
 <a name="type2"></a> 
 
-# Bit Flipping Attack  
+# CBC Bit Flipping Attack  
 
 Giả sử Alice có một oracle encrypt và trả về ciphertext. Alice sẽ đưa ciphertext cho Bob để xác nhận xem Alice có phải admin không. Oracle lại không cho encrypt bất kì đoạn message nào có chứa chữ ```admin```. Mục tiêu của chúng ta là sửa một số byte trong cipher text để thu được plaintext có chứa ```admin```.  
 Mình có viết một cái [**Oracle**](https://github.com/hacmao/hacmao.github.io/tree/master/Crypto/AES/Bit_flipping) để minh họa.  
 Tất cả idea của cách tấn công này được miêu tả thông qua sơ đồ sau :  
 
-![](https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/082113_1459_CBCByteFlip3.jpg)  
+![](https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/082113_1459_CBCByteFlip3.jpg)   
+
+Trong mode CBC bước decrypt, để thu được plaintext thì ta lấy blockcipher trước xor với block được decrypt trong lần hiện tại. Do đây là phép xor nên nếu ta thay đổi một số bit trong blockcipher_prev thì ở vị trí tương ứng trong plaintext cũng thay đổi.  
+Có nghĩa là giả sử ta có ciphertext của một plaintext mà chữ cái ta muốn thay đổi là "A" thành "a". Ta cần thay đổi trong blockcipher trước đó (Nếu là blockđầu tiên thì thay đổi IV) theo công thức :   
+
+```python
+c[i] = chr(ord(c[i]) ^ ord("a") ^ ord("A"))
+```
+
+Khi đó plaintext sẽ trở thành :  
+
+```python
+p[i] = p[i] ^ ord("a") ^ ord("A") 
+p[i] = ord("a") ^ ord("a") ^ ord("A") 
+p[i] = ord("a") 
+``` 
+
 
 
 
