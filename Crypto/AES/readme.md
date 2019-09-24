@@ -99,9 +99,10 @@ Khi đó, k = P1' ^ P3'.   🌝🌝🌝 Get key.
 
 <a name="type4"></a>  
 # CBC Padding Oracle Attack  
-🎏🎏🎏 [**Oracle**](https://github.com/hacmao/hacmao.github.io/tree/master/Crypto/AES/padding_oracle)  
-
 Kiểu tấn công này có phức tạp hơn các kiểu tấn công trước một chút.  
+
+🎏🎏🎏 [**Oracle**](https://github.com/hacmao/hacmao.github.io/tree/master/Crypto/AES/padding_oracle)  
+ 
 🎆🎆🎆 Tình huống : Giả sử chúng ta đang sử dụng hệ thống mã hóa AES CBC có sử dụng kiểu padding PKCS7. Có một Oracle check padding có valid hay không, trả về True and False. Từ Oracle này chúng ta có thể thực hiện tấn công và recovery lại được plaintext.  
 
 Padding PKCS7 có dạng sau :  
