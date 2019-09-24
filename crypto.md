@@ -6,8 +6,8 @@ title: CryptoGraphy
 
  
 ## 🐣🐣🐣 CRYPTOPAL  
-Mình có chơi cryptopal và note lại code lại . Mặc dù cũng tham khảo từ nhiều nguồn và note lại 💬💬💬  
-[Link](https://github.com/hacmao/Cryptopal) 
+  Cryptopal là một nơi đủ tốt để bắt đầu. Nó cho bạn khá nhiều kiến thức trên các mảng căn bản của cryptography.   
+  Mình cũng bắt đầu từ đây và có lưu lại code trên [**Github**](https://github.com/hacmao/Cryptopal).   
 
 ## 👻👻👻 Documentations  
 
