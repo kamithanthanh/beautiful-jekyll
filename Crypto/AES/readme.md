@@ -18,7 +18,8 @@ Well documented [here](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operat
   - [**Byte-at-a-time ECB decryption**](#type1)  
   - [**CBC Bit flipping attack**](#type2)  
   - [**CBC KEY as IV**](#type3)  
-
+  - [**CBC Padding Oracle**](#type4)  
+  
 <a name="type1"></a> 
 # Byte-at-a-time ECB decryption  
 
@@ -94,6 +95,58 @@ Sau khi giải mã thì plaintext mới sẽ là :
  - P3` = D(k, C1) ^ Z = D(k, C1) 
 ``` 
 Khi đó, k = P1' ^ P3'.   🌝🌝🌝 Get key.  
+
+
+<a name="type4"></a>  
+# CBC Padding Oracle Attack  
+🎏🎏🎏 [**Oracle**](https://github.com/hacmao/hacmao.github.io/tree/master/Crypto/AES/padding_oracle)  
+
+Kiểu tấn công này có phức tạp hơn các kiểu tấn công trước một chút.  
+🎆🎆🎆 Tình huống : Giả sử chúng ta đang sử dụng hệ thống mã hóa AES CBC có sử dụng kiểu padding PKCS7. Có một Oracle check padding có valid hay không, trả về True and False. Từ Oracle này chúng ta có thể thực hiện tấn công và recovery lại được plaintext.  
+
+Padding PKCS7 có dạng sau :  
+
+```python
+def pad(s) : 
+    c = 16 - len(s) % 16 
+    return s + c * chr(c) 
+``` 
+Hàm check padding có dạng :  
+
+```python
+def padding_oracle2(c) : 
+    m = decrypt(c) 
+    LB = ord(m[-1])   
+    return LB
+``` 
+
+### Step 1 : create fake valid padding  
+
+![](Crypto/AES/padding_oracle/hinh1.PNG)  
+
+Giả sử target của chúng ta là block Ci. Chúng ta thực hiện check valid padding của đoạn cipher ```R + Ci```. Trong đó R là một block ngẫu nhiên. Chúng ta sẽ thay đổi byte cuối cùng của R cho tới khi đạt được valid padding.Do CBC là phép xor nên khi thay đổi byte như vậy ta luôn được valid padding (vì luôn qua giá trị ```\x01```).  
+Tuy nhiên đôi khi chúng ta gặp phải trường hợp valid padding lại có dạng ```\x02\x02``` hoặc ```\x03\x03\x03```. Những trường hợp như vậy rất hiếm nhưng không phải không có khả năng. Ta có thể loại bỏ nó bằng cách thay đổi byte thứ hai từ cuối lên của R. Nếu nó vần là valid padding thì valid padding sẽ là ```\x01```.  
+Nếu không là valid padding, trong trường hợp này mình tiếp tục lựa chọn bruteforce tiếp byte cuối của R cho tới khi tìm được valid padding là ```\x01```. Để code nó gọn hơn đỡ lằng nhằng. 👌👌👌 Đương nhiên hoàn toàn có thể xác định được padding là gì nhưng do lười nên mình thường làm những việc đơn giản hơn.  
+
+### Step 2 : Recovery last bytes   
+
+Sau khi có được valid padding là ```\x01```. Ta có thể recovery lại last bytes của plaintext tại block tương ứng.   
+Thật vậy, ta có :  
+```
+D(k, Ci[-1]) ^ R[-1] = 1 
+-> D(k, C[-1]) = 1 ^ R[-1] 
+``` 
+Khi tìm được D(k, C[-1]) theo công thức trên thì ta hoàn toàn có thể tìm được m[-1].  
+
+### Step 3 : Recovery remaining block   
+Tiếp theo, ta thay đổi R : ```R[-1] = R[-1] ^ 1 ^ 2```. Như vậy, hiện tại padding sẽ là ```\x02```.   
+Ta lại tiếp tục bruteforce R[-2] cho tới khi đạt được valid padding là : ```\x02\x02```.Khi đó :   
+```
+D(k, Ci[-2]) ^ R[-2] = 2 
+-> D(k, Ci[-2] = R[-2] ^ 2 
+```  
+Tiếp tục ta lại recovery được m[-2].  
+Tương tự ta recovery được hết block.  
 
 
 
