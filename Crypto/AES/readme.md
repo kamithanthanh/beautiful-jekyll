@@ -16,7 +16,7 @@ Well documented [here](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operat
 
 # Table Of Content  
   - [**Byte-at-a-time ECB decryption**](#type1)  
-
+  - [**Bit flipping attack**](#type2)  
 
 <a name="type1"></a> 
 # Byte-at-a-time ECB decryption  
@@ -50,7 +50,15 @@ Bruteforce tới khi nào thu được đoạn mã giống như (1) thì dừng.
 Tiếp tục làm như vậy ta thu được suffix.  
 👉 [Script](/Crypto/AES/byte_at_time.py) 👈  
 
+<a name="type2"></a> 
 
+# Bit Flipping Attack  
+
+Giả sử Alice có một oracle encrypt và trả về ciphertext. Alice sẽ đưa ciphertext cho Bob để xác nhận xem Alice có phải admin không. Oracle lại không cho encrypt bất kì đoạn message nào có chứa chữ ```admin```. Mục tiêu của chúng ta là sửa một số byte trong cipher text để thu được plaintext có chứa ```admin```.  
+Mình có viết một cái [**Oracle**](https://github.com/hacmao/hacmao.github.io/tree/master/Crypto/AES/Bit_flipping) để minh họa.  
+Tất cả idea của cách tấn công này được miêu tả thông qua sơ đồ sau :  
+
+![](https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/082113_1459_CBCByteFlip3.jpg)  
 
 
 
