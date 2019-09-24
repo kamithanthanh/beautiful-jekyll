@@ -3,13 +3,18 @@ AES-128-ECB(random-prefix || attacker-controlled || target-bytes, random-key)
 attack to find target-bytes
 In this challenge I use a random-prefix with length 3-10 , if it greater just need do some ez step ''' 
 from Crypto.Cipher import AES 
-from challenge_9 import PKCS7 
 from os import urandom 
 from random import randint 
 
 random_prefix = urandom (randint(3,10)) 
 targets_bytes = urandom(randint(3,10))
 
+def PKCS7(m,length):
+    ch = length - len(m) % length 
+    return m + bytes([ch]) * ch  
+
+def unPad(c):
+    return c[:-c[-1]] 
 
 def encrypt_oracle (s):
     s = random_prefix + s + targets_bytes
