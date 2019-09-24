@@ -8,9 +8,11 @@ ECC luôn là vấn đề phức tạp 😥😥😥 Cần rất nhiều kiến t
 
 # Singular Point  
 Giả sử ta có được cong Elliptic (E) trên GF(p) :  
+
 ![](https://latex.codecogs.com/gif.latex?y^{2}&space;=&space;x^{3}&space;&plus;&space;A\times&space;x&space;&plus;&space;B)  
 
 Singular là nghiệm của phương trình :  
+
 ![](https://latex.codecogs.com/gif.latex?x^{3}&space;&plus;&space;A\times&space;x&space;&plus;&space;B=0)  
 
 
