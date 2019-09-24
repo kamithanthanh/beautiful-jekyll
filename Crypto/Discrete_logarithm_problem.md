@@ -4,15 +4,10 @@ title : Discrete Logarithm Problem (DLP)
 --- 
 
 # Mở đầu  
-**Alert** : Bài viết này không mang tính chất học thuật mà mang đậm tính chất của một script kiddie. Học và hiểu cách làm thông qua một số bài CTF, biết các script và cách xử lí cho từng bài. Nếu bạn nào có hứng thú thì sau có thể tìm hiểu thêm. Không gì nhanh bằng việc học qua các bài CTF. 😂😂😂  
-  
-Discrete Logarithm Problem(DLP) là việc đi tìm x sao cho : ```a ^ x = b (mod n)```  
 
-# Table Of Content  
- - [RitSec2018 DarkpearAI](#wu1) 
- - [Securinets Quals](#wu2)  
-<a name="wu1">
-</a>
+Discrete Logarithm Problem(DLP) là việc đi tìm x sao cho : ```a ^ x = b (mod n)```   
+
+**Alert** : Bài viết này không mang tính chất học thuật mà mang đậm tính chất của một script kiddie. Học và hiểu cách làm thông qua một số bài CTF, biết các script và cách xử lí cho từng bài. Nếu bạn nào có hứng thú thì sau có thể tìm hiểu thêm. Không gì nhanh bằng việc học qua các bài CTF. 😂😂😂  Mình sẽ lấy ví dụ là một bài CTF đơn giản để minh họa. Sad là có khá ít bài toán liên quan tới DLP mình tìm thấy trên CTFtime. Mấy bài còn lại liên quan nhiều đến ECC nên cũng không tiện viết ở đây.  
 
 # [RitSec2018 DarkpearAI](https://github.com/aadityapurani/My-CTF-Solutions/tree/master/ritsec-2018/DarkpearAI)  
 
@@ -56,10 +51,7 @@ Nhưng trong trường hợp tốt nhất thì là :
 Như vậy ta có thể thấy được hai phương pháp này thích hợp cho những số nhỏ. Sage còn hỗ trợ nhiều cách giải khác nhau của bài toán DLP trong các trường hợp khác nhau được miêu ta chi tiết ở [đây](http://doc.sagemath.org/html/en/reference/groups/sage/groups/generic.html)  
  - **discrete_log_lamda** : Phương pháp này dùng cho trường hợp chúng ta có một vùng giới hạn của x.  
  - **discrete_log_rho** : Dùng cho module lớn hơn nhưng chỉ được phép là số nguyên tố. Nếu module khá nhỏ thì nó trở về BSGS.  
-
-
-<a name="wu2"></a>
-# [Securinets CTF Quals 2018](https://github.com/p4-team/ctf/tree/master/2018-03-24-securinets/crypto_quality)  
+ 
 
 
 
