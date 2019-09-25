@@ -50,7 +50,9 @@ Giả sử chúng ta có ECDLP : Q = x * P. Thì lúc này sau khi chuyển đ�
 **Practice** : [**Nullcon 2019**](https://grosquildu.github.io/writeups/2019/01/03/nullcon-singular/)  
 
 # Attack 0n N0d3  
+Một Curve là một Node khi mà sau khi chuyển đổi singular point về (0, 0) thì phương trình có dạng :   
 
+y^{2} = x^{2}.(x+C)  
 
 # Tài liệu tham khảo  
  - [**Crypto StackExchange**](https://crypto.stackexchange.com/questions/61302/how-to-solve-this-ecdlp)  
