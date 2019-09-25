@@ -7,3 +7,4 @@ https://github.com/p4-team/ctf/tree/master/2018-12-08-hxp/crypto_curve12833227  
 https://grosquildu.github.io/writeups/2019/01/03/nullcon-singular/        # cusp  
 
 https://aadityapurani.com/2019/03/11/utctf-2019-writeups/#alice       #pollard  
+https://christianepeters.files.wordpress.com/2012/10/20080620-rennes.pdf        # Edwards 
