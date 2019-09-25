@@ -33,7 +33,7 @@ Solution : Send ```2**e * C```. Ta sẽ thu được ```2*P```. Chỉ cần chia
 🎆🎆🎆 Khi e quá lớn thì d có thể rất bé.   
 
 💰💰💰 Solution : Weiner Attack. Cũng có trong RsaCtftools.   
-Khi d to hơn một tí so với giới hạn của weiner attack thì chúng ta có thể sử dụng thuật toán ```[**boneh_durfee**](https://github.com/Ganapati/RsaCtfTool/blob/master/boneh_durfee.sage)``` để attack.  
+Khi d to hơn một tí so với giới hạn của weiner attack thì chúng ta có thể sử dụng thuật toán [**boneh_durfee**](https://github.com/Ganapati/RsaCtfTool/blob/master/boneh_durfee.sage) để attack.  
 
 
 # Coopersmith Attack    
