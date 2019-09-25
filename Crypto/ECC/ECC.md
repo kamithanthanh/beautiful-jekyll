@@ -1,12 +1,12 @@
 ---
 layout :  post 
-title : Attack on ECDLP 
+title : Attack on ECC 
 ---  
 Giả định ta có đường cong Elliptic (E) trên trường số nguyên tố p :  
 
 ![](https://latex.codecogs.com/gif.latex?y^{2}&space;=&space;x^{3}&space;&plus;&space;Ax&plus;b) 
 
-Chúng ta cần đi giải bài toán ECDLP :   
+Đối với các bài toán về ECC thì thông thường chúng ta cần đi giải bài toán ECDLP :   
 
 ![](https://latex.codecogs.com/gif.latex?Q=nP)  
 
