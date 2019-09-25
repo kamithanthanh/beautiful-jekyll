@@ -22,7 +22,7 @@ Kiểu attack này thực hiện được khi có điều kiện : ```P.order() 
 Nếu bạn muốn tìm hiểu sâu hơn thì có thể đọc [**document**](https://hpl.hp.com/techreports/97/HPL-97-128.pdf) này để biết thêm chi tiết.  
 **Practice** : [**Sharift 2016**](https://hxp.io/blog/25/SharifCTF%202016:%20crypto350%20%22British%20Elevator%22%20writeup/)  
 
-# 3.  Pohlig-Hellman attack     
+# 3. Pohlig-Hellman attack     
 
 Kiểu tấn công này được well-defined trong [**tài liệu**](https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf) này.  
 Kiểu tấn công này thực hiện được khi ```P.order()``` có thể phân tích thành các số nguyên tố nhỏ hoặc là ta có bound của n.  
@@ -48,5 +48,14 @@ Trong sage, hàm ```discrete_log_lamda``` được dùng để giải bài toán
 Toàn bộ ý tưởng này là mình học được từ bài CTF dưới đây. Hãy thử làm và kiểm nghiệm độ hiệu quả 😀😀😀   
 
 **Pratice** : [**UCTF**](https://aadityapurani.com/2019/03/11/utctf-2019-writeups/#alice)   
+
+# 4. No Correctness Check for Input Points   
+🎏🎏🎏 Situation : Trong trường hợp chúng ta có một oracle cho ta nhập một điểm P' và trả về Q' = nP' mà không check xem điểm P' có thuộc đường cong (E) hay không.  
+
+🎇🎇🎇 Solutions : Input các điểm thuộc các đường cong khác. Rồi dùng phương pháp Pollig-Hellman để tìm đồng dư của n theo một module nào đó. Làm nhiều lần như vậy rồi dùng CRT để tìm ra n.  
+
+Kiểu tấn công này được document trong [**tài liệu**](https://www.iacr.org/archive/crypto2000/18800131/18800131.pdf) này. Và được minh họa trong kì thi CTF bên dưới.  
+
+**Practice** :  [**Spam the flags**](https://github.com/p4-team/ctf/tree/master/2019-04-07-spam-and-flags-teaser/crypto_ecc)   
 
 
