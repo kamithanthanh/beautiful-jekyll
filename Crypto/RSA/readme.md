@@ -86,11 +86,13 @@ Kiểu tấn công này được trình bày khá kĩ ở [đây](https://crypto
 
 # Partial Private Key  
 🎆🎆🎆 Situation : Khi chúng ta biết được một phần của private key.  
+
 Well Documented [here](https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf).  
 
 # Partial p  
 
 🎆🎆🎆 Situation : Khi biết được một phần của private key.   
+
 Kiểu tấn công này có thể được thấy qua kì CTF [này](https://github.com/p4-team/ctf/tree/master/2017-09-02-tokyo/crypto_rsa).  
 # Some repositories  
 
