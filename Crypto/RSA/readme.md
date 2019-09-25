@@ -33,6 +33,8 @@ Solution : Send ```2**e * C```. Ta sẽ thu được ```2*P```. Chỉ cần chia
 🎆🎆🎆 Khi e quá lớn thì d có thể rất bé.   
 
 💰💰💰 Solution : Weiner Attack. Cũng có trong RsaCtftools.   
+Khi d to hơn một tí so với giới hạn của weiner attack thì chúng ta có thể sử dụng thuật toán ```[**boneh_durfee**](https://github.com/Ganapati/RsaCtfTool/blob/master/boneh_durfee.sage)``` để attack.  
+
 
 # Coopersmith Attack    
 
@@ -50,6 +52,48 @@ Hoặc đơn giản hơn là dùng script trong sage như sau :
 ![](https://kamithanthanhhome.files.wordpress.com/2019/01/image-3.png)   
 
 
+#  Hastad's Broadcast Attack   
 
+🎆🎆🎆 Situation : Một messages có thể mã hóa nhiều lần bằng các public key khác nhau.  
 
+Khi đó chúng ta có thể tiến hành mã hóa nhiều lần, thu được cipher text rồi dùng Chinese remainder theorem để tìm được :  
 
+```
+m^e = C (mod N1 * N2 * ... * Nr)  
+```  
+Sau đó khi m^e < N1 * N2 * ... * Nr thì ta tính iroot(m,e) là xong.   
+
+# Franklin-Reiter Related Message Attack   
+
+🎆🎆🎆 Situation : Khi hai message có mối liên hệ với nhau thì ta có thể dùng kiểu tấn công này.   
+
+🌊 Kiểu tấn công đơn giản đầu tiên của Franklin-Reiter là khi biết được khoảng cách giữa hai messages.  
+Khi đó ta chỉ cần tính gcd hai hàm :  
+```
+f = x ^ e - C1  
+g = (x + r) ^ e - C2   
+```
+f,g đều có nghiệm là M nên là khi tìm được gcd sẽ là x - M.  
+
+🌊 Kiểu tấn công thứ hai là khi không rõ khoảng cách giữa hai messages là bao nhiêu. Chỉ cần nó không quá xa nhau thì ta hoàn toàn có thể recovery lại khoảng cách đó rồi thực hiện tiếp theo kiểu tấn công trên.   
+
+[**script**](/Crypto/RSA/franklinReiter.py)   
+
+# Least Significant Bits Oracle Attack  
+🎆🎆🎆 Situation : Khi ta có một oracle decrypt trả về bit cuối cùng của plaintext.  
+
+Kiểu tấn công này được trình bày khá kĩ ở [đây](https://crypto.stackexchange.com/questions/11053/rsa-least-significant-bit-oracle-attack)   
+
+# Partial Private Key  
+🎆🎆🎆 Situation : Khi chúng ta biết được một phần của private key.  
+Well Documented [here](https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf).  
+
+# Partial p  
+
+🎆🎆🎆 Situation : Khi biết được 
+
+# Some repositories  
+
+ - [**ashutosh**](https://github.com/ashutosh1206/Crypton/tree/master/RSA-encryption)   
+ - [**ValarDragon**](https://github.com/ValarDragon/CTF-Crypto/tree/master/RSA)   
+ - [**RsaCtfTools**](https://github.com/Ganapati/RsaCtfTool)  
