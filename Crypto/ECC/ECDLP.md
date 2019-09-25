@@ -22,7 +22,10 @@ Kiểu attack này thực hiện được khi có điều kiện : ```P.order() 
 Nếu bạn muốn tìm hiểu sâu hơn thì có thể đọc [**document**](https://hpl.hp.com/techreports/97/HPL-97-128.pdf) này để biết thêm chi tiết.  
 **Practice** : [**Sharift 2016**](https://hxp.io/blog/25/SharifCTF%202016:%20crypto350%20%22British%20Elevator%22%20writeup/)  
 
-# 3. Pollard   
+# 3.  Pohlig-Hellman attack      
+Kiểu tấn công này được well-defined trong [**tài liệu**](https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf) này.  
+Giả sử chúng ta có thể phân tích được ```P.order()``` thành các số nguyên tố p1, p2, p3, ....  
+
 [CTF](https://aadityapurani.com/2019/03/11/utctf-2019-writeups/#alice)   
 
 
