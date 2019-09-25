@@ -25,6 +25,7 @@ res = Hensel(f, p, k, coeffs)
 ## Discrete Logarithm problem (DLP)  
 
 Có thể dùng tool online. [đây](https://www.alpertron.com.ar/DILOG.HTM)   
+Hoặc xem Docs mình viết. [đây](https://hacmao.pw/Crypto/Discrete_logarithm_problem/)  
 
 ## Căn bậc hai module n  
 
