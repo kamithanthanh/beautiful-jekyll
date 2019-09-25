@@ -22,10 +22,31 @@ Kiểu attack này thực hiện được khi có điều kiện : ```P.order() 
 Nếu bạn muốn tìm hiểu sâu hơn thì có thể đọc [**document**](https://hpl.hp.com/techreports/97/HPL-97-128.pdf) này để biết thêm chi tiết.  
 **Practice** : [**Sharift 2016**](https://hxp.io/blog/25/SharifCTF%202016:%20crypto350%20%22British%20Elevator%22%20writeup/)  
 
-# 3.  Pohlig-Hellman attack      
-Kiểu tấn công này được well-defined trong [**tài liệu**](https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf) này.  
-Giả sử chúng ta có thể phân tích được ```P.order()``` thành các số nguyên tố p1, p2, p3, ....  
+# 3.  Pohlig-Hellman attack     
 
-[CTF](https://aadityapurani.com/2019/03/11/utctf-2019-writeups/#alice)   
+Kiểu tấn công này được well-defined trong [**tài liệu**](https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf) này.  
+Kiểu tấn công này thực hiện được khi ```P.order()``` có thể phân tích thành các số nguyên tố nhỏ hoặc là ta có bound của n.  
+
+Giả sử chúng ta có thể phân tích được ```P.order()``` thành các số nguyên tố :  
+
+![](https://latex.codecogs.com/gif.latex?P.order()&space;=&space;p_{1}^{e_{1}}.p_{2}^{e_{2}}...p_{r}^{e_{r}})   
+
+Ý tưởng của Pollig-Hellman là làm việc với các số nguyên tố bé, sau đó dùng CRT để tìm được n.   
+Ok trước hết tìm ```x = n (mod p1^e1)```. Ta thực hiện theo các biến đổi sau :   
+
+```python
+k = P.order() 
+P0 = P * (k // (p1^e1)) 
+Q0 = Q * (k // (p1^e1)) 
+x = discrete_log_lamda(Q0, P0, (0, p1^e1), '+')    
+```   
+
+Trong sage, hàm ```discrete_log_lamda``` được dùng để giải bài toán DLP trong một khoảng giới hạn nào đó. Qua các phép biến đổi kia, ta đã giới hạn được x trong module p1^e1. Vì vậy sử dụng hàm này trong trường hợp này là vô cùng thích hợp, giúp giảm thời gian tìm kiếm đi rất nhiều.    
+
+🐣🐣🐣 Một điểm đặc biệt nữa là khi ta có vùng bound của n (n < N) thì sau khi tìm được số dư của n cho một số số nguyên tố nào đó, ta có thể tiến hành bruteforce theo module đó để tìm ra được n.  
+
+Toàn bộ ý tưởng này là mình học được từ bài CTF dưới đây. Hãy thử làm và kiểm nghiệm độ hiệu quả 😀😀😀   
+
+**Pratice** : [**UCTF**](https://aadityapurani.com/2019/03/11/utctf-2019-writeups/#alice)   
 
 
