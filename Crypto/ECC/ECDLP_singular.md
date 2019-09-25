@@ -54,7 +54,21 @@ Một Curve là một Node khi mà sau khi chuyển đổi singular point về (
 
 ![](https://latex.codecogs.com/gif.latex?y^{2}&space;=&space;x^{2}.(x&plus;C))   
 
+Gọi u là nghiệm của phương trình :   
+![](https://latex.codecogs.com/gif.latex?X^{2}&space;\equiv&space;C&space;(mod&space;p))   
 
+Khi đó ta thực hiên việc chuyển đổi (E) -> Fp :  
 
-# Tài liệu tham khảo  
- - [**Crypto StackExchange**](https://crypto.stackexchange.com/questions/61302/how-to-solve-this-ecdlp)  
+![](https://latex.codecogs.com/gif.latex?(x,y)&space;\rightarrow&space;\frac{y&plus;ux}{y-ux})  
+
+Giả sử ta cần giải phương trình ECDLP : Q = kP.  
+Sau khi chuyển đổi : Q -> q, P -> p. Thì phương trình ECDLP trở thành phương trình DLP :  
+
+![](https://latex.codecogs.com/gif.latex?q\equiv&space;p^{k}(mod&space;p))   
+
+Ta đưa về phương trình DLP thông thường và giải theo những cách đã biết.  
+**Practice** :  
+  - [**Crypto StackExchange**](https://crypto.stackexchange.com/questions/61302/how-to-solve-this-ecdlp)   
+  - [**Hxp 2018**](https://github.com/p4-team/ctf/tree/master/2018-12-08-hxp/crypto_curve12833227)   
+
+  
