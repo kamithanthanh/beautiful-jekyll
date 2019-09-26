@@ -12,7 +12,7 @@ Giả sử A, B là hai bên cần trao đổi thông tin. A, B cùng chia sẻ 
  - Trả về message + iv + sign.   
 Để xác nhận là cùng một người kí, đoạn message không bị sửa đổi thì phía bên B sau khi nhận được message sẽ tiến hành kí lại rồi so sánh với chữ kí của bên A. Nếu giống thì văn bản toàn vẹn.   
 
-[**Oracle**](https://github.com/hacmao/hacmao.github.io/blob/master/Crypto/CBC-MAC/CBC_mac_forgery/oracle.py)   
+   
 
 # Type 0f Attack  
  - [**CBC-MAC Forgery**](#type1)  
@@ -20,6 +20,8 @@ Giả sử A, B là hai bên cần trao đổi thông tin. A, B cùng chia sẻ 
 <a name="type1"></a>  
 # CBC-MAC Forgery  
 🎆 Scenario : Chúng ta nhận được chữ kí của đoạn message nào đó.  
+
+[**Oracle**](https://github.com/hacmao/hacmao.github.io/blob/master/Crypto/CBC-MAC/CBC_mac_forgery/oracle.py)   
 
 🎁 Đạt được : Thay đổi được 16 kí tự đầu của message.   
 
