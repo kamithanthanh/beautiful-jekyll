@@ -17,3 +17,19 @@ Một hệ thống xác thực người dùng bằng CBC-MAC hoạt động theo
 # CBC-MAC Forgery  
 hello
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a
