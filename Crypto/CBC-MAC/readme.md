@@ -46,7 +46,9 @@ forged_msg + IV_forged + mac
 # CBC-MAC Length Extension Attack   
 
 🎆 Scenario :  Khi CBC-MAC được dùng như một loại hash.   
-[**Oracle**](/Crypto/CBC-MAC/CBC_mac_length_extension/oracle.py)
+
+[**Oracle**](/Crypto/CBC-MAC/CBC_mac_length_extension/oracle.py)   
+
 🎁 Đạt được : Chúng ta có thể tạo được hai đoạn message có cùng hash mà nội dung của nó bao gồm những cái ta có thể control được.   
 
 Nhìn lại đoạn giải mã AES-CBC một chút. 
