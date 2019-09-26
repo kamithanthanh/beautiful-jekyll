@@ -10,6 +10,8 @@ Giả sử A, B là hai bên cần trao đổi thông tin. A, B cùng chia sẻ 
  - Mã hóa messages của người dùng bằng AES CBC bằng KEY bí mật.  
  - Chữ kí là block cuối cùng của đoạn mã hóa.  
  - Trả về message + iv + sign.   
+
+
 Để xác nhận là cùng một người kí, đoạn message không bị sửa đổi thì phía bên B sau khi nhận được message sẽ tiến hành kí lại rồi so sánh với chữ kí của bên A. Nếu giống thì văn bản toàn vẹn.   
 
    
