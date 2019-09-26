@@ -10,5 +10,10 @@ Một hệ thống xác thực người dùng bằng CBC-MAC hoạt động theo
  - Chữ kí là block cuối cùng của đoạn mã hóa. 
  - Trả về message + iv + sign  
 
+# Type 0f Attack  
+ - [**CBC-MAC Forgery**](#type1)  
 
+<a name="type1"></a>  
+# CBC-MAC Forgery  
+hello
 
