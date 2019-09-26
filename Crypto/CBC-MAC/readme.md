@@ -20,7 +20,9 @@ Giả sử A, B là hai bên cần trao đổi thông tin. A, B cùng chia sẻ 
 <a name="type1"></a>  
 # CBC-MAC Forgery  
 🎆 Scenario : Chúng ta nhận được chữ kí của đoạn message nào đó.  
+
 🎁 Đạt được : Thay đổi được 16 kí tự đầu của message.   
+
 Vì chúng ta có quyền kiểm soát được iv, nên chúng ta có thể tiến hành CBC bit flipping-attack ở đây.   
 Cụ thể IV sẽ bị thay đổi thành :   
 
