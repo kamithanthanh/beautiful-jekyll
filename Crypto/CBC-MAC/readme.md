@@ -18,6 +18,8 @@ Giả sử A, B là hai bên cần trao đổi thông tin. A, B cùng chia sẻ 
 
 # Type 0f Attack  
  - [**CBC-MAC Forgery**](#type1)  
+ - [**CBC-MAC LENGTH EXTENSION ATTACK**](#type2)  
+
 
 <a name="type1"></a>  
 # CBC-MAC Forgery  
@@ -39,5 +41,39 @@ Nguyên lí hoạt động tương tự như bit flipping attack. Sau đó văn 
 ```
 forged_msg + IV_forged + mac 
 ```  
+
+<a name="type2"></a>  
+# CBC-MAC Length Extension Attack   
+
+🎆 Scenario :  Khi CBC-MAC được dùng như một loại hash.   
+[**Oracle**](/Crypto/CBC-MAC/CBC_mac_length_extension/oracle.py)
+🎁 Đạt được : Chúng ta có thể tạo được hai đoạn message có cùng hash mà nội dung của nó bao gồm những cái ta có thể control được.   
+
+Nhìn lại đoạn giải mã AES-CBC một chút. 
+![](https://camo.githubusercontent.com/e2a2004bd559ede641cbe267182ac824884cf738/68747470733a2f2f692e696d6775722e636f6d2f757048616375382e706e67)   
+
+Đầu tiên chúng ta mã hóa M2. Bây giờ tiến hành các bước cần thiết để có thể có được một đoạn message có mã hash như của M2.  
+Chúng ta mã hóa một đoạn message M1 bất kì. Sau đó thêm đoạn ghép nối chuyển đổi trạng thái giữa hai đoạn message :  
+
+```
+M1 || padd || M2[16:] 
+```  
+
+Đoạn padd sẽ có dạng :  
+
+```
+padd = xor(xor(CBC-MAC(M1), IV), M2[: 16])  
+```  
+Tại sao lại xor với CBC-MAC(M1). Vì sau khi mã hóa M1 trong chuỗi string ```M1 || padd || M2[16:]```, chương trình sẽ tiếp tục mã hóa phần padd theo công thức :  
+
+```
+E( CBC-MAC(M1) ^ padd)  
+-> E(IV ^ M2[: 16])  
+```   
+Chúng ta thấy bây giờ chương trình mã hóa lại đúng là trạng thái đầu tiên khi mã hóa M2. Vì vậy, kết thúc quá trình này thì chúng ta được cùng một loại mã hóa với M2.   
+
+
+
+
 
 
