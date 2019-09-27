@@ -1,6 +1,6 @@
 ''' Break a SHA-1 keyed MAC using length extension
 SHA1(key || original-message || glue-padding || new-message)
-SHA1(key || original-message || gluepadding) = old-hash
+SHA1(key || original-message) = old-hash
 There are 3 things you want to know : 
 1 - padding "1" and "0" 
 2 - length padding to the end 
