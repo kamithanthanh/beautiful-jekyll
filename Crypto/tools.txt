@@ -1,6 +1,9 @@
 https://github.com/corkami/collisions
 https://www.alpertron.com.ar/DILOG.HTM
 
+# Vignere auto solve 
+https://www.boxentriq.com/code-breaking/vigenere-cipher 
+
 # ECDLP 
 https://crypto.stackexchange.com/questions/61302/how-to-solve-this-ecdlp   # node 
 https://github.com/p4-team/ctf/tree/master/2018-12-08-hxp/crypto_curve12833227    # node 
