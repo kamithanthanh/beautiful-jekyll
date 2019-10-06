@@ -36,3 +36,10 @@ def debug(bp):
 debug([0x123,0x456])
 ```  
 Hàm ```get_PIE``` sẽ lấy địa chỉ PIE rồi recovery lại tất cả địa chỉ trước khi PIE, tiến hành đặt break point rồi debug như thường thôi.
+
+# Turn Off Alarm on GDB  
+
+Chúng ta có thể tắt alarm signal trong GDB bằng câu lệnh :  
+```
+handle SIGALRM ignore
+```
