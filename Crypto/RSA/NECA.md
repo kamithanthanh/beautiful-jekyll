@@ -26,6 +26,5 @@ Mình mất khá nhiều thời gian để mò ra được cách build.
 install GMP 
 cmake CMakeLists.txt 
 make
-make install 
 ./neca <N> 
 ```
