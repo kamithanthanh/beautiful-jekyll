@@ -16,6 +16,7 @@ Chúng ta có thể lần lượt thử các tools như :
  - [**factordb**](http://factordb.com/)   
  - [**alpertron**](https://www.alpertron.com.ar/ECM.HTM)  
  - [**RsaCtftools**](https://github.com/Ganapati/RsaCtfTool)   
+ - [**Neca**](https://github.com/hacmao/hacmao.github.io/blob/master/Crypto/RSA/NECA.md)  
 
 Nếu thử hết tools trên mà còn không factor được modules này thì con đường factor sẽ không thể theo script kiddie được rồi.  
 Chúng ta có thể dựa vào một số giấu hiệu trong code để tìm được cách factor n. Cái này thì nó đa dạng lắm nên là cũng không thể liệt kê hết được. Nhưng có một số phương pháp tiêu biểu  :  
