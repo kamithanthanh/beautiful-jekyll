@@ -4,8 +4,8 @@ title : BackDoor CTF 2019
 ---   
 
 # Table of Content 
- - [**[PWN] baby heap**](#wu1)  
-
+ - [**[PWN] Baby Heap**](#wu1)  
+ - [**[PWN] MiscPwn**](#wu2)   
  
 
 
@@ -80,7 +80,39 @@ Các bước tấn công được thực hiện theo các bước sau :
 
 Khá là đơn giản và dễ hiểu 😀😀😀    
 
+<a name="wu2">  
+</a>   
+# MiscPwn   
 
+Đây tiếp tục là một bài heap lạ lol 🌝🌝🌝.   
+Chương trình hết sức đơn giản :   
+
+![](/Pwnable/ctf/BackDoor/miscpwn/hinh1.PNG)    
+
+Mà càng thứ gì đơn giản lại càng khó sml. 😁😁😁   
+Bài này dùng một kĩ thuật như sau :   
+
+```
+Khi malloc một chunk size đủ lớn, malloc sẽ gọi mmap. Khi malloc(10000000) sẽ return một địa chỉ đủ gần libc.   
+```
+
+Nhờ kĩ thuật trên chúng ta leak được địa chỉ của libc.   
+
+![](/Pwnable/ctf/BackDoor/miscpwn/hinh2.PNG)    
+
+
+Sau đó , chúng ta có lỗi out of bound có thể ghi đè lên vùng nhớ. Lại có heap của chúng ta khá gần với libc nên có thể ghi đè lên ```malloc_hook``` hoặc ```free_hook```. Tuy nhiên bài này các one_gadget đều không hoạt động.  
+
+Tác giả của wu thực hiện như sau :   
+```
+  - ghi đè lên __realloc_hook : one_gadget
+  - ghi đè lên __malloc_hook : realloc + 14  
+```  
+Đoạn ```relloc + 14``` có lẽ là một hằng số mà mình cũng không rõ lắm tại sao 😂😂😂    
+
+
+# END   
+Haha Sắp đến SVATTT rồi hóng quá. Không biết là sẽ nát như nào đây 😂😂😂
 
 
 
