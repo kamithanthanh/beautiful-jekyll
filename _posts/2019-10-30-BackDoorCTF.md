@@ -4,11 +4,12 @@ title : BackDoor CTF 2019
 ---   
 
 # Table of Content 
- - [**[PWN] baby heap**](#wu2)  
+ - [**[PWN] baby heap**](#wu1)  
+
+ 
 
 
-
-<a name="wu2">  
+<a name="wu1">  
 </a>   
 
 # Baby Heap
@@ -43,7 +44,7 @@ Một trong những kĩ thuật tấn công trên unsorted bin được dùng tr
   - free chunk 
   - change bd -> target - 2 * size 
 
-👉 Đạt được : thay đổi target thành heap address.   
+👉 Đạt được : thay đổi giá trị của target thành heap address.   
 
 Chúng ta có thể dùng lỗi trên để ghi đè lên ```global_max_fast``` thành 1 giá trị cực lớn. Như vậy thì mọi chunk khi free sẽ thành fastbin và ta có thể tiến hành những kiểu tấn công quen thuộc.   
 
