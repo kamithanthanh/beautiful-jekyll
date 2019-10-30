@@ -12,7 +12,7 @@ title : BackDoor CTF 2019
 <a name="wu1">  
 </a>   
 
-# Baby Heap
+# [PWN] Baby Heap
 
 Bài này trong lúc thi mình không làm được. 😝😝😝 Hôm đó cũng bất ngờ vì cái action của chương trình này rất lạ lol.  Rõ ràng là mình đã free fastbin mà nó lại vào hết unsortedbins. 😱😱😱 Nay đọc wu thì mới hiểu được vấn đề. Đồng thời, vận dụng tốt hơn việc ghi đè lên GOT.  
 Chương trình có ba chức năng cơ bản :   
@@ -84,7 +84,7 @@ Khá là đơn giản và dễ hiểu 😀😀😀
 </a>   
 
 
-# MiscPwn   
+# [PWN] MiscPwn   
 
 
 Đây tiếp tục là một bài heap lạ lol 🌝🌝🌝.   
