@@ -53,7 +53,7 @@ Sau khi tạo 1 chunk rồi free thì FD, BK sẽ có dạng :
 
 Như vậy , ta chỉ cần thay đổi 4 byte cuối của ```BK``` thành ```global_max_fast``` là được. Mà 3 bytes cuối của ```global_max_fast``` không thay đổi nên chúng ta chỉ cần brute force 1 byte để có thể tiến hành ghi đè lên ```global_max_fast```.  
 
-## Fastbin dup into bss   
+## Step 2 : Fastbin dup into bss   
 Sau khi giải quyết vấn đề **mallopt** thì việc còn lại nhẹ nhàng hơn.  Chúng ta không hề có hàm in ra để leak được giá trị của libc. Đến đây là mình nghĩ ngay đến kĩ thuật của ```angel boy``` nhưng như vậy là quá phức tạp. Đồng thời size của ```global_max_fast``` cũng khá là lớn nên việc tạo ra một unsorted bin là điều không tưởng.   
 
 😎😎😎 Và đến đây mình học thêm kĩ thuật vừa cũ lại mới với mình : ghi đè lên GOT. Trong những bài heap thì thường người ta bật full cơ chế bảo vệ nên mình không nghĩ đến cách tấn công này. Nhưng trong bài này thì người ta chỉ bật ```partial RELRO``` đồng thời ```PIE``` cũng tắt luôn.    
