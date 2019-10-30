@@ -47,6 +47,12 @@ Một trong những kĩ thuật tấn công trên unsorted bin được dùng tr
 
 Chúng ta có thể dùng lỗi trên để ghi đè lên ```global_max_fast``` thành 1 giá trị cực lớn. Như vậy thì mọi chunk khi free sẽ thành fastbin và ta có thể tiến hành những kiểu tấn công quen thuộc.   
 
+Sau khi tạo 1 chunk rồi free thì FD, BK sẽ có dạng :    
+
+![](/Pwnable/ctf/BackDoor/babyheap/hinh5.PNG)    
+
+Như vậy , ta chỉ cần thay đổi 4 byte cuối của ```BK``` thành ```global_max_fast``` là được. Mà 3 bytes cuối của ```global_max_fast``` không thay đổi nên chúng ta chỉ cần brute force 1 byte để có thể tiến hành ghi đè lên ```global_max_fast```.  
+
 ## Fastbin dup into bss   
 Sau khi giải quyết vấn đề **mallopt** thì việc còn lại nhẹ nhàng hơn.  Chúng ta không hề có hàm in ra để leak được giá trị của libc. Đến đây là mình nghĩ ngay đến kĩ thuật của ```angel boy``` nhưng như vậy là quá phức tạp. Đồng thời size của ```global_max_fast``` cũng khá là lớn nên việc tạo ra một unsorted bin là điều không tưởng.   
 
@@ -58,6 +64,8 @@ Sau khi giải quyết vấn đề **mallopt** thì việc còn lại nhẹ nhà
 ```python
 add(8, 0x50, "lol") 
 ```  
+
+![](/Pwnable/ctf/BackDoor/babyheap/hinh4.PNG)  
 
 Sau đó chúng ta có thể tùy ý thay đổi giá trị con trỏ của node[0], node[1] thành GOT của các hàm khác.  
 Đồng thời tận dụng hàm edit để chỉnh sửa giá trị của GOT.  
