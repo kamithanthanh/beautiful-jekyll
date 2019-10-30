@@ -3,6 +3,9 @@ layout : post
 title : BackDoor CTF 2019 
 ---   
 
+# Mở đầu   
+Giải này diễn ra một tuần trước khi thi SVATTT 2019. Mình đã thức cả đêm chơi để trải nghiệm giải :v Cũng làm được 2 bài crypto với một bài pwn. Cũng gọi là chuẩn bị tinh thần trước kì thi :v 😂😂😂 Mặc dù tỉ lệ bị hành là rất cao vì có quá nhiều team trâu bò.   
+
 # Table of Content 
  - [**[PWN] Baby Heap**](#wu1)  
  - [**[PWN] MiscPwn**](#wu2)   
