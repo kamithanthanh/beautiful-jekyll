@@ -8,5 +8,7 @@ p = next_prime(2^int(round(length/2)))
 q = next_prime( round(pi.n()*p) )
 N = p*q
 set_verbose(2)
+F.<x> = PolynomialRing(Zmod(N), implementation='NTL')
+f = x - qbar
 d = f.small_roots(X=2^hidden-1, beta=0.5)[0] # time random
 q == qbar - d
