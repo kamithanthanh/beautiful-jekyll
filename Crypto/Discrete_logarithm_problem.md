@@ -1,7 +1,6 @@
 ---
 layout : post 
 title : Discrete Logarithm Problem (DLP)  
-tags : [Crypto]
 --- 
 
 # Mở đầu  
