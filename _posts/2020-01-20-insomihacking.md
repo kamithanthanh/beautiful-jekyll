@@ -8,3 +8,10 @@ Kì thi này được tổ chức gần tết, anh em trong team đã cùng nhau
 > Tương lai đang ở phía trước và việc của chúng ta là tiếp tục bước đi.   
 
 Trong kì thi mình chẳng làm được bài nào 🥴 what's a shame. Giờ thì đi review writeup để bổ túc lại kiến thức thôi. 
+
+# List   
+   - [** [Reverse] Kaboom**](#wu1)
+
+<a name="wu1"></a> 
+# Kaboom    
+
