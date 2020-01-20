@@ -11,7 +11,7 @@ Trong kì thi mình chẳng làm được bài nào 🥴 what's a shame. Giờ t
 
 # List   
    - [**[Reverse] Kaboom**](#wu1)
-   - [**[Reverse + Forensis] Getdents **](#wu2)  
+   - [**[Reverse + Forensis] Getdents**](#wu2)  
    
 <a name="wu1"></a> 
 # Kaboom    
