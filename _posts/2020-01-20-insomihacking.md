@@ -15,5 +15,5 @@ Trong kì thi mình chẳng làm được bài nào 🥴 what's a shame. Giờ t
 <a name="wu1"></a> 
 # Kaboom    
 
-[Đây](/ctf/insomnihack/kaboom/kaboom-orig.bin) là một file PE32 được pack bằng UPX.  
+[Đây](https://github.com/hacmao/hacmao.github.io/raw/master/ctf/insomnihack/kaboom/kaboom-orig.bin) là một file PE32 được pack bằng UPX.  
 
