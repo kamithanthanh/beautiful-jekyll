@@ -11,7 +11,8 @@ Trong kì thi mình chẳng làm được bài nào 🥴 what's a shame. Giờ t
 
 # List   
    - [**[Reverse] Kaboom**](#wu1)
-
+   - [**[Reverse + Forensis] Getdents **](#wu2)  
+   
 <a name="wu1"></a> 
 # Kaboom    
 
@@ -36,4 +37,8 @@ Chạy lại chương trình trong IDA thì ta thu được flag:
 
 ![](/ctf/insomnihack/kaboom/hinh1.PNG)   
 
+Kinh nghiệm rút ra sau khi làm bài này là đối với những đoạn code bị obfuscate thì đôi khi không cần đọc hết, có thể dựa vào cách hoạt động mà đoán được chức năng. 😁😁😁 Và học thêm được kĩ thuật anti-unpacker 🤗 Cái này mới vl :vvv    
 
+<a name="wu2"></a>   
+# Getdents    
+Not update yet
