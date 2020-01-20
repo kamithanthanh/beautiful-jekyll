@@ -10,7 +10,7 @@ Kì thi này được tổ chức gần tết, anh em trong team đã cùng nhau
 Trong kì thi mình chẳng làm được bài nào 🥴 what's a shame. Giờ thì đi review writeup để bổ túc lại kiến thức thôi. 
 
 # List   
-   - [** [Reverse] Kaboom**](#wu1)
+   - [**[Reverse] Kaboom**](#wu1)
 
 <a name="wu1"></a> 
 # Kaboom    
