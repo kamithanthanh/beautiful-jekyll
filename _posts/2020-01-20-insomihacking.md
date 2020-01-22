@@ -41,4 +41,7 @@ Kinh nghiệm rút ra sau khi làm bài này là đối với những đoạn co
 
 <a name="wu2"></a>   
 # Getdents    
-Not update yet
+Tham khảo tại [**WU**](https://ctftime.org/writeup/17984).   
+Writeup viết khá là chi tiết và rõ ràng chỉ cần thực hiện theo các bước là được.   
+Lưu ý nên sử dụng trên kali linux để xác xuất thành công cao hơn 😂😂😂 Không hiểu sao làm trên ubuntu lại không được.   
+Qua bài này học thêm được một chút về ```volatility```. Mình có notes lại một số commandline hữu ích về volatility tại [đây](https://www.notion.so/Volatility-9a96277741e74dbf87d2f9088e725bd4)    
