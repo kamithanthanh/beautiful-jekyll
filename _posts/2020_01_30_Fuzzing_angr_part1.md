@@ -57,8 +57,7 @@ Tất cả các loại stash không cần thiết chúng ta cho hết vào danh 
 Mặc định, Angr sẽ hủy bỏ những trạng thái unconstrained. Chúng ta có thể điều chỉnh bằng cách ```save_unconstrained=True```. Khi đó, Angr sẽ lưu các trạng thái đó vào ```simulation.unconstrained```.   
 
 # Fuzzing Step   
-+ Giai đoạn 1 : 
-Thu thập tất cả các unconstrained state:  
++ Giai đoạn 1 : Thu thập tất cả các unconstrained state:  
   - Thực hiện dịch chuyển tất cả stash ```unconstrained``` sang stash ```found```
   ```
   simulation.move('unconstrained', 'found')
@@ -78,5 +77,7 @@ Cuối cùng là in ra kết quả tìm được :
     print(solution)
   ```
 
+# Kết thúc   
+😁😁😁 Vậy đó là một vài bước căn bản để fuzz được một chương trình cơ bản bằng angr. Mình sẽ tiếp tục tìm hiểu thêm về nó😁😁😁 Phần khó khăn vẫn đang chờ ở phía sau :)))   
 
 
