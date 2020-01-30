@@ -66,17 +66,16 @@ Thu thập tất cả các unconstrained state:
   - Tiếp tục thực hiện chương trình bằng lệnh ```simulation.step()```
   - Lặp cho tới khi không còn trạng thái active hoặc trạng thái unconstrained thì dừng.  
 Việc ```step``` hoạt động như nào lại là vấn đề sâu xa mà mình cũng chưa rõ cách hoạt động của nó 😥 Nói chung, Angr sẽ thực hiện chọn input đầu vào là các biến, thực hiện chương trình là các biến đó và theo dõi quá trình hoạt động từ đầu đến cuối. Ở mỗi bước thực hiện, tiến hành lọc ra tất cả các trạng thái uncóntrained thu được và lưu tại stash ```found``` để sau đó có thể truy cập được thông qua ```simulation.found```.  
-+ Giai đoạn 2 :  
-Vơi một trạng thái ```found``` tìm được, chúng ta tiến hành thêm ràng buộc của eip phải trỏ tới hàm ```print_good```.   
-```python
++ Giai đoạn 2 : Với một trạng thái ```found``` tìm được, chúng ta tiến hành thêm ràng buộc của eip phải trỏ tới hàm ```print_good```.   
+  ```python
     solution_state = simulation.found[0]
     solution_state.add_constraints(solution_state.regs.eip == print_good_addr)
-```
+  ```
 Cuối cùng là in ra kết quả tìm được :  
-```python
+  ```python
     solution = solution_state.posix.dumps(sys.stdin.fileno())
     print(solution)
-````
+  ```
 
 
 
