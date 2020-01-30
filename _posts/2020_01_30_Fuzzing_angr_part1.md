@@ -31,3 +31,11 @@ Trong khi chương trình được thực hiện bởi angr, Under-constrained s
  def check_vulnerable(state):
     return state.se.symbolic(state.regs.eip)
 ```
+
+# Stash   
+Stash là một danh sách phân loại các trạng thái.Bao gồm : 
+  - 'active' : trạng thái mà chương trình có thể tiếp tục thực hiện
+  - 'deadended' : trạng thái kết thúc chương trình 
+  - 'errored' : trạng thái chương trình gặp lỗi với angr
+  - 'unconstrained' : Under-constrained state 
+  - 'unsat' : trạng thái không thể tồn tại (nghĩa là phương trình vô nghiệm) 
