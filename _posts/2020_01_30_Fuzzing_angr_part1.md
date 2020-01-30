@@ -13,13 +13,13 @@ Sau khi đọc xong writeup trên thì mình có tổng kết sơ lại được
 Quay trở lại đề tài, sau khi nắm bắt được một số bước cơ bản tiếp cận angr, mình lại tiếp tục cày [tutorial này](https://github.com/jakespringer/angr_ctf/tree/master/solutions). Nó cho ta những challenge dạng ctf đơn giản và nhưng công cụ thực hiện khác nhau giúp ta nắm bắt thêm các cách sử dụng linh hoạt của angr trong từng trường hợp khác nhau.🙂🙂🙂 Cuối cùng,ở challenge 17 nó có trình bày một bài fuzzing và mình thấy khá là thú vị nên note lại ở đây.   
 Chương trình bao gồm 2 hàm cơ bản :   
 
-![](https://raw.githubusercontent.com/hacmao/hacmao.github.io/master/ctf/temp/fuzzAngr1%20(1).PNG)    
+![](/ctf/temp/fuzzAngr1%20(1).PNG)    
 
-![](https://raw.githubusercontent.com/hacmao/hacmao.github.io/master/ctf/temp/fuzzAngr1%20(2).PNG)
+![](/ctf/temp/fuzzAngr1%20(2).PNG)
 
 Mục tiêu của chương trình này là khai thác lỗi để in ra :   
 
-![](https://raw.githubusercontent.com/hacmao/hacmao.github.io/master/ctf/temp/fuzzAngr1%20(3).PNG)    
+![](/ctf/temp/fuzzAngr1%20(3).PNG)    
 
 Chương trình có một lỗi overflow cơ bản. Nhưng nó rất hợp để làm ví dụ mở đầu.  
 Giả sử chưa biết lỗi overflow, mà dựa trên yêu cầu chúng ta biết được bằng cách nào đó chúng ta phải tìm được cách thay đổi luồng thực thi của chương trình để nó gọi hàm ```print_good```.   
