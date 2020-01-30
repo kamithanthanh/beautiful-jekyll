@@ -15,5 +15,5 @@ Chương trình bao gồm 2 hàm cơ bản :
 
 ![](https://raw.githubusercontent.com/hacmao/hacmao.github.io/master/ctf/temp/fuzzAngr1%20(1).PNG)    
 
-![](/ctf/temp/fuzzAngr1 (2).PNG)
+![](https://raw.githubusercontent.com/hacmao/hacmao.github.io/master/ctf/temp/fuzzAngr1%20(2).PNG)
 
