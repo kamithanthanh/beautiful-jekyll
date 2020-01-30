@@ -38,4 +38,32 @@ Stash là một danh sách phân loại các trạng thái.Bao gồm :
   - 'deadended' : trạng thái kết thúc chương trình 
   - 'errored' : trạng thái chương trình gặp lỗi với angr
   - 'unconstrained' : Under-constrained state 
-  - 'unsat' : trạng thái không thể tồn tại (nghĩa là phương trình vô nghiệm) 
+  - 'unsat' : trạng thái không thể tồn tại (nghĩa là phương trình vô nghiệm)   
+
+Chúng ta có thể tự cấu hình stash như sau :   
+```python
+simulation = project.factory.simgr(
+    initial_state, 
+    save_unconstrained=True,
+    stashes={
+      'active' : [initial_state],
+      'unconstrained' : [],
+      'found' : [],
+      'not_needed' : []
+    }
+  )
+```  
+Tất cả các loại stash không cần thiết chúng ta cho hết vào danh sách ```not_need```.   
+Mặc định, Angr sẽ hủy bỏ những trạng thái unconstrained. Chúng ta có thể điều chỉnh bằng cách ```save_unconstrained=True```. Khi đó, Angr sẽ lưu các trạng thái đó vào ```simulation.unconstrained```.   
+
+# Fuzzing Step   
+Các bước thực hiện :  
+  - Thực hiện dịch chuyển tất cả stash ```unconstrained``` sang stash ```found```
+  ```
+  simulation.move('unconstrained', 'found')
+  ```
+  - Lặp cho tới khi không còn trạng thái active hoặc trạng thái unconstrained thì dừng.  
+
+
+
+
