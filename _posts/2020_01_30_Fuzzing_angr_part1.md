@@ -13,7 +13,7 @@ Sau khi đọc xong writeup trên thì mình có tổng kết sơ lại được
 Quay trở lại đề tài, sau khi nắm bắt được một số bước cơ bản tiếp cận angr, mình lại tiếp tục cày [tutorial này](https://github.com/jakespringer/angr_ctf/tree/master/solutions). Nó cho ta những challenge dạng ctf đơn giản và nhưng công cụ thực hiện khác nhau giúp ta nắm bắt thêm các cách sử dụng linh hoạt của angr trong từng trường hợp khác nhau.🙂🙂🙂 Cuối cùng, nó có trình bày một bài fuzzing và mình thấy khá là thú vị nên note lại ở đây.   
 Chương trình bao gồm 2 hàm cơ bản :   
 
-![](/ctf/temp/fuzzAngr1 (1).PNG)    
+![](/ctf/temp/fuzzAngr1%20%(1).PNG)    
 
 ![](/ctf/temp/fuzzAngr1 (2).PNG)
 
