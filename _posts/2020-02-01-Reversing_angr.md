@@ -19,4 +19,8 @@ Sau khi làm những bước reverse cơ bản thì chúng ta cần chú ý nh�
 
 ![](/ctf/re/angr/hinh2.PNG)    
 
+Chúng ta sẽ dùng Angr để vượt qua ```check1```.```Check1``` lấy tham số truyền vào là địa chỉ của argv[1] với độ dài là 8. Sau đó được copy vào vùng nhớ ```0x6C4B20```. Tiếp tục là một loạt các check số học khác nhau 🧐🧐🧐 Đây là một trường hợp rất thích hợp để dùng angr. Chúng ta sẽ dùng angr để tìm tất cả các input đầu vào có thể để vượt qua được ```check1```.   
+```python
+simgr.explore(find=0x4017CF)   
+```
 
