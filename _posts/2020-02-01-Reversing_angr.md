@@ -45,7 +45,7 @@ Cuối cùng, trong binary này có một hàm anti debug là ```sub_401438```.
 
 ![](/ctf/re/angr/whitehat/hinh3.PNG)   
 
-Nó dùng ```ptrace``` để thực hiện công việc này. Chúng ta cần bypass hàm này bằng cách thay thế nó bằng một hàm không làm gì cả :)))   
+Mình lưu lại nó hơi sai tí 😂😂😂 Hàm này dùng ```ptrace``` để thực hiện công việc này. Chúng ta cần bypass hàm này bằng cách thay thế nó bằng một hàm không làm gì cả :)))   
 
 ```python
 def do_nothing (state) : 
