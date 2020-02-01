@@ -15,9 +15,9 @@ Sau khi làm quen với angr xong, mình tiếp tục hành trình làm những 
 Cũng khá là ngạc nhiên khi một challenge của Việt Nam được lấy ví dụ ở đây \(￣︶￣*\))\(￣︶￣*\))\(￣︶￣*\))Việt Nam chúng ta thật tuyệt 🤗🤗🤗    
 Sau khi làm những bước reverse cơ bản thì chúng ta cần chú ý những hàm sau :    
 
-![](/ctf/re/angr/hinh1.PNG)    
+![](/ctf/re/angr/whitehat/hinh1.PNG)    
 
-![](/ctf/re/angr/hinh2.PNG)    
+![](/ctf/re/angr/whitehat/hinh2.PNG)    
 
 Chúng ta sẽ dùng Angr để vượt qua ```check1```.```Check1``` lấy tham số truyền vào là địa chỉ của argv[1] với độ dài là 8. Sau đó được copy vào vùng nhớ ```0x6C4B20```. Tiếp tục là một loạt các check số học khác nhau 🧐🧐🧐 Đây là một trường hợp rất thích hợp để dùng angr. Chúng ta sẽ dùng angr để tìm tất cả các input đầu vào có thể để vượt qua được ```check1```.   
 
@@ -43,7 +43,7 @@ p.hook(0x40168E, set_length, length=5)
 
 Cuối cùng, trong binary này có một hàm anti debug là ```sub_401438```.   
 
-![](/ctf/re/angr/hinh3.PNG)   
+![](/ctf/re/angr/whitehat/hinh3.PNG)   
 
 Nó dùng ```ptrace``` để thực hiện công việc này. Chúng ta cần bypass hàm này bằng cách thay thế nó bằng một hàm không làm gì cả :)))   
 
