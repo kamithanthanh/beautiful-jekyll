@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Reversing with Angr Example 
+title : Pratice Reversing with Angr Example 
 --- 
 
 # Mở đầu   
