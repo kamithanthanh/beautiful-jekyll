@@ -12,3 +12,11 @@ Sau khi làm quen với angr xong, mình tiếp tục hành trình làm những 
 <a name="wu1"></a>   
 
 # Whitehat Crypto400 
+Cũng khá là ngạc nhiên khi một challenge của Việt Nam được lấy ví dụ ở đây \(￣︶￣*\))\(￣︶￣*\))\(￣︶￣*\))Việt Nam chúng ta thật tuyệt 🤗🤗🤗    
+Sau khi làm những bước reverse cơ bản thì chúng ta cần chú ý những hàm sau :    
+
+![](/ctf/re/angr/hinh1.PNG)    
+
+![](/ctf/re/angr/hinh2.PNG)    
+
+
