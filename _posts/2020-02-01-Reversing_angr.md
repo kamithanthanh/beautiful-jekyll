@@ -53,6 +53,51 @@ def do_nothing (state) :
 p.hook(0x401438, do_nothing, length=262)    # length of target function 
 ```   
 
+## Step 2 : Create Variable and Simulation   
+Chúng ta tiến hành tạo biến input có độ dài 8 kí tự.  
+```python
+arg1 = BVS('arg1', 8 * 8) 
+state = p.factory.entry_state(args=["name", arg1]) 
+``` 
+Tham số ```args``` ở đây thể hiện cho tham số truyền vào của binary.  
+Thêm ràng buộc của flag là phải là kí tự in được :   
+```
+for c in arg1.chop(bits=8) : 
+    state.add_constraints(And(c > 33, c < 128))
+```
+## Step 3 : Get all result of check1    
+Tiến hành explore như bình thường :    
+```python
+simgr = p.factory.simulation_manager(state)  
+simgr.explore(find=0x4017CF)      
+```   
+
+
+Do chúng ta cần liệt kê tất cả các giá trị có được của kết quả, ta cần dùng hàm ```eval_upto```.   
+```python
+s = simgr.found[0] 
+posible_values = [s.solver.eval_upto(arg1.get_bytes(i, 2), 256 * 256, cast_to=bytes) for i in range(0,8,2)]
+```   
+Vì những ràng buộc trong ```check1``` đều theo cặp, nên để giảm tải lượng tính toán cho Angr thì chúng ta tiến hành giải theo từng cặp biến 1 với số lượng đáp án lớn nhất cho từng cặp là ```256 * 256```.    
+Sau đó chúng ta tiến hành nhóm từng cặp lại, thu được toàn bộ câu trả lời :   
+```python
+possibilities = list(itertools.product(*posible_values))
+```   
+
+## Step 4 : Brute force   
+Do số lượng đáp án thu được từ bước ba rất nhỏ nên chúng ta có thể brute force arg1.   
+```python 
+print('[*] brute-forcing %d possibilities' % len(possibilities))
+for guess in progressbar.ProgressBar(widgets=[progressbar.Counter(), ' ', progressbar.Percentage(), ' ', progressbar.Bar(), ' ', progressbar.ETA()])(possibilities):
+    guess_str = b''.join(guess)
+    stdout,_ = subprocess.Popen(["./whitehat_crypto400", guess_str.decode("ascii")], stdout=subprocess.PIPE, stderr=subprocess.STDOUT).communicate()
+    if b'FLAG' in stdout:
+        print(stdout)  
+        print(guess_str.decode("ascii"))
+        break
+```
+
+
 
  
 
