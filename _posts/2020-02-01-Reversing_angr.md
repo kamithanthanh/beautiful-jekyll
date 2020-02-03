@@ -88,7 +88,7 @@ Sau đó chúng ta tiến hành nhóm từng cặp lại, thu được toàn b�
 ```python
 possibilities = list(itertools.product(*posible_values))
 ```   
-
+<a name="wu2"></a>
 ## Step 4 : Brute force   
 Do số lượng đáp án thu được từ bước ba rất nhỏ nên chúng ta có thể brute force arg1.   
 ```python 
@@ -102,7 +102,7 @@ for guess in progressbar.ProgressBar(widgets=[progressbar.Counter(), ' ', progre
         break
 ```
 
-<a name="wu2"></a>
+
 
 
 
@@ -149,7 +149,7 @@ Tiếp đến dựa theo những tính toán thủ công dựa trên số hàm v
 len_flag = (len(list_function) - 24) / 2   
 good = target_function + len_flag * 17 + 25  
 ```
-
+<a name="wu3"></a>
 Last solution : [solution.py](https://github.com/hacmao/hacmao.github.io/raw/master/ctf/re/angr/defcon/magic_dist/solve.py)   
 
 Ok cách này có chút thủ công nhưng cũng ra được kết quả. Mình còn định dùng unicorn để giải cơ :]] Mà phức tạp quá nên thôi. QUa bài tiếp theo của defcon ta sẽ biết cách khác để tìm được các tham số trên bằng ```capstone```.    
@@ -157,7 +157,7 @@ Ok cách này có chút thủ công nhưng cũng ra được kết quả. Mình 
 
 
 
-<a name="wu3"></a>
+
 
 
 
