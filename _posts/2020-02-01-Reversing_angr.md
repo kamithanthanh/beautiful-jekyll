@@ -112,17 +112,17 @@ Defcon 2017 có một chuỗi bài liên quan tới tự động hóa trong reve
 Chúng ta có một thư mục chứa khoảng 20 files. Thử nghĩ đến chuyện sẽ ngồi reverse hết đống này bằng IDA xem ◑﹏◐ Reverse sẽ biến thành địa ngục. :)))   
 Lucki là chúng ta có thể tự động hóa quá trình này. Vì các file này có kết cấu tương tự nhau.   
 
-```main```  
+Hàm ```main```:     
 
 ![](/ctf/re/angr/defcon/magic_dist/hinh1.PNG)   
 
-```sub_DF6```    
+Hàm ```sub_DF6```:    
 
 ![](/ctf/re/angr/defcon/magic_dist/hinh2.PNG)    
 
 Trong ```sub_DF6``` sẽ có những hàm có chức năng tương tự như sau :   
 
-```sub_93B```   
+Hàm ```sub_93B``` :   
 
 ![](/ctf/re/angr/defcon/magic_dist/hinh3.PNG)    
 
