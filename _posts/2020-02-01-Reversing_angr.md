@@ -201,9 +201,12 @@ Ok cách này có chút thủ công nhưng cũng ra được kết quả. Mình 
 
 
 # Defcon 2017 Sorcery    
-Bài này là một file khá là phức tạp. Đoạn reverse đầu tiên để tìm ra được function mà chúng ta quan tâm cũng sẽ tiêu tốn khá nhiều thời gian. Vì file này nó cấp phát một vùng nhớ, stack mới để thực thi chương trình chính thì phải. 😁😁😁 Do đang tập trung vào angr nên là mình không tập trung vào phần reverse này lắm :vv »»» Kinh nghiệm sẽ là tập trung vào những cái đơn giản, hàm đơn giản.Nhưng không được bỏ qua đoạn nào, vì đoạn code quan trọng có thể nằm bất kì đâu.       
+Bài này là một file khá là phức tạp. Đoạn reverse đầu tiên để tìm ra được function mà chúng ta quan tâm cũng sẽ tiêu tốn khá nhiều thời gian. Vì file này nó cấp phát một vùng nhớ, stack mới để thực thi chương trình chính thì phải. 😁😁😁 Do đang tập trung vào angr nên là mình không tập trung vào phần reverse này lắm :vv 
+༼ つ ◕_◕ ༽つ »»» Kinh nghiệm sẽ là tập trung vào những cái đơn giản, hàm đơn giản trước, hàm dùng nhiều hàm lạ thì để sau .Nhưng không được bỏ qua đoạn nào, vì đoạn code quan trọng có thể nằm bất kì đâu.       
 
 Như trong trường hợp này, trong hàm main sẽ gọi đến hàm ```sub_30fc```. Trong hàm này sẽ có một chuỗi so sánh check flag :    
+
+![](/ctf/re/angr/defcon/sorcery_dist/hinh1.PNG)     
 
 
 
