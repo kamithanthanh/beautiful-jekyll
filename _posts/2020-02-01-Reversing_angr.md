@@ -103,7 +103,10 @@ for guess in progressbar.ProgressBar(widgets=[progressbar.Counter(), ' ', progre
 ```
 
 <a name="wu2"></a>
-
+   
+   
+   
+   
 # Defcon 2017 - Magic    
 Defcon 2017 có một chuỗi bài liên quan tới tự động hóa trong reverse engineering. Đây là bài đầu tiên trong chuỗi series này. Và cũng thực hiện những kĩ thuật đơn giản nhất.   
 Chúng ta có một thư mục chứa khoảng 20 files. Thử nghĩ đến chuyện sẽ ngồi reverse hết đống này bằng IDA xem ◑﹏◐ Reverse sẽ biến thành địa ngục. :)))   
