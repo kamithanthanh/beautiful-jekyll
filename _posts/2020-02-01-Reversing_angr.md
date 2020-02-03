@@ -121,7 +121,67 @@ Trong ```sub_DF6``` sẽ có những hàm có chức năng tương tự như sau
 
 ![](/ctf/re/angr/defcon/magic_dist/hinh3.PNG)    
 
+Bài này sẽ không khó nếu chỉ có một file. Chúng ta có thể tự động hóa quá trình này bằng một đoạn code angr đơn giản  :    
+```python
+  from angr import * 
+from claripy import * 
+import sys 
 
 
- 
+filename = sys.argv[1]
+BASE = 0x400000
+p = Project(filename)
+
+target_function = ???
+
+state = p.factory.blank_state(addr=target_function)  
+simgr = p.factory.simgr(state) 
+
+# compute flag length from number of function
+len_flag = ???
+print("[*] Length flag = " + str(len_flag))
+flag = BVS("flag", len_flag * 8) 
+
+# set up paramterers for functions
+memory_write = 0x20200F + BASE 
+state.memory.store(memory_write, flag) 
+state.regs.rdi = memory_write 
+
+# calculate from instruction counts 
+good = ???  
+print("Good point = " + hex(good))
+simgr.explore(find=(good)) 
+
+if simgr.found : 
+    s = simgr.found[0] 
+    print(s.solver.eval(flag, cast_to=bytes))
+else : 
+    print("No fucking that easy ....")
+```
+
+Chúng ta sẽ bắt đầu từ ```sub_DF6```, thiết lập biến flag dài 46 kí tự, ghi vào bộ nhớ và truyền địa chỉ của bộ nhớ đó vào thanh ghi rdi. Điểm kết thúc là diểm vượt qua tất cả các check. Mọi công việc diễn ra như chương trình angr đơn giản.   
+
+Tuy nhiên có một số tham số chưa xác định, thay đổi theo từng binary. Chúng ta sẽ dùng angr để tự động xác định tham số này.   
+Chúng ta dùng công cụ ```analyses``` của angr để phân tích biểu đồ của chương trình này , liệt kê các function :   
+
+```python
+cfg = p.analyses.CFG() 
+list_function = p.kb.functions.items()  
+```   
+Lại để ý , hàm mục tiêu lại luôn nằm gần cuối, nên việc có bao nhiêu hàm check không quan trọng, ta chỉ cần lần từ cuối lên là tìm được :   
+![](/ctf/re/angr/defcon/magic_dist/hinh4.PNG)     
+
+```python
+target_function = list_function[-11][0]    # last final function 
+```
+
+Tiếp đến dựa theo những tính toán thủ công dựa trên số hàm và số câu lệnh của hàm ```sub_DF6```, mình thu được thêm những mảnh ghép còn lại :  
+```python
+len_flag = (len(list_function) - 24) / 2   
+good = target_function + len_flag * 17 + 25  
+```
+
+Ok cách này có chút thủ công nhưng cũng ra được kết quả. Mình còn định dùng unicorn để giải cơ :]] Mà phức tạp quá nên thôi. QUa bài tiếp theo của defcon ta sẽ biết cách khác để tìm được các tham số trên bằng ```capstone```.    
+
+
 
