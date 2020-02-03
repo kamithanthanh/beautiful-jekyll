@@ -112,10 +112,12 @@ Defcon 2017 có một chuỗi bài liên quan tới tự động hóa trong reve
 Chúng ta có một thư mục chứa khoảng 20 files. Thử nghĩ đến chuyện sẽ ngồi reverse hết đống này bằng IDA xem ◑﹏◐ Reverse sẽ biến thành địa ngục. :)))   
 Lucki là chúng ta có thể tự động hóa quá trình này. Vì các file này có kết cấu tương tự nhau.   
 
-```main```    
+```main```  
+
 ![](/ctf/re/angr/defcon/magic_dist/hinh1.PNG)   
 
 ```sub_DF6```    
+
 ![](/ctf/re/angr/defcon/magic_dist/hinh2.PNG)    
 
 Trong ```sub_DF6``` sẽ có những hàm có chức năng tương tự như sau :   
@@ -125,6 +127,7 @@ Trong ```sub_DF6``` sẽ có những hàm có chức năng tương tự như sau
 ![](/ctf/re/angr/defcon/magic_dist/hinh3.PNG)    
 
 Bài này sẽ không khó nếu chỉ có một file. Chúng ta có thể tự động hóa quá trình này bằng một đoạn code angr đơn giản  :    
+
 ```python
   from angr import * 
 from claripy import * 
@@ -160,7 +163,8 @@ if simgr.found :
     print(s.solver.eval(flag, cast_to=bytes))
 else : 
     print("No fucking that easy ....")
-```
+```    
+
 
 Chúng ta sẽ bắt đầu từ ```sub_DF6```, thiết lập biến flag dài 46 kí tự, ghi vào bộ nhớ và truyền địa chỉ của bộ nhớ đó vào thanh ghi rdi. Điểm kết thúc là diểm vượt qua tất cả các check. Mọi công việc diễn ra như chương trình angr đơn giản.   
 
