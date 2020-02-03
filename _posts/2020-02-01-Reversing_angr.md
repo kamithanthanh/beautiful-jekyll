@@ -187,7 +187,7 @@ func = cfg.functions[0x4030fc]      # get graph code of functions 0x4030fc
 for block in func.blocks:     
 ```
 Mỗi block là một class, chuyển về các đối tượng instructments  bằng câu lệnh ```block.capstone.insns```.  
-Tiếp đến, chúng ta phân tích từng câu lệnh, so sánh xem khi nào câu lệnh là phép so sánh ```al``` hoặc ```bl``` thì tách phần số được đem ra so sánh rồi cộng vào flag 😀😀😀    
+Tiếp đến, chúng ta phân tích từng câu lệnh, so sánh xem khi nào câu lệnh là phép so sánh  ```al``` hoặc ```bl``` với một sô thì tách số đó cộng vào flag 😀😀😀    
 ```python
 flag = "" 
     for block in func.blocks: 
