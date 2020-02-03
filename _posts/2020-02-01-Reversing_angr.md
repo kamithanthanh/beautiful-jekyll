@@ -128,47 +128,7 @@ Hàm ```sub_93B``` :
 
 ![](/ctf/re/angr/defcon/magic_dist/hinh3.PNG)    
 
-Bài này sẽ không khó nếu chỉ có một file. Chúng ta có thể tự động hóa quá trình này bằng một đoạn code angr đơn giản  :    
-
-```python
-  from angr import * 
-from claripy import * 
-import sys 
-
-
-filename = sys.argv[1]
-BASE = 0x400000
-p = Project(filename)
-
-target_function = ???
-
-state = p.factory.blank_state(addr=target_function)  
-simgr = p.factory.simgr(state) 
-
-# compute flag length from number of function
-len_flag = ???
-print("[*] Length flag = " + str(len_flag))
-flag = BVS("flag", len_flag * 8) 
-
-# set up paramterers for functions
-memory_write = 0x20200F + BASE 
-state.memory.store(memory_write, flag) 
-state.regs.rdi = memory_write 
-
-# calculate from instruction counts 
-good = ???  
-print("Good point = " + hex(good))
-simgr.explore(find=(good)) 
-
-if simgr.found : 
-    s = simgr.found[0] 
-    print(s.solver.eval(flag, cast_to=bytes))
-else : 
-    print("No fucking that easy ....")
-```    
-
-
-Chúng ta sẽ bắt đầu từ ```sub_DF6```, thiết lập biến flag dài 46 kí tự, ghi vào bộ nhớ và truyền địa chỉ của bộ nhớ đó vào thanh ghi rdi. Điểm kết thúc là diểm vượt qua tất cả các check. Mọi công việc diễn ra như chương trình angr đơn giản.   
+Bài này sẽ không khó nếu chỉ có một file. Chúng ta có thể tự động hóa quá trình này bằng một đoạn code angr không quá phức tạp 😁😁😁 .Chúng ta sẽ bắt đầu từ ```sub_DF6```, thiết lập biến flag dài 46 kí tự, ghi vào bộ nhớ và truyền địa chỉ của bộ nhớ đó vào thanh ghi rdi. Điểm kết thúc là diểm vượt qua tất cả các check. Mọi công việc diễn ra như chương trình angr đơn giản.   
 
 Tuy nhiên có một số tham số chưa xác định, thay đổi theo từng binary. Chúng ta sẽ dùng angr để tự động xác định tham số này.   
 Chúng ta dùng công cụ ```analyses``` của angr để phân tích biểu đồ của chương trình này , liệt kê các function :   
@@ -190,6 +150,8 @@ len_flag = (len(list_function) - 24) / 2
 good = target_function + len_flag * 17 + 25  
 ```
 
+Last solution : [solution.py](https://github.com/hacmao/hacmao.github.io/raw/master/ctf/re/angr/defcon/magic_dist/solve.py)   
+
 Ok cách này có chút thủ công nhưng cũng ra được kết quả. Mình còn định dùng unicorn để giải cơ :]] Mà phức tạp quá nên thôi. QUa bài tiếp theo của defcon ta sẽ biết cách khác để tìm được các tham số trên bằng ```capstone```.    
 
 
@@ -207,6 +169,39 @@ Bài này là một file khá là phức tạp. Đoạn reverse đầu tiên đ�
 Như trong trường hợp này, trong hàm main sẽ gọi đến hàm ```sub_30fc```. Trong hàm này sẽ có một chuỗi so sánh check flag :    
 
 ![](/ctf/re/angr/defcon/sorcery_dist/hinh1.PNG)     
+
+Chúng ta sẽ dùng angr + capstone để extract ra được những giá trị khi tiến hành so sánh.   
+Chúng ta sẽ tiếp tục dùng phương thức ```analyses``` để explore graph của chương trình. Tuy nhiên lần này sẽ thêm giá trị ```auto_load_libs=False``` để chương trình thực hiện nhanh hơn và không có lỗi.   
+```python
+p = Project(s, auto_load_libs = False)   
+cfg = p.analyses.CFG(show_progressbar=True) 
+```    
+
+Lấy graph của hàm ```sub_30fc``` về để phân tích. Ta hiểu nôm na graph sẽ như sau :    
+
+![](/ctf/re/angr/defcon/sorcery_dist/sample-gimple-cfg.png)    
+
+Graph trong angr được biểu thị bằng các block. Mỗi block gồm nhiều câu lệnh khác nhau. Block được chia theo phép toán thay đổi luồng thực thi. Ta tiến hành sắp xếp lại các block theo thứ tự tăng dần rồi phân tích từng block :   
+```python
+func = cfg.functions[0x4030fc]      # get graph code of functions 0x4030fc
+for block in func.blocks:     
+```
+Mỗi block là một class, chuyển về các đối tượng instructments  bằng câu lệnh ```block.capstone.insns```.  
+Tiếp đến, chúng ta phân tích từng câu lệnh, so sánh xem khi nào câu lệnh là phép so sánh ```al``` hoặc ```bl``` thì tách phần số được đem ra so sánh rồi cộng vào flag 😀😀😀    
+```python
+flag = "" 
+    for block in func.blocks: 
+        # get instruction start with al, cl 
+        ins = [insn for insn in block.capstone.insns if insn.mnemonic == "cmp" and    # if cmp 
+                  insn.operands[0].type == 1   # if not register 
+                      and insn.operands[0].reg in (2, 10)  ] # if not al or cl  
+        if not ins :         
+            continue 
+        else : 
+            c = ins[0].operands[1].imm 
+            flag += chr(c) 
+```
+Xem thêm về capstone constant tại [đây](https://github.com/aquynh/capstone/blob/master/bindings/python/capstone/x86_const.py)     
 
 
 
