@@ -9,9 +9,13 @@ Sau khi làm quen với angr xong, mình tiếp tục hành trình làm những 
 
 # Table of Content   
   - [**Whitehat Crypto 400**](#wu1)
+  - [**Defcon 2017 Magic**](#wu2)   
+  
 <a name="wu1"></a>   
     
     
+
+
 # Whitehat Crypto400 
 Cũng khá là ngạc nhiên khi một challenge của Việt Nam được lấy ví dụ ở đây \(￣︶￣*\))\(￣︶￣*\))\(￣︶￣*\))Việt Nam chúng ta thật tuyệt 🤗🤗🤗    
 Sau khi làm những bước reverse cơ bản thì chúng ta cần chú ý những hàm sau :    
@@ -97,6 +101,25 @@ for guess in progressbar.ProgressBar(widgets=[progressbar.Counter(), ' ', progre
         print(guess_str.decode("ascii"))
         break
 ```
+
+<a name="wu2"></a>
+
+# Defcon 2017 - Magic    
+Defcon 2017 có một chuỗi bài liên quan tới tự động hóa trong reverse engineering. Đây là bài đầu tiên trong chuỗi series này. Và cũng thực hiện những kĩ thuật đơn giản nhất.   
+Chúng ta có một thư mục chứa khoảng 20 files. Thử nghĩ đến chuyện sẽ ngồi reverse hết đống này bằng IDA xem ◑﹏◐ Reverse sẽ biến thành địa ngục. :)))   
+Lucki là chúng ta có thể tự động hóa quá trình này. Vì các file này có kết cấu tương tự nhau.   
+
+```main```    
+![](/ctf/re/angr/defcon/magic_dist/hinh1.PNG)   
+
+```sub_DF6```    
+![](/ctf/re/angr/defcon/magic_dist/hinh2.PNG)    
+
+Trong ```sub_DF6``` sẽ có những hàm có chức năng tương tự như sau :   
+
+```sub_93B```   
+
+![](/ctf/re/angr/defcon/magic_dist/hinh3.PNG)    
 
 
 
