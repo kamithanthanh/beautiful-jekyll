@@ -1,4 +1,8 @@
-# Angstrom CTF 2020   
+---
+layout : post 
+title : Angstrom CTF 2020 
+---
+  
 
 # Mở đầu  
 
