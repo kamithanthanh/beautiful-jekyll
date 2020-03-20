@@ -7,21 +7,21 @@ RUN apt-get update
 RUN apt-get install xinetd -y
 RUN apt-get install netcat -y
 
-RUN useradd -m nocanary
+RUN useradd -m ctf
 
-COPY ./nocanary.conf /etc/xinetd.d/nocanary
-COPY ./flag.txt /home/nocanary/flag.txt
-COPY ./no_canary /home/nocanary/no_canary
-COPY ./run.sh /home/nocanary/run.sh
-COPY ./init.sh /home/nocanary/init.sh
+COPY ./service.conf /etc/xinetd.d/service
+COPY ./flag.txt /home/ctf/flag.txt
+COPY ./no_canary /home/ctf/no_canary
+COPY ./run.sh /home/ctf/run.sh
+COPY ./init.sh /home/ctf/init.sh
 
-RUN chmod +x /home/nocanary/init.sh
-RUN chmod +x /home/nocanary/run.sh
+RUN chmod +x /home/ctf/init.sh
+RUN chmod +x /home/ctf/run.sh
 
-RUN chown -R root:nocanary /home/nocanary
-RUN chmod -R 755 /home/nocanary
-RUN chmod 640 /home/nocanary/flag.txt
-RUN chown -R root:nocanary /home/nocanary/flag.txt
+RUN chown -R root:ctf /home/ctf
+RUN chmod -R 755 /home/ctf
+RUN chmod 640 /home/ctf/flag.txt
+RUN chown -R root:ctf /home/ctf/flag.txt
 
 WORKDIR /home
 #ENTRYPOINT  ["/home/nocanary/init.sh"]
