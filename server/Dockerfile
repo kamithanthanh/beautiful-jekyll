@@ -1,3 +1,6 @@
+# docker build -t no_canary .
+# docker run -d --name no_canary -p 9999:9999 -it no_canary 
+
 FROM ubuntu:16.04
 
 RUN apt-get update
