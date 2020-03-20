@@ -1,4 +1,5 @@
 #!/bin/sh
 #
 
-service xinetd restart
+service xinetd restart; sleep infinity
+
