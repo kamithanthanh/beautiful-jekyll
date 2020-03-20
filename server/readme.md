@@ -1,1 +1,1 @@
-set up server ctf collect from angstrom CTF 2020
+set up server pwn ctf loot from chung96vn github
