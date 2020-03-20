@@ -1,21 +1,25 @@
-#IMPORTANT: on host system: sysctl vm.mmap_min_addr=0
-FROM ubuntu:xenial
+FROM ubuntu:16.04
 
 RUN apt-get update
-RUN apt-get install -y xinetd zsh
+RUN apt-get install xinetd -y
+RUN apt-get install netcat -y
 
-COPY xinetd.conf /etc/xinetd.d/ctf
+RUN useradd -m nocanary
 
-WORKDIR /ctf
-RUN mkdir /ctf/users
+COPY ./nocanary.conf /etc/xinetd.d/nocanary
+COPY ./flag.txt /home/nocanary/flag.txt
+COPY ./no_canary /home/nocanary/no_canary
+COPY ./run.sh /home/nocanary/run.sh
+COPY ./init.sh /home/nocanary/init.sh
 
-COPY bookface .
-COPY server.sh .
-COPY flag.txt .
-RUN chmod +x server.sh
-RUN chmod +x bookface
-RUN chown -R 1000 /ctf
+RUN chmod +x /home/nocanary/init.sh
+RUN chmod +x /home/nocanary/run.sh
 
-EXPOSE 1337
+RUN chown -R root:nocanary /home/nocanary
+RUN chmod -R 755 /home/nocanary
+RUN chmod 640 /home/nocanary/flag.txt
+RUN chown -R root:nocanary /home/nocanary/flag.txt
 
-ENTRYPOINT ["xinetd", "-dontfork", "-limit", "256"]
+WORKDIR /home
+#ENTRYPOINT  ["/home/nocanary/init.sh"]
+EXPOSE 9999
