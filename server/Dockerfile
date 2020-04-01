@@ -6,6 +6,7 @@ FROM ubuntu:16.04
 RUN apt-get update
 RUN apt-get install xinetd -y
 RUN apt-get install netcat -y
+# RUN apt-get install libc6-dev-i386 -y 
 
 RUN useradd -m ctf
 
