@@ -12,7 +12,7 @@ RUN useradd -m ctf
 
 COPY ./service.conf /etc/xinetd.d/service
 COPY ./flag.txt /home/ctf/flag.txt
-COPY ./bin /home/ctf/bin
+COPY ./<bin> /home/ctf/<bin>
 COPY ./run.sh /home/ctf/run.sh
 COPY ./init.sh /home/ctf/init.sh
 
@@ -25,4 +25,4 @@ RUN chmod 640 /home/ctf/flag.txt
 
 WORKDIR /home
 ENTRYPOINT  ["/home/ctf/init.sh"]
-EXPOSE 9999
+EXPOSE <port>
