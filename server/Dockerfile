@@ -23,6 +23,6 @@ RUN chown -R root:ctf /home/ctf
 RUN chmod -R 755 /home/ctf
 RUN chmod 640 /home/ctf/flag.txt
 
-WORKDIR /home
+WORKDIR /home/ctf
 ENTRYPOINT  ["/home/ctf/init.sh"]
 EXPOSE <port>
