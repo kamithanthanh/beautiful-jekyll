@@ -1,6 +1,7 @@
 ---
 layout : post
-title : Start exploit windows with dadadb hitcon 2019 quals  
+title : Start learning exploit windows 
+subtitle : with dadadb hitcon 2019 quals  
 --- 
 
 # Mở đầu  
