@@ -7,3 +7,9 @@ def partial(hidden, N, qbar) :
   d = f.small_roots(X=2^hidden-1, beta=0.5)[0] # time random
   return qbar - d 
 
+def partialP(pbar, N, hidden_bits) : 
+    X = 2^hidden_bits
+    M = matrix([[X^2, X*pbar, 0], [0, X, pbar], [0, 0, N]])
+    B = M.LLL()
+    Q = B[0][0]*x^2/X^2+B[0][1]*x/X+B[0][2]
+    return pbar +Q.roots(ring=ZZ)[0][0] 
