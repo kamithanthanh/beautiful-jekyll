@@ -1,6 +1,6 @@
 from pwn import *
 
-def debug(p, idx) :
+def debug(idx) :
     cmd = """
     """
     context.terminal = ['tmux', 'splitw', '-h']
@@ -35,7 +35,7 @@ def exploit() :
     global p, e, libc 
     p, e, libc = conn("./chall")
 
-    debug(p, 0)
+    debug(0)
 
     p.interactive()
 
