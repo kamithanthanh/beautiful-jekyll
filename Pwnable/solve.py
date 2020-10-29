@@ -32,6 +32,7 @@ def conn(binary) :
     return (p, e, libc)
 
 def exploit() :
+    global p, e, libc 
     p, e, libc = conn("./chall")
 
     debug(p, 0)
@@ -39,4 +40,5 @@ def exploit() :
     p.interactive()
 
 if __name__ == "__main__" :
+    p, e, libc = ("", "", "")
     exploit()
