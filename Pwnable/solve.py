@@ -5,8 +5,7 @@ def debug(idx) :
     """
     context.terminal = ['tmux', 'splitw', '-h']
 
-    if int(args.GDB) == str(idx):
-        print('lol')
+    if args.GDB == str(idx):
         gdb.attach(p, cmd)
 
 def conn(binary) :
