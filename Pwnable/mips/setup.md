@@ -63,4 +63,6 @@ Ta sẽ thực hiện được debug trên server. Làm cách này, chúng ta c�
 
 # LD_LIBRARY_PATH
 
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./
+```
