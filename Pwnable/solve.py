@@ -1,10 +1,16 @@
 from pwn import *
 
+def get_PIE(proc):
+    memory_map = open("/proc/{}/maps".format(proc.pid),"rb").readlines()
+    return int(memory_map[0].split(b"-")[0],16)
+
 def debug(idx) :
-    cmd = """
+    pie = get_PIE(p)
+    cmd = f"""
+    b * 0x{pie+0x:x}
     """
     context.terminal = ['tmux', 'splitw', '-h']
-
+    context.log_level = 'debug'
     if args.GDB == str(idx):
         gdb.attach(p, cmd)
 
