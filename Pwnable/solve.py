@@ -10,8 +10,8 @@ def debug(idx) :
     b * 0x{pie+0x:x}
     """
     context.terminal = ['tmux', 'splitw', '-h']
-    context.log_level = 'debug'
     if args.GDB == str(idx):
+        context.log_level = 'debug'
         gdb.attach(p, cmd)
 
 def conn(binary) :
