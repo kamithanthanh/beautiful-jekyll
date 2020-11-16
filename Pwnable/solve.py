@@ -5,6 +5,8 @@ def get_PIE(proc):
     return int(memory_map[0].split(b"-")[0],16)
 
 def debug(idx) :
+    if args.REMOTE : 
+        return
     pie = get_PIE(p)
     cmd = f"""
     b * 0x{pie+0x:x}
