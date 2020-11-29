@@ -1,3 +1,7 @@
+---
+layout : post
+title : SVATT Final 2020  
+---
 # SVATT Final 2020  
 
 SVATTT Final 2020.  
