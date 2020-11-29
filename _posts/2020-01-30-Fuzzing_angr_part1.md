@@ -24,7 +24,8 @@ Mục tiêu của chương trình này là khai thác lỗi để in ra :
 Chương trình có một lỗi overflow cơ bản. Nhưng nó rất hợp để làm ví dụ mở đầu.  
 Giả sử chưa biết lỗi overflow, mà dựa trên yêu cầu chúng ta biết được bằng cách nào đó chúng ta phải tìm được cách thay đổi luồng thực thi của chương trình để nó gọi hàm ```print_good```.   
 
-# Under-constrained state   
+## Under-constrained state   
+
 Trong khi chương trình được thực hiện bởi angr, Under-constrained state xảy ra khi thanh ghi EIP mang giá trị tượng trưng (có nghĩa là bị ảnh hưởng bởi user-input). Đây là những trạng thái chúng ta cần quan tâm trong trường hợp này.  
 Để kiểm tra, chúng ta có thể dùng đoạn code sau :   
 ```python
@@ -32,15 +33,18 @@ Trong khi chương trình được thực hiện bởi angr, Under-constrained s
     return state.se.symbolic(state.regs.eip)
 ```
 
-# Stash   
-Stash là một danh sách phân loại các trạng thái.Bao gồm : 
-  - 'active' : trạng thái mà chương trình có thể tiếp tục thực hiện
-  - 'deadended' : trạng thái kết thúc chương trình 
-  - 'errored' : trạng thái chương trình gặp lỗi với angr
-  - 'unconstrained' : Under-constrained state 
-  - 'unsat' : trạng thái không thể tồn tại (nghĩa là phương trình vô nghiệm)   
+## Stash  
 
-Chúng ta có thể tự cấu hình stash như sau :   
+Stash là một danh sách phân loại các trạng thái.Bao gồm :  
+
+  + 'active' : trạng thái mà chương trình có thể tiếp tục thực hiện
+  + 'deadended' : trạng thái kết thúc chương trình
+  + 'errored' : trạng thái chương trình gặp lỗi với angr
+  + 'unconstrained' : Under-constrained state
+  + 'unsat' : trạng thái không thể tồn tại (nghĩa là phương trình vô nghiệm)  
+
+Chúng ta có thể tự cấu hình stash như sau :  
+
 ```python
 simulation = project.factory.simgr(
     initial_state, 
@@ -53,15 +57,19 @@ simulation = project.factory.simgr(
     }
   )
 ```  
-Tất cả các loại stash không cần thiết chúng ta cho hết vào danh sách ```not_need```.   
+
+Tất cả các loại stash không cần thiết chúng ta cho hết vào danh sách ```not_need```.  
 Mặc định, Angr sẽ hủy bỏ những trạng thái unconstrained. Chúng ta có thể điều chỉnh bằng cách ```save_unconstrained=True```. Khi đó, Angr sẽ lưu các trạng thái đó vào ```simulation.unconstrained```.   
 
-# Fuzzing Step   
+## Fuzzing Step
+
 + Giai đoạn 1 : Thu thập tất cả các unconstrained state:  
-  - Thực hiện dịch chuyển tất cả stash ```unconstrained``` sang stash ```found```
-  ```
+  - Thực hiện dịch chuyển tất cả stash ```unconstrained``` sang stash ```found```  
+
+  ```c
   simulation.move('unconstrained', 'found')
-  ```
+  ```  
+
   - Tiếp tục thực hiện chương trình bằng lệnh ```simulation.step()```
   - Lặp cho tới khi không còn trạng thái active hoặc trạng thái unconstrained thì dừng.  
 Việc ```step``` hoạt động như nào lại là vấn đề sâu xa mà mình cũng chưa rõ cách hoạt động của nó 😥 Nói chung, Angr sẽ thực hiện chọn input đầu vào là các biến, thực hiện chương trình là các biến đó và theo dõi quá trình hoạt động từ đầu đến cuối. Ở mỗi bước thực hiện, tiến hành lọc ra tất cả các trạng thái uncóntrained thu được và lưu tại stash ```found``` để sau đó có thể truy cập được thông qua ```simulation.found```.  
